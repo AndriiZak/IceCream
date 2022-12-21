@@ -28,7 +28,7 @@ ul {
 
 body {
     background-color: var(--color-section);
-    font-family: 'Roboto', sans-serif;
+    font-family: , sans-serif;
 }
 
 footer {
@@ -49,26 +49,10 @@ footer {
 }
 
 .section {
-    padding: 60px 0 60px 0;
-
-
-            
-        @media screen and (min-width:1200px) {padding: 94px 0 94px 0;}
+    padding: ;
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    
-    @media screen and (min-width:768px) {
-        max-width: 768px;
-    }
-        
-    @media screen and (min-width:1200px) {
-        max-width: 1200px;
-    }
-    
+ 
 
 }
