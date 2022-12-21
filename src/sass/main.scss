@@ -1,14 +1,17 @@
-@import './mixins';
-@import './reset';
 
-@import './about';
-@import './advantages';
-@import './customer-reviews';
-@import './footer';
-@import './gallery';
-@import './';
-@import './';
-@import './';
-@import './';
-@import './';
+
+@import './abstracts/mixins';
+@import './base/reset';
+
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/customer-reviews';
+@import './layout/footer';
+@import './layout/gallery';
+@import './layout/header';
+@import './layout/hero-header';
+@import './layout/ontacts';
+@import './layout/products';
+
+
 
