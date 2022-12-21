@@ -1,0 +1,15 @@
+:root {
+    --color-brand: #2196F3;
+    --color-section: #FFFFFF;
+    --color-background: #2F303A;
+    --color-icon: #AFB1B8;
+    --color-text-grey: #757575;
+    --input-border: rgba(33, 33, 33, 0.2);
+    --color-text: #212121;
+    --color-footer-text: rgba(255, 255, 255, 0.6);
+    ;
+
+    --transition-header: fiill 250ms, color 250ms, background-color 250ms, box-shedow 250ms, border 250ms;
+    --transition-cobic-bezier: cubic-bezier (0.4, 0, 0.2, 1);
+    --transition-translate: transform 250ms
+}
