@@ -5,15 +5,35 @@
 
 .container {
     width: 100%;
-    max-width: 480px;
     margin: 0 auto;
     padding: 0 16px;
+    outline: 2px solid tomato; //чимчасово, щоб бачити межі контейнера
 
-    @media screen and (min-width:768px) {
-        max-width: 768px;
+    /*----Стиль для телефона до 320----*/
+    @media screen and (max-width: 319px) {
+        .container {
+            max-width: 319px;
+        }
     }
 
-    @media screen and (min-width:1200px) {
-        max-width: 1200px;
+    /*----Стиль для телефона 320-767----*/
+    @media screen and (min-width: 320px) {
+        .container {
+            max-width: 320px;
+        }
+    }
+
+    /*----Стиль для планшета 768-1200----*/
+    @media screen and (min-width: 768px) {
+        .container {
+            max-width: 768px;
+        }
+    }
+
+    /*----Стиль для компа від 1200----*/
+    @media screen and (min-width: 1200px) {
+        .container {
+            max-width: 1200px;
+        }
     }
 }
