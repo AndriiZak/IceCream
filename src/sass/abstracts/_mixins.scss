@@ -85,14 +85,14 @@ $desctopMin: 1200px;
 //* Castom media
 // */
 
-// @mixin minW($widhtValue) {
-//   @media screen and (min-width: $widhtValue) {
+// @mixin minW($widthValue) {
+//   @media screen and (min-width: $widthValue) {
 //     @content;
 //   }
 // }
 
-// @mixin maxW($widhtValue) {
-//   @media screen and (max-width: $widhtValue) {
+// @mixin maxW($widthValue) {
+//   @media screen and (max-width: $widthValue) {
 //     @content;
 //   }
 // }
