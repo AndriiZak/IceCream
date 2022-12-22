@@ -1,0 +1,11 @@
+.advantages-container {
+    margin: 0 auto;
+    padding: 0 16px;
+    min-width: 320px;
+    
+    // outline: 1px solid tomato; //TODO: REMOVE
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
