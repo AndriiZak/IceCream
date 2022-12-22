@@ -91,6 +91,11 @@ ul {
   color: #fcfcfc;
 }
 .advantages-container .advantages__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #000000;
+  padding: 12px 51px 12px 34px;
   background: #f8d24e;
   border-radius: 10px;
   border: none;
