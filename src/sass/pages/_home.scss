@@ -1,39 +1,32 @@
 .section {
-    padding: 60px 0 60px 0;
-
+  padding: 60px 0 60px 0;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 16px;
-    outline: 2px solid tomato; //чимчасово, щоб бачити межі контейнера
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
+}
 
-    /*----Стиль для телефона до 320----*/
-    @media screen and (max-width: 319px) {
-        .container {
-            max-width: 319px;
-        }
-    }
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+}
 
-    /*----Стиль для телефона 320-767----*/
-    @media screen and (min-width: 320px) {
-        .container {
-            max-width: 320px;
-        }
-    }
+/*----Стиль для планшета до 768-1200----*/
 
-    /*----Стиль для планшета 768-1200----*/
-    @media screen and (min-width: 768px) {
-        .container {
-            max-width: 768px;
-        }
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
-    /*----Стиль для компа від 1200----*/
-    @media screen and (min-width: 1200px) {
-        .container {
-            max-width: 1200px;
-        }
-    }
+/*----Стиль для компа від 1200----*/
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
