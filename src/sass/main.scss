@@ -1,8 +1,9 @@
 
-
+//? BASE 
 @import './abstracts/mixins';
 @import './base/reset';
-
+@import './abstracts/colors';
+//? LAYOUT
 @import './layout/сontacts';
 @import './layout/about';
 @import './layout/advantages';
