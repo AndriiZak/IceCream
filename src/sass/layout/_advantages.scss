@@ -1,6 +1,7 @@
 .advantages-container {
   margin: 0 auto;
   padding: 0 16px;
+  padding-bottom: 25px;
   min-width: 320px;
   background: #84a178;
 
@@ -50,17 +51,42 @@
 
       color: #fcfcfc;
     }
-  }
 
-  .advantages__button {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
+    &__button {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.29;
 
-    color: #000000;
-    padding: 12px 51px 12px 34px;
-    background: #f8d24e;
-    border-radius: 10px;
-    border: none;
+      color: #000000;
+      padding: 12px 51px 12px 34px;
+      background: #f8d24e;
+      border-radius: 10px;
+      border: none;
+    }
+
+    &__data-value {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.22;
+
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      color: #fcfcfc;
+    }
+
+    &__data-text {
+      padding-top: 16px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.7;
+
+      text-align: center;
+
+      color: #fcfcfc;
+    }
   }
 }
