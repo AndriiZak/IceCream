@@ -8,47 +8,16 @@
   padding: 0 16px;
   outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
 
-  @media screen and (max-width: 767px) {
-      .container {
-        max-width: 480px;
-      }
+  @include minW-Phone {
+      width: 480px;
     }
   
-    /*----Стиль для планшета до 768-1200----*/
-  
-    @media screen and (min-width: 768px) {
-      .container {
-        max-width: 768px;
-      }
+  @include minW-Tablet {
+      width: 768px;
     }
   
-    /*----Стиль для компа від 1200----*/
-  
-    @media screen and (min-width: 1200px) {
-      .container {
-        max-width: 1200px;
-      }
+  @include minW-Dt {
+      width: 1200px;
     }
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-/*----Стиль для планшета до 768-1200----*/
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-/*----Стиль для компа від 1200----*/
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
