@@ -1,57 +1,95 @@
-<<<<<<< Updated upstream
-<div class="backdrop__modal-buy is-hidden">
+<div class="backdrop">
   <div class="modal modal-buy">
-    <button class="modal-buy__btn">
-      <svg width="20" height="20">
-        <use href="./images/icons.svg#icon-close-line"></use>
+    <button class="modal__btn-close">
+      <svg width="20" height="20" class="">
+        <use href="./images/icons.svg#icon-close-cross"></use>
       </svg>
     </button>
-    <div class="modal-buy__content">
-      <h2 class="modal-buy__title">Buy now</h2>
-      <div class="modal-buy__products products">
-        <ul class="list products__list">
-          <li class="product product__item">
-            <img
-              srcset="./images/products/products-ice-cream-desktop.png 1x, ./images/products/products-ice-cream-desktop@2x.png 2xå"
-              src="./images/products/products-ice-cream-desktop.png"
-              alt=""
-              width="132"
-              height="132px"
-            />
-          </li>
-          <li class="product product__item">
-            <img
-              class="product__img"
-              srcset="
-                ./images/products/products-ice-coffee-desktop.png    1x,
-                ./images/products/products-ice-coffee-desktop@2x.png 2x
-              "
-              src="./images/products/products-ice-coffee-desktop.png"
-              alt=""
-              width="132"
-              height="132px"
-            />
-          </li>
-          <li class="product product__item">
-            <img
-              srcset="
-                ./images/products/products-milkshakes-desktop.png    1x,
-                ./images/products/products-milkshakes-desktop@2x.png 2x
-              "
-              src="./images/products/products-milkshakes-desktop.png"
-              alt=""
-              width="132"
-              height="132px"
-            />
-          </li>
-        </ul>
-      </div>
-      <form class="modal-form" action="">
-        <input type="text" />
-        <input type="text" />
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-      </form>
-      <button class="modal-form__button" type="submit">Submit</button>
+
+    <h2 class="modal__header modal__title">Buy now</h2>
+    <div class="product-box">
+      <ul class="list product-box__list">
+        <li class="product-box__item">
+          <div class="pctr__back pctr__back--green">
+            <div class="pctr__img">
+              <img
+                class="product-box__img"
+                srcset="./images/products/products-ice-cream-desktop.png 1x"
+                srcset="./images/products/products-ice-cream-desktop@2x.png 2x"
+                src="./images/products/products-ice-cream-desktop.png"
+                alt="ice-cream"
+                width="132"
+                height="132"
+              />
+            </div>
+          </div>
+        </li>
+
+        <li class="product-box__item">
+          <div class="pctr__back pctr__back--yellow">
+            <div class="pctr__img">
+              <img
+                class="product-box__img"
+                srcset="
+                  ./images/products/products-ice-coffee-desktop.png    1x,
+                  ./images/products/products-ice-coffee-desktop@2x.png 2x
+                "
+                src="./images/products/products-ice-coffee-desktop.png"
+                alt="coffee"
+                width="132"
+                height="132"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="product-box__item">
+          <div class="pctr__back pctr__back--brown">
+            <div class="pctr__img">
+              <img
+                class="product-box__img"
+                srcset="
+                  ./images/products/products-milkshakes-desktop.png    1x,
+                  ./images/products/products-milkshakes-desktop@2x.png 2x
+                "
+                src="./images/products/products-milkshakes-desktop.png"
+                alt="milkshakes"
+                width="132"
+                height="132"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
+    <div class="form-wrapper">
+      <form class="form" action="">
+        <div class="input-wrapper">
+          <input
+            class="input-wrapper__input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+          />
+
+          <input
+            class="input-wrapper__input"
+            type="text"
+            name="user-number"
+            id="user-number"
+            placeholder="Phone"
+          />
+
+          <textarea
+            class="input-wrapper__input form__textarea"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+
+    <button type="button" class="modal__btn">Submit</button>
   </div>
 </div>
