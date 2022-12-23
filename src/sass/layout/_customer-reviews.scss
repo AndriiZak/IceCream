@@ -8,9 +8,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; //треба?
-}
 
-.customer-reviews__image_thumb {
+/*---- Стилі для планшета 768px-1199px ----*/
+  @include minW-Tablet  {
+        padding-top: 283px;
+        padding-bottom: 379px;
+        background-image: url('../images/Background/Background_tablet.svg');
+      }
+/*---- Стилі для десктопа від 1200px ----*/
+  @include minW-Dt {
+    padding-top: 464px;
+    padding-bottom: 228px;
+    background-image: url('../images/Background/Background_desktop.svg');
+  }
+  
+
+&__image_thumb {
   height: 85px;
   width: 85px;
 
@@ -23,14 +36,14 @@
   overflow: hidden;
 }
 
-.customer-reviews__image {
+&__image {
   display: block;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.customer-reviews__text {
+&__text {
   padding: 35px 39px;
   margin-left: 4px;
   margin-right: 4px;
@@ -50,9 +63,29 @@
   text-align: center;
 
   color: #fcfcfc;
+/*---- Стилі для планшета 768px-1199px ----*/
+  @include minW-Tablet {
+      padding: 28px 80px;
+      margin-left: 15px;
+      margin-right: 15px;
+  
+      border-radius: 24px;
+  
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.86;
+    }
+/*---- Стилі для десктопа від 1200px ----*/
+  @include minW-Dt{
+    padding: 43px 73px;
+    margin-left: 100px;
+    margin-right: 100px;
+  
+    font-size: 16px;
+  }
 }
 
-.customer-reviews__name {
+&__name {
   font-family: 'Montserrat';
 
   font-weight: 500;
@@ -62,49 +95,11 @@
   text-align: center;
 
   color: #131313;
-}
-
 /*---- Стилі для планшета 768px-1199px ----*/
-
-@media screen and (min-width: 768px) {
-  .customer-reviews {
-    padding-top: 283px;
-    padding-bottom: 379px;
-    background-image: url('../images/Background/Background_tablet.svg');
-  }
-
-  .customer-reviews__text {
-    padding: 28px 80px;
-    margin-left: 15px;
-    margin-right: 15px;
-
-    border-radius: 24px;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
-  }
-
-  .customer-reviews__name {
-    font-size: 16px;
-    line-height: 1.86;
-  }
+  @include minW-Tablet {
+      font-size: 16px;
+      line-height: 1.86;
+    }
+}
 }
 
-/*---- Стилі для десктопа від 1200px ----*/
-
-@media screen and (min-width: 1200px) {
-  .customer-reviews {
-    padding-top: 464px;
-    padding-bottom: 228px;
-    background-image: url('../images/Background/Background_desktop.svg');
-  }
-
-  .customer-reviews__text {
-    padding: 43px 73px;
-    margin-left: 100px;
-    margin-right: 100px;
-
-    font-size: 16px;
-  }
-}
