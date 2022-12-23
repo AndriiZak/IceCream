@@ -1,10 +1,10 @@
 .products {
-  background-image: url(../images/Background/Background_mobile.svg);
+  background-image: url(../images/background/Background_mobile.svg);
   @include minW-Tablet {
-    background-image: url(../images/Background/Background_tablet.svg);
+    background-image: url(../images/background/Background_tablet.svg);
   }
   @include minW-Dt {
-    background-image: url(../images/Background/Background_desktop.svg);
+    background-image: url(../images/background/Background_desktop.svg);
   }
 
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
       padding: 108px 26px 12px 26px;
     }
     @include minW-Dt {
-      width: 370px;
+      min-width: 370px;
       height: 536px;
       padding: 165px 64px 60px 64px;
     }
