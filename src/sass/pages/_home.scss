@@ -4,20 +4,24 @@
 
 .container {
   width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 16px;
   outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
 
-  @include minW-Phone {
-      width: 480px;
-    }
-  
-  @include minW-Tablet {
-      width: 768px;
-    }
-  
-  @include minW-Dt {
-      width: 1200px;
-    }
-}
+  @include maxW-minPhone {
+    width: 320px;
+  }
 
+  @include minW-Phone {
+    width: 480px;
+  }
+
+  @include minW-Tablet {
+    width: 768px;
+  }
+
+  @include minW-Dt {
+    width: 1200px;
+  }
+}
