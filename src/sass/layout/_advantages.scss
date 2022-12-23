@@ -15,7 +15,7 @@
     &__box {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
     }
 
     &__title-up {
@@ -45,15 +45,30 @@
     }
 
     &__img {
-      position: relative;
       width: 279px;
       height: 279px;
-      margin-bottom: 8%;
+      box-sizing: content-box;
+      padding-bottom: 22px;
+      margin-top: 32px;
+      margin-bottom: 40px;
+    }
+
+    &__img-back {
+      position: relative;
+      height: 100%;
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+      border-radius: 50%;
     }
 
     &__img-top {
       position: absolute;
-      top: 8%;
+      top: 22px;
       left: 0;
       z-index: 1;
       width: 100%;
@@ -70,18 +85,6 @@
       &__img-top {
         background-image: url(./../images/how-its-made/korova-mobile@2x.png);
       }
-    }
-
-    &__img-back {
-      height: 100%;
-      background: linear-gradient(
-          0deg,
-          rgba(248, 210, 78, 0.7),
-          rgba(248, 210, 78, 0.7)
-        ),
-        #d9d9d9;
-      box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-      border-radius: 50%;
     }
 
     &__text {
