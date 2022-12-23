@@ -17,7 +17,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 280px;
+    width: calc(100% - 40px);
+    max-width: 320px;
     height: 420px;
     border-radius: 24px;
     &--green {
@@ -37,7 +38,7 @@
     line-height: 1.2222;
     text-align: center;
     text-transform: uppercase;
-    color: #131313;
+    color: $txt-black;
     margin-bottom: 12px;
   }
   &__title--400 {
@@ -90,8 +91,13 @@
 .products-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 150px;
   flex-basis: calc((100% - 450px) / 3);
+
+  @include minW-Tablet {
+    gap: 16px;
+  }
 }
 
 .picture {
