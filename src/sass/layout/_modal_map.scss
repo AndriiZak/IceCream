@@ -1,9 +1,9 @@
-.modal--map {
-  min-height: 365px;
-}
+.modal {
+  &--map {
+    min-height: 365px;
 
-@media screen and (min-width: 768px) {
-  .modal--map {
-    min-height: 458px;
+    @include minW-Tablet {
+      min-height: 458px;
+    }
   }
 }
