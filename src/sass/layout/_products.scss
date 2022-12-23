@@ -1,61 +1,145 @@
-// .products {
-//     //   background-image: url();
-//     //   @media screen and (min-device-pixel-ratio: 2),
-//     //     (min-resolution: 192dpi),
-//     //     (min-resolution: 2dppx) {
-//     //   }
-//     //   @include minW-Tablet {
-//     //     @media screen and (min-device-pixel-ratio: 2),
-//     //       (min-resolution: 192dpi),
-//     //       (min-resolution: 2dppx) {
-//     //     }
-//     //   }
-//     //   @include minW-Dt {
-//     //     @media screen and (min-device-pixel-ratio: 2),
-//     //       (min-resolution: 192dpi),
-//     //       (min-resolution: 2dppx) {
-//     //     }
-//     //   }
+.products {
+  background-image: url(../images/Background/Background_mobile.svg);
+  @include minW-Tablet {
+    background-image: url(../images/Background/Background_tablet.svg);
+  }
+  @include minW-Dt {
+    background-image: url(../images/Background/Background_desktop.svg);
+  }
 
-//     //   background-repeat: no-repeat;
-//     //   background-position: center;
-//     //   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-//     &__item {
-//         width: 280px;
-//         height: 420px;
-//         border-radius: 24px;
+  &__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 40px);
+    max-width: 320px;
+    height: 420px;
+    border-radius: 24px;
+    &--green {
+      background-color: #aec6a5;
+    }
+    &--yellow {
+      background-color: #efd478;
+    }
+    &--brown {
+      background-color: #d6936d;
+    }
+  }
 
-//         &--green {
-//             background-color: #aec6a5;
-//         }
-//     }
+  &__title--800 {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2222;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-black;
+    margin-bottom: 12px;
+  }
+  &__title--400 {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2666;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-//     &__title--800 {
-//         font-weight: 800;
-//         font-size: 18px;
-//         line-height: 1.2222;
-//         text-align: center;
-//         text-transform: uppercase;
-//         color: #131313;
-//     }
+    margin-bottom: 150px;
+  }
+}
 
-//     &__title--400 {
-//         font-weight: 400;
-//         font-size: 30px;
-//         line-height: 1.2666;
-//         text-align: center;
-//         letter-spacing: 0.04em;
-//         text-transform: uppercase;
-//     }
+.products-elements {
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
 
-//     &__picture {}
-// }
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  &__text {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: auto;
 
-// .products-elements {
-//     &__title {}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7857;
+    letter-spacing: 0.04em;
+  }
 
-//     &__text {}
+  &__link {
+    margin-top: auto;
+    padding-bottom: 16px;
+  }
+  &__svg {
+    width: 40px;
+    height: 16px;
+  }
+}
 
-//     &__svg {}
-// }
+.products-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+  flex-basis: calc((100% - 450px) / 3);
+
+  @include minW-Tablet {
+    gap: 16px;
+  }
+}
+
+.picture {
+  &__img {
+    z-index: 50;
+    transform: translateY(-11px);
+  }
+  &__back {
+    position: absolute;
+    top: -120px;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    &--green {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+    &--yellow {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+    }
+    &--brown {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
