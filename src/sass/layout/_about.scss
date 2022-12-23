@@ -36,9 +36,9 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin: 12px auto 32px auto;
-    max-width: 500px;
 
     @media (max-width: 767px) {
+        max-width: 200px;
     }
 
     @media (min-width: 768px) {
