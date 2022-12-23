@@ -25,14 +25,14 @@
 
 
 //* media
-$phoneMax: 319px;
-$phoneMin: 320px;
+$phoneMax: 479px;
+$phoneMin: 480px;
 //******/
 $tabletMax: 767px;
 $tabletMin: 768px;
 //******/
-$desctopMax: 1199px;
-$desctopMin: 1200px;
+$desktopMax: 1199px;
+$desktopMin: 1200px;
 /**
 //* Phone
 */
@@ -70,16 +70,26 @@ $desctopMin: 1200px;
 */
 
 @mixin maxW-Dt {
-    @media screen and (max-width: $desctopMax) {
+    @media screen and (max-width: $desktopMax) {
         @content;
     }
 }
 
 @mixin minW-Dt {
-    @media screen and (min-width: $desctopMin) {
+    @media screen and (min-width: $desktopMin) {
         @content;
     }
 }
+
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
+    }
+}
+
+
 
 /**
 //* Castom media
