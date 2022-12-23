@@ -109,15 +109,14 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 280px;
   background-color: #fcfcfc;
+  width: 280px;
   padding: 28px;
   border: 2px solid #F8D24E;
   border-radius: 10px;
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @media screen and (min-width: 768px) {
   .modal {
     width: 568px;
@@ -138,7 +137,6 @@ ul {
   background-color: transparent;
   color: #131313;
 }
-
 .modal__header {
   font-family: "Seymour One";
   font-style: normal;
@@ -149,9 +147,8 @@ ul {
   color: #131313;
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 768px) {
-  .modal-map__header {
+  .modal__header {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 32px;
@@ -174,7 +171,6 @@ ul {
   text-align: center;
   color: #131313;
 }
-
 @media screen and (min-width: 768px) {
   .modal__btn {
     margin-top: 32px;
@@ -182,6 +178,7 @@ ul {
     line-height: 1.2142857143;
   }
 }
+
 .contact {
   background-color: #84A178;
 }
@@ -745,12 +742,12 @@ header {
 .modal--map {
   min-height: 365px;
 }
-
 @media screen and (min-width: 768px) {
   .modal--map {
     min-height: 458px;
   }
 }
+
 .modal__video {
   width: 224px;
   height: 199px;
@@ -758,7 +755,6 @@ header {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 768px) {
   .modal__video {
     width: 448px;
@@ -774,12 +770,12 @@ header {
   line-height: 1.4;
   color: #131313;
 }
-
 @media screen and (min-width: 768px) {
   .modal__video-text {
     font-size: 16px;
   }
 }
+
 .products {
   background-image: url(../images/Background/Background_mobile.svg);
   background-repeat: no-repeat;
