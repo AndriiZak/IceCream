@@ -10,7 +10,7 @@
 // //@include font("Inter", "Inter-Light", "300", "normal");
 
 // //* responsive font size
-// $maxWidth: 1440; 
+// $maxWidth: 1440;
 // $minWidth: 575;
 
 // //@include adaptive-font(44, 26); - вказуємо максимальний і мінімальний розмір шрифту
@@ -23,8 +23,11 @@
 
 //******/
 
-
 //* media
+$minphoneMax: 319px;
+$minphoneMin: 320px;
+//**/
+
 $phoneMax: 479px;
 $phoneMin: 480px;
 //******/
@@ -37,16 +40,27 @@ $desktopMin: 1200px;
 //* Phone
 */
 
+@mixin maxW-minPhone {
+  @media screen and (max-width: $minphoneMax) {
+    @content;
+  }
+}
+@mixin minW-minPhone {
+  @media screen and (max-width: $minphoneMin) {
+    @content;
+  }
+}
+
 @mixin maxW-Phone {
-    @media screen and (max-width: $phoneMax) {
-        @content;
-    }
+  @media screen and (max-width: $phoneMax) {
+    @content;
+  }
 }
 
 @mixin minW-Phone {
-    @media screen and (min-width: $phoneMin) {
-        @content;
-    }
+  @media screen and (min-width: $phoneMin) {
+    @content;
+  }
 }
 
 /**
@@ -54,15 +68,15 @@ $desktopMin: 1200px;
 */
 
 @mixin maxW-Tablet {
-    @media screen and (max-width: $tabletMax) {
-        @content;
-    }
+  @media screen and (max-width: $tabletMax) {
+    @content;
+  }
 }
 
 @mixin minW-Tablet {
-    @media screen and (min-width: $tabletMin) {
-        @content;
-    }
+  @media screen and (min-width: $tabletMin) {
+    @content;
+  }
 }
 
 /**
@@ -70,26 +84,24 @@ $desktopMin: 1200px;
 */
 
 @mixin maxW-Dt {
-    @media screen and (max-width: $desktopMax) {
-        @content;
-    }
+  @media screen and (max-width: $desktopMax) {
+    @content;
+  }
 }
 
 @mixin minW-Dt {
-    @media screen and (min-width: $desktopMin) {
-        @content;
-    }
+  @media screen and (min-width: $desktopMin) {
+    @content;
+  }
 }
 
 @mixin retina {
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        @content;
-    }
+    @content;
+  }
 }
-
-
 
 /**
 //* Castom media
