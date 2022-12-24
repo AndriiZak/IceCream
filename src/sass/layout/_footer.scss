@@ -5,20 +5,20 @@
     background: $bg-color-green;
 }
 
-.container {
-    padding-bottom: 40px;
+// .container {
+//     padding-bottom: 40px;
 
-    @media screen and (min-width:768px) {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 32px;
-    }
+//     @media screen and (min-width:768px) {
+//         display: flex;
+//         justify-content: space-between;
+//         padding-bottom: 32px;
+//     }
 
-    @media screen and (min-width:1200px) {
-        padding-bottom: 60px;
-        border-bottom: 1px solid #E1E1E1;
-    }
-}
+//     @media screen and (min-width:1200px) {
+//         padding-bottom: 60px;
+//         border-bottom: 1px solid #E1E1E1;
+//     }
+// }
 
 .footer-text {
     list-style: none;
