@@ -3,6 +3,7 @@
 @import './base/reset';
 @import './pages/contact';
 @import './pages/home';
+@import './base/modal-common-rules';
 
 // LAYOUT
 @import './layout/сontacts';
@@ -13,13 +14,8 @@
 @import './components/form';
 @import './layout/gallery';
 @import './layout/header';
-@import './layout/hero-header';
 @import './layout/modal_buy';
 @import './layout/modal_map';
 @import './layout/modal_product';
 @import './layout/modal_video';
 @import './layout/products';
-
-
-
-

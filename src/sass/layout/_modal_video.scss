@@ -1,0 +1,29 @@
+.modal {
+  &__video {
+    width: 224px;
+    height: 199px;
+    background: #131313;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    @include minW-Tablet {
+      width: 448px;
+      height: 205px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__video-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #131313;
+
+    @include minW-Tablet {
+      font-size: 16px;
+    }
+  }
+}
