@@ -5,22 +5,37 @@
     background: $bg-color-green;
 }
 
-// .footer-container {
-//     padding-bottom: 40px;
-//     max-width: 480;
-//     @media screen and (min-width:768px) {
-//         display: flex;
-//         max-width: 768;
-//         justify-content: space-between;
-//         padding-bottom: 32px;
-//     }
+.footer-container {
+    margin-bottom: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
 
-//     @media screen and (min-width:1200px) {
-//         padding-bottom: 60px;
-//         max-width: 1200px;
-//         border-bottom: 1px solid #E1E1E1;
-//     }
-// }
+    @include maxW-minPhone {
+        width: 320px;
+    }
+    
+    @include minW-Phone {
+        width: 480px;
+    }
+    
+    @include minW-Tablet {
+        display: flex;
+        justify-content: space-between;
+        min-width: 768;
+        justify-content: space-between;
+        margin-bottom: 32px;
+    }
+
+    @include minW-Dt {
+        display: flex;
+        padding-bottom: 60px;
+        min-width: 1200px;
+        margin-bottom:0;
+        border-bottom: 1px solid #E1E1E1;
+    }
+}
 
 .footer-text {
     list-style: none;

@@ -5,16 +5,16 @@
   background-color: $bg-color-green;
   position: relative;
   &__container {
-    padding-bottom: 60px;
+    max-height: 1100px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
     transform: translateY(-355px);
     @include minW-Tablet {
-      padding-bottom: 40px;
+      max-height: 340px;
       transform: translateY(-300px);
     }
     @include minW-Dt {
-      padding-bottom: 120px;
+      max-height: 560px;
       transform: translateY(-128px);
     }
   }
