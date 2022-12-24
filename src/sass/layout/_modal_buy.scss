@@ -14,6 +14,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include minW-Tablet {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
 
   &__img {
@@ -74,6 +79,9 @@
 
   &__input {
     padding: 8px 12px;
+
+    min-width: 224px;
+    width: 100%;
     background: rgba(248, 210, 78, 0.1);
     border: 1px solid #84a178;
     border-radius: 10px;
@@ -85,6 +93,10 @@
     line-height: 1.4166;
 
     color: #131313;
+
+    @include minW-Tablet {
+      min-width: 368px;
+    }
   }
 }
 
