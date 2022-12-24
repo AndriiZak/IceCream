@@ -45,11 +45,16 @@
         font-size: 34px;
         line-height: 1.26;
         letter-spacing: 0.06em;
+        margin-bottom: 72px;
     }
 }
 
 .section-about__item {
+
+   @media (min-width: 768px) {
+
     display: flex;
+   }
 }
 .tumb {
     
@@ -61,13 +66,28 @@
     border-radius: 140px;
     margin: 0  auto 62px auto;
 
+
+    @media (min-width: 768px) {
+
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+    margin: 0  38px 62px 16px;
+   }
 }
 
 .section-about__picture {
     position: absolute;
     top: 22px;
+
+    @media (min-width: 768px) {
+        top: 28px;
+   }
 }
 
+.wrapper {
+    margin-top: 8px;
+}
 .section-about__text {
 
     font-weight: 400;
@@ -81,6 +101,7 @@
     @media (min-width: 768px) {
         max-width: 334px;
         text-align: left;
+        margin: 0 auto 8px auto;
     }
 }
 .section-about__text--second {
@@ -105,6 +126,10 @@
     border-radius: 10px;
     padding: 12px 35px 12px 34px;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+        margin: 0;
+   }
 
 
     &:hover {
@@ -134,5 +159,6 @@
     @media (min-width: 768px) {
     display: block;
     line-height: 1.94;
+    margin-bottom: 32px;
     }
 }
