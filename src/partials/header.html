@@ -1,9 +1,9 @@
 <header>
   <div class="container header">
     <a class="header__logo" href="./">
-      <!-- <svg width="60" height="65">
-        <use href="./images/icons.svg/#icon-logo"></use>
-      </svg> -->
+      <svg width="60" height="65">
+        <use href="./images/icons.svg#icon-ice-crema"></use>
+      </svg>
     </a>
     <button type="button" class="header__button js-open-menu">
       <svg width="32" height="32">
@@ -60,7 +60,7 @@
             ./images/hero/hero-ice-cream-round-tablet@2x.png  304w,
             ./images/hero/hero-ice-cream-round-desktop.png    225w,
             ./images/hero/hero-ice-cream-round-desktop@2x.png 450w
-          " sizes="(min-width: 1200px) 225px, (min-width: 768px) 155px, 100vw "
+          " sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw "
         src="./images/hero/hero-ice-cream-round-tablet.png" alt="imghero" />
 
       <div>
@@ -70,7 +70,7 @@
         </p>
         <a href="#">
           <svg class="hero__div1--svg" width="40" height="16">
-            <use href="./images/icons.svg##icon-arrow"></use>
+            <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </a>
       </div>
@@ -88,15 +88,45 @@
     </div>
 
     <div class="hero__img">
-      <img srcset="
-            ./images/hero/hero-ice-cream-mobile.png     177w,
-            ./images/hero/hero-ice-cream-mobile@2x.png   354w,
-            ./images/hero/hero-ice-cream-tablet.png     268w,
-            ./images/hero/hero-ice-cream-tablet@2x.png  536w,
-            ./images/hero/hero-ice-cream-desktop.png    456w,
-            ./images/hero/hero-ice-cream-desktop@2x.png 912w"
-        sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw "
-        src="./images/hero/hero-ice-cream-tablet.png" alt="ice" width="177" height="217" />
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/hero-ice-cream-desktop.png    1x,
+              ./images/hero/hero-ice-cream-desktop@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/hero-ice-cream-tablet.png    1x,
+              ./images/hero/hero-ice-cream-tablet@2x.png 2x
+            "
+            type="image/png"
+          />
+          
+          <source
+            media="(min-width: 480px)"
+            srcset="
+              ./images/hero/hero-ice-cream-mobile.png   1x,
+              ./images/hero/hero-ice-cream-mobile@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img src="./images/hero/hero-ice-cream-mobile.png" alt="ice" />
+        </picture>
+      </div>
     </div>
   </div>
 </section>
+
+<script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
