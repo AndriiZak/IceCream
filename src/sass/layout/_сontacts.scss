@@ -3,15 +3,23 @@
 // @include minW-Dt{}
 .contact {
   background-color: $bg-color-green;
+  position: relative;
   &__container {
-    padding-bottom: 60px;
+    max-height: 1100px;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
+    transform: translateY(-355px);
     @include minW-Tablet {
-      padding-bottom: 40px;
+      max-height: 340px;
+      transform: translateY(-300px);
     }
     @include minW-Dt {
-      padding-bottom: 120px;
+      max-height: 560px;
+      transform: translateY(-128px);
     }
+  }
+  &__holder {
+    position: relative;
   }
 }
 .agency {
@@ -36,7 +44,7 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px 24px;
-    max-width: 440px;
+    max-width: 320px;
     @include minW-Tablet {
       max-width: 224px;
       padding: 40px 24px;
