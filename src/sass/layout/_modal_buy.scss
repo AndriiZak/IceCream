@@ -18,6 +18,7 @@
     margin-bottom: 40px;
   }
   &__list {
+    
     display: flex;
     flex-direction: column;
     flex-basis: calc((100% - 164px) / 3);
@@ -43,18 +44,11 @@
 
     border-radius: 15px;
 
-    &--green {
-      border: 2px solid #96af8c;
-    }
-    &--yellow {
-      border: 2px solid #efd478;
-    }
-    &--brown {
-      border: 2px solid #d6936d;
-    }
   }
 }
 .elements__txt {
+  position: absolute;
+  z-index: 3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -66,6 +60,8 @@
 }
 
 .picture__modal {
+  position: absolute;
+  z-index: 2;
   width: 132px;
   height: 132px;
   border-radius: 50%;
@@ -147,3 +143,5 @@
 // .checkbox__accept {
 //   cursor: pointer;
 // }
+
+
