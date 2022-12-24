@@ -1,105 +1,102 @@
 <header>
-    <div class="container header">
-      <a class="header__logo" href="./"><img src="./img/logo.png" alt="logo" /></a>
-      <button type="button" class="header__button js-open-menu">
+  <div class="container header">
+    <a class="header__logo" href="./">
+      <!-- <svg width="60" height="65">
+        <use href="./images/icons.svg/#icon-logo"></use>
+      </svg> -->
+    </a>
+    <button type="button" class="header__button js-open-menu">
+      <svg width="32" height="32">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <div class="menu js-menu-container">
+      <button type="button" class="menu__buttoncls js-close-menu">
         <svg width="32" height="32">
-          <use href="./img/svg/symbol-defs.svg#icon-burger"></use>
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <div class="menu js-menu-container">
-        <button type="button" class="menu__buttoncls js-close-menu">
-          <svg width="32" height="32">
-            <use href="./img/svg/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link"></a>Home</li>
-          <li class="menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
-          <li class="menu__item"><a href="#" class="menu__link"></a>Our products</li>
-          <li class="menu__item"><a href="#" class="menu__link"></a>Contact</li>
-        </ul>
-        <button type="button" class="button">
-          <span class="button__text">Buy now</span>
-          <svg width="12" height="12">
-            <use href="./img/svg/symbol-defs.svg#icon-vector"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="nav-menu">
-        <ul class="nav-menu__list">
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>Home</li>
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>Our products</li>
-          <li class="nav-menu__item"><a href="#" class="menu__link"></a>Contact</li>
-        </ul>
-      </div>
-      <button type="button" class="nav-menu__button">Buy now</button>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#" class="menu__link"></a>Home</li>
+        <li class="menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
+        <li class="menu__item"><a href="#" class="menu__link"></a>Our products</li>
+        <li class="menu__item"><a href="#" class="menu__link"></a>Contact</li>
+      </ul>
+      <button type="button" class="button">
+        <span class="button__text">Buy now</span>
+        <svg width="12" height="12">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
     </div>
-  </header>
-
-  <section class="icehero">
-    <div class="container hero">
-      <h1 class="hero__title">
-        <span class="hero__title--1">ice cream</span>
-        <span class="hero__title--2"> made with</span>
-        <span class="hero__title--3">passion</span>
-      </h1>
-
-      <div class="hero__div">
-        <button type="button" class="hero__products">Products</button>
-        <a class="hero__link" href="#">How it’s made?</a>
-      </div>
-
-      <div class="hero__div1">
-        <img
-          srcset="
-            ./img/hero/hero-ice-cream-round-tablet.png     152w,
-            ./img/hero/hero-ice-cream-round-tablet@2x.png  304w,
-            ./img/hero/hero-ice-cream-round-desktop.png    225w,
-            ./img/hero/hero-ice-cream-round-desktop@2x.png 450w
-          "
-          sizes="(min-width: 1200px) 225px, (min-width: 768px) 155px, 100vw "
-          src="./img/hero/hero-ice-cream-round-tablet.png"
-          alt="imghero"
-        />
-
-        <div>
-          <p class="hero__div1--text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <a href="#">
-            <svg class="hero__div1--svg" width="40" height="16" >
-            <use href="./img/svg/symbol-defs.svg#icon-arrow" ></use>
-          </svg>
-          </a>
-        </div>
-        
-      </div>
-
-      <div class="hero__div2">
-        <p class="hero__div2--text1">16</p>
-        <p class="hero__div2--text2">cafes</p>
-      </div>
-
-      <div class="hero__div3">
-        <p class="hero__div3--text1">23</p>
-        <p class="hero__div3--text2">food trucks</p>
-      </div>
-
-      <div class="hero__img">
-        <img
-          srcset="
-            ./img/hero/hero-ice-cream-mobile.png     177w,
-            ./img/herohero-ice-cream-mobile@2x.png   354w,
-            ./img/hero/hero-ice-cream-tablet.png     268w,
-            ./img/hero/hero-ice-cream-tablet@2x.png  536w,
-            ./img/hero/hero-ice-cream-desktop.png    456w,
-            ./img/hero/hero-ice-cream-desktop@2x.png 912w"
-
-          sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw "
-          src="./img/hero/hero-ice-cream-tablet.png"
-          alt="ice" width="177" height="217" />
-      </div>
+    <div class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a href="#" class="menu__link"></a>Home</li>
+        <li class="nav-menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
+        <li class="nav-menu__item"><a href="#" class="menu__link"></a>Our products</li>
+        <li class="nav-menu__item"><a href="#" class="menu__link"></a>Contact</li>
+      </ul>
     </div>
-  </section>
+    <button type="button" class="nav-menu__button">Buy now</button>
+  </div>
+</header>
+
+<section class="icehero">
+  <div class="container hero">
+    <h1 class="hero__title">
+      <span class="hero__title--1">ice cream</span>
+      <span class="hero__title--2"> made with</span>
+      <span class="hero__title--3">passion</span>
+    </h1>
+
+    <div class="hero__div">
+      <button type="button" class="hero__products">Products</button>
+      <a class="hero__link" href="#">How it’s made?</a>
+    </div>
+
+    <div class="hero__div1">
+      <img srcset="
+            ./images/hero/hero-ice-cream-round-tablet.png     152w,
+            ./images/hero/hero-ice-cream-round-tablet@2x.png  304w,
+            ./images/hero/hero-ice-cream-round-desktop.png    225w,
+            ./images/hero/hero-ice-cream-round-desktop@2x.png 450w
+          " sizes="(min-width: 1200px) 225px, (min-width: 768px) 155px, 100vw "
+        src="./images/hero/hero-ice-cream-round-tablet.png" alt="imghero" />
+
+      <div>
+        <p class="hero__div1--text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et
+        </p>
+        <a href="#">
+          <svg class="hero__div1--svg" width="40" height="16">
+            <use href="./images/icons.svg##icon-arrow"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero__div2">
+      <p class="hero__div2--text1">16</p>
+      <p class="hero__div2--text2">cafes</p>
+    </div>
+
+    <div class="hero__div3">
+      <p class="hero__div3--text1">23</p>
+      <p class="hero__div3--text2">food trucks</p>
+    </div>
+
+    <div class="hero__img">
+      <img srcset="
+            ./images/hero/hero-ice-cream-mobile.png     177w,
+            ./images/hero/hero-ice-cream-mobile@2x.png   354w,
+            ./images/hero/hero-ice-cream-tablet.png     268w,
+            ./images/hero/hero-ice-cream-tablet@2x.png  536w,
+            ./images/hero/hero-ice-cream-desktop.png    456w,
+            ./images/hero/hero-ice-cream-desktop@2x.png 912w"
+        sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw "
+        src="./images/hero/hero-ice-cream-tablet.png" alt="ice" width="177" height="217" />
+    </div>
+  </div>
+</section>
