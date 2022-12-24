@@ -111,5 +111,9 @@
     &__input-orange:checked+.checkbox__label-orange::before {
         opacity: 0;
     }
+
+    &__input-green:checked.picture__img--modal {
+        transform: translate(0);
+    }
 }
 

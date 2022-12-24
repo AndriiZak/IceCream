@@ -72,7 +72,10 @@
 }
 .picture__img--modal {
   transform: translateY(-7px);
+  transition: $transition;
 }
+
+
 .form-wrapper {
   display: flex;
   justify-content: center;
