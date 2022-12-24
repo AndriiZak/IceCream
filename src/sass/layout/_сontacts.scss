@@ -5,12 +5,12 @@
   background-color: $bg-color-green;
   position: relative;
   &__container {
-    max-height: 1100px;
+    max-height: 1070px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
     transform: translateY(-355px);
     @include minW-Tablet {
-      max-height: 340px;
+      max-height: 320px;
       transform: translateY(-300px);
     }
     @include minW-Dt {
