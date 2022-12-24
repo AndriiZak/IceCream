@@ -1,15 +1,23 @@
 .footer {
     font-family: 'Montserrat';
     font-style: normal;
-    padding-top: 60px;
+    padding-top: 30px;
     background: $bg-color-green;
+
+    @include minW-Tablet {
+        padding-top: 20px;
+    }
+
+    @include minW-Dt {
+        padding-top: 60px;
+    }
 }
 
 .footer-container {
     margin-bottom: 40px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 20px;
     outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
 
     @include maxW-minPhone {
@@ -25,12 +33,13 @@
         justify-content: space-between;
         min-width: 768;
         justify-content: space-between;
+        padding: 0 33px;
         margin-bottom: 32px;
     }
 
     @include minW-Dt {
         display: flex;
-        padding-bottom: 60px;
+        padding: 0 16px 60px 16px;
         min-width: 1200px;
         margin-bottom:0;
         border-bottom: 1px solid #E1E1E1;
