@@ -201,7 +201,7 @@
         box-shadow: 0px 0px 0px 0px #f5eded, 0px 0px 0px 0px #92e692 inset;
         animation-name: changeBShColor;
         animation-duration: 4500ms;
-        animation-timing-function: linear;
+        animation-timing-function: reverse;
         animation-iteration-count: infinite;
         animation-direction: alternate;
 
@@ -211,15 +211,15 @@
 
         @keyframes changeBShColor {
             0% {
-                box-shadow: 0px 0px 1px 2px $dyellow-color, 0px 0px 10px 10px #92e692 inset;
+                box-shadow: 0px 0px 0px 1px $dyellow-color, 0px 0px 3px 5px #92e692 inset;
             }
 
             50% {
-                box-shadow: 0px 0px 3px 4px #f5eded, 0px 0px 5px 7px #92e692 inset;
+                box-shadow: 0px 0px 1px 2px #f5eded, 0px 0px 2px 3px #92e692 inset;
             }
 
             100% {
-                box-shadow: 0px 0px 5px 6px #f5eded, 0px 0px 7px 9px #92e692 inset;
+                box-shadow: 0px 0px 2px 3px #f5eded, 0px 0px 2px 4px #92e692 inset;
             }
         }
     }
@@ -282,18 +282,20 @@
     z-index: 4;
     width: 50px;
     height: 50px;
+    font-family: 'Montserrat';
+    font-style:normal;
+    font-weight: 700;
+    font-size: 26px;
     color: #fff;
     text-align: center;
-    opacity: 0.5;
-    background-color: #EE508F;
+    opacity: 0.7;
+    // background-color: #EE508F;
+    background-color: $dyellow-color;
     border-radius: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
     line-height: 1.83;
     transition: opacity $transition;
     position: fixed;
@@ -303,6 +305,6 @@
     margin-right: 10px;
 
     &:hover {
-        opacity: 0.7;
+        opacity: 0.9;
     }
 }
