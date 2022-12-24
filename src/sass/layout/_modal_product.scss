@@ -14,14 +14,11 @@
 .modal {
     
       width: 224px;
-     
-    
       border-radius: 10px;
       padding: 28px 20px;
   
       @include minW-Tablet {
         width: 568px;
-        
         padding: 32px 40px;
       }
   
@@ -59,9 +56,6 @@
         top: 0;
         left: 0;
     }
-  }
-  .link {
-
   }
 
 .calories {
@@ -171,7 +165,7 @@ gap: 33px;
            
             font: inherit;
             border-radius: 4px;
-            border: 1px solid $form-modal-color;
+            // border: 1px solid $form-modal-color;
             margin-bottom: 28px;
             cursor: pointer;
        
