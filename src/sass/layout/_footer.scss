@@ -1,0 +1,291 @@
+.footer {
+    font-family: 'Montserrat';
+    font-style: normal;
+    padding-top: 60px;
+    background: $bg-color-green;
+}
+
+.container {
+    padding-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 60px;
+        border-bottom: 1px solid #E1E1E1;
+    }
+}
+
+.footer-text {
+    list-style: none;
+
+    @media screen and (max-width: 767.98px) {
+        max-width: 240px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 352px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 504px;
+    }
+
+    &__item {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $txt-white;
+
+        @media screen and (min-width:768px) {
+            font-size: 26px;
+            letter-spacing: 0.04em;
+        }
+
+        @media screen and (min-width:1200px) {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+
+            @media screen and (min-width:768px) {
+                margin-bottom: 8px;
+            }
+
+            @media screen and (min-width:1200px) {
+                margin-bottom: 14px;
+            }
+        }
+    }
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+
+    @media screen and (min-width:768px) {
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 58px;
+    }
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: flex-end;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 28px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 10px;
+        padding-bottom: 0;
+        gap: 40px;
+    }
+
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.86;
+        color: $txt-black;
+    }
+
+    &__text {
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &__link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.8;
+        color: $txt-white;
+        transition: background-color $transition,
+            fill $transition;
+
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+            line-height: 1.86;
+            text-align: right;
+        }
+
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.02em;
+            color: $white;
+        }
+    }
+}
+
+.footer-contact {
+    font-size: 12px;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.02em;
+    }
+}
+
+.footer-networks {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: flex-end;
+    list-style: none;
+
+    @media screen and (min-width:768px) {
+        gap: 30px;
+    }
+
+    &__item {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+    }
+
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background: $dyellow-color;
+        transition: fill $transition;
+        box-shadow: 0px 0px 0px 0px #f5eded, 0px 0px 0px 0px #92e692 inset;
+        animation-name: changeBShColor;
+        animation-duration: 4500ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        &:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes changeBShColor {
+            0% {
+                box-shadow: 0px 0px 1px 2px $dyellow-color, 0px 0px 10px 10px #92e692 inset;
+            }
+
+            50% {
+                box-shadow: 0px 0px 3px 4px #f5eded, 0px 0px 5px 7px #92e692 inset;
+            }
+
+            100% {
+                box-shadow: 0px 0px 5px 6px #f5eded, 0px 0px 7px 9px #92e692 inset;
+            }
+        }
+    }
+
+    &__icon {
+        border-radius: 50%;
+        fill: #84A178;
+    }
+}
+
+.footer-networks__link:hover .footer-networks__icon,
+.footer-networks__link:focus .footer-networks__icon {
+    fill: $txt-white;
+}
+
+.footer-watermark {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 1px solid #E1E1E1;
+    list-style: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        padding: 12px 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        border-top: none;
+    }
+
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        color: #7A7A7A;
+
+        @media screen and (min-width:768px) {
+            line-height: 1.857;
+            letter-spacing: 0.02em;
+        }
+
+        @media screen and (min-width:1200px) {
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.02em;
+        }
+    }
+}
+
+.stiky-container {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.stiky-link {
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    background-color: #EE508F;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.83;
+    transition: opacity $transition;
+    position: fixed;
+    bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
