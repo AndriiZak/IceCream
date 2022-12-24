@@ -1,10 +1,10 @@
 .products {
-  background-image: url(../images/background/Background_mobile.svg);
+  background-image: url(../images/background/background_mobile.svg);
   @include minW-Tablet {
-    background-image: url(../images/background/Background_tablet.svg);
+    background-image: url(../images/background/background_tablet.svg);
   }
   @include minW-Dt {
-    background-image: url(../images/background/Background_desktop.svg);
+    background-image: url(../images/background/background_desktop.svg);
   }
 
   background-repeat: no-repeat;
@@ -156,13 +156,8 @@
 .picture {
   &__img {
     z-index: 50;
-    transform: translateY(-11px);
-    @include minW-Tablet {
-      transform: translateY(-12px);
-    }
-    @include minW-Dt {
-      transform: translateY(-16px);
-    }
+    transform: translate(0);
+    transition: $transition;
   }
   &__back {
     position: absolute;
@@ -207,15 +202,20 @@
   }
 }
 
-// .picture__img {
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   background: linear-gradient(
-//       0deg,
-//       rgba(156, 190, 143, 0.7),
-//       rgba(156, 190, 143, 0.7)
-//     ),
-//     #d9d9d9;
-//   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-// }
+//!animation
+.products__item:hover .picture__img {
+  transform: translateY(-11px);
+  @include minW-Tablet {
+    transform: translateY(-12px);
+  }
+  @include minW-Dt {
+    transform: translateY(-16px);
+  }
+}
+.shadow {
+  filter: drop-shadow(0);
+  transition: filter $transition;
+}
+.products-elements__but:hover .shadow {
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}

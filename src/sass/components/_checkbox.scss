@@ -1,0 +1,119 @@
+.checkbox {
+    &__label-green::before {
+
+        position: absolute;
+        z-index: -2;
+        top: 163px;
+        left: 54px;
+        width: 132px;
+        height: 135px;
+        border: 2px solid #96AF8C;
+        border-radius: 15px;
+        content: '';
+
+
+    }
+
+    &__label-green::after {
+        position: absolute;
+        z-index: 1;
+        top: 163px;
+        left: 54px;
+        width: 132px;
+        height: 135px;
+        border: 2px solid #96AF8C;
+        background-color: #96AF8C;
+        border-radius: 15px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        content: '';
+    }
+
+
+
+    &__label-yellow::before {
+        position: absolute;
+        z-index: -2;
+        top: 163px;
+        left: 218px;
+        width: 132px;
+        height: 135px;
+        border: 2px solid#EFD478;
+        border-radius: 15px;
+        content: '';
+
+    }
+
+    &__label-yellow::after {
+        position: absolute;
+        z-index: 1;
+        top: 163px;
+        left: 218px;
+        width: 132px;
+        height: 135px;
+        border: 2px solid#EFD478;
+        background-color: #EFD478;
+        border-radius: 15px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        content: '';
+
+    }
+
+    &__label-orange::before {
+        position: absolute;
+        z-index: -2;
+        top: 163px;
+        right: 54px;
+        width: 132px;
+        height: 135px;
+        border: 2px solid#D6936D;
+        border-radius: 15px;
+        content: '';
+    }
+
+    &__label-orange::after {
+        position: absolute;
+        z-index: 1;
+        top: 163px;
+        right: 54px;
+        width: 132px;
+        height: 135px;
+        border: 2px solid#D6936D;
+        background-color: #D6936D;
+        border-radius: 15px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        content: '';
+    }
+
+
+    &__input-green:checked+.checkbox__label-green::after {
+        opacity: 1;
+    }
+
+    &__input-green:checked+.checkbox__label-green::before {
+        opacity: 1;
+    }
+
+    &__input-yellow:checked+.checkbox__label-yellow::after {
+        opacity: 1;
+    }
+
+    &__input-yellow:checked+.checkbox__label-yellow::before {
+        opacity: 1;
+    }
+
+    &__input-orange:checked+.checkbox__label-orange::after {
+        opacity: 1;
+    }
+
+    &__input-orange:checked+.checkbox__label-orange::before {
+        opacity: 0;
+    }
+
+    &__input-green:checked.picture__img--modal {
+        transform: translate(0);
+    }
+}
+
