@@ -108,7 +108,13 @@
 }
 
 .wrapper {
-    margin-top: 8px;
+    @media (min-width: 768px) {
+        margin-top: 8px;
+   }
+
+   @media (min-width: 1200px) {
+        margin-top: 90px;
+    }
 }
 .section-about__text {
 
