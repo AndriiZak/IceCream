@@ -1,26 +1,48 @@
 /*---- Стилі для телефона резинові до 480px і адаптивні до 767px ----*/
 
 .customer-reviews {
-  padding-top: 178px;
-  padding-bottom: 393px;
-  background-image: url('../images/background/background_mobile.svg');
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; //треба?
-
-/*---- Стилі для планшета 768px-1199px ----*/
-  @include minW-Tablet  {
-        padding-top: 283px;
-        padding-bottom: 379px;
-        background-image: url('../images/background/background_tablet.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  
+      padding: 60px 0;
+      background-image: url('../images/background/background_mobile.png');
+  
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        max-width: 768px;
+        // height: 400px;
+        background-image: url('../images/background/background_mobile@2x.png');
       }
-/*---- Стилі для десктопа від 1200px ----*/
-  @include minW-Dt {
-    padding-top: 464px;
-    padding-bottom: 228px;
-    background-image: url('../images/background/background_desktop.svg');
-  }
+  
+      @include minW-Tablet {
+        background-image: url('../images/background/background_tablet.png');
+  
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+          max-width: 1200px;
+          // height: 400px;
+          background-image: url('../images/background/background_tablet@2x.png');
+        }
+      }
+  
+      @include minW-Dt {
+        max-width: 1600px;
+        // height: 600px;
+        margin: 0 auto;
+  
+        background-image: url('../images/background/background_desktop.png');
+  
+        // 2x screens, retina
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+          background-image: url('../images/background/background_desktop@2x.png');
+        }
+      }
+    
   
 
 &__image_thumb {
