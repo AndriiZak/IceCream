@@ -1,0 +1,15 @@
+.gallery {
+  background-image: url(‘../images/background/background_mobile.png’);
+  max-height: 440px;
+}
+
+.galery-img {
+  border-radius: 8px;
+
+  @include minW-Tablet {
+    border-radius: 18px;
+  }
+  @include minW-Dt {
+    border-radius: 24px;
+  }
+}
