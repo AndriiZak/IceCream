@@ -1,31 +1,33 @@
 <div class="backdrop is-hidden">
-    <div class="modal modal__franchise">
+    <div class="modal-franchise">
         <button class="modal__btn-close">
             <svg width="20" height="20" class="">
                 <use href="./images/icons.svg#icon-close-cross"></use>
             </svg>
         </button>
-        <h1 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h1>
-        <p class="modal__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+        <h1 class="modal-franchise__header">Thank you for your interest in owning an Ice Cream shop</h1>
+        <p class="modal-franchise__text">Due to the overwhelming volume of franchise requests we are not accepting new
+            franchisee
             applications at this
             time. Once
             the application process resumes, we will contact you for further information. Please fill out the contact
             information
             below and we will reach out for additional information. We appreciate your patience.</p>
-        <form class="form">
-            <label class="form__label" for="person-name"></label>
-            <input class="form__input" id="person-name" type="text" name="person-name" placeholder="Name">
+        <form class="form-franchise">
+            <label class="form-franchise__label" for="person-name"></label>
+            <input class="form-franchise__input" id="person-name" type="text" name="person-name" placeholder="Name">
 
 
-            <label class="form__label" for="person-phone"></label>
-            <input class="form__input" id="person-phone" type="tel" name="person-phone" placeholder="Phone">
+            <label class="form-franchise__label" for="person-phone"></label>
+            <input class="form-franchise__input" id="person-phone" type="tel" name="person-phone" placeholder="Phone">
 
-            <label class="form__label" for="person-mail"></label>
-            <input class="form__input" id="person-mail" type="email" name="person-mail" placeholder="Email">
+            <label class="form-franchise__label" for="person-mail"></label>
+            <input class="form-franchise__input" id="person-mail" type="email" name="person-mail" placeholder="Email">
 
-            <label class="form__label" for="person-coment"></label>
-            <textarea class="form__textarea" id="person-textarea " name="person-comment"
+            <label class="form-franchise__label" for="person-coment"></label>
+            <textarea class="form-franchise__textarea" id="person-textarea " name="person-comment"
                 placeholder="Comment"></textarea>
         </form>
+        <button type="submit" class="modal__btn">Submit</button>
     </div>
 </div>

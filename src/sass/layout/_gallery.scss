@@ -1,15 +1,24 @@
 .gallery {
 
-      top: 2827px;
+      
       position: absolute;
+      top: 3971px;
       left: 50%;
       transform: translateX(-50%);
 
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: cover;
   
-      padding: 60px 0;
+
+      @include minW-Tablet {
+        position: absolute;
+        top: 2228px;
+      }
+      @include minW-Dt {
+        position: absolute;
+        top: 2847px;
+      }
       // background-image: url('../images/background/background_mobile.png');
   
       // @media screen and (min-device-pixel-ratio: 2),
