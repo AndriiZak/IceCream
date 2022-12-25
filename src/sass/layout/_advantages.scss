@@ -3,7 +3,6 @@
   padding: 0 16px;
   padding-bottom: 32px;
   min-width: 320px;
-  background: #84a178;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     max-width: 480px;
@@ -19,6 +18,7 @@
 }
 
 .advantages {
+  background: #84a178;
   &__box {
     display: flex;
     flex-direction: column;
@@ -35,12 +35,11 @@
   }
 
   &__title-under {
-    padding-top: 12px;
+    margin-top: 12px;
     padding-left: 45px;
     padding-right: 45px;
     font-family: 'Seymour One';
     font-style: normal;
-    font-weight: 400;
     font-size: 30px;
     line-height: 1.27;
     text-align: center;
@@ -95,7 +94,6 @@
   &__text {
     padding-left: 35px;
     padding-right: 35px;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.76;
     text-align: center;
@@ -161,6 +159,7 @@
     margin-bottom: 28px;
     padding-left: 30px;
     padding-right: 30px;
+    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
@@ -219,7 +218,7 @@
     }
 
     &__read-more {
-      padding-top: 32px;
+      margin-top: 32px;
       text-align: left;
     }
 
@@ -241,6 +240,94 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 1.74;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-container {
+    padding: 0 16px;
+  }
+
+  .advantages {
+    &__box {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 72px;
+    }
+
+    &__img {
+      width: 490px;
+      height: 490px;
+      flex: 0 0 490px;
+      padding-bottom: 39px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &__img-top {
+      top: 39px;
+      background-image: url(./../images/how-its-made/korova-desktop.png);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &__img-top {
+        background-image: url(./../images/how-its-made/korova-desktop@2x.png);
+      }
+    }
+
+    &__title-up {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 1.23;
+    }
+
+    &__title-under {
+      font-size: 36px;
+      line-height: 1.25;
+    }
+
+    &__info {
+      margin-left: 109px;
+    }
+
+    &__text {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.76;
+    }
+
+    &__read-more {
+      margin-top: 54px;
+      text-align: left;
+    }
+
+    &__data-wrapper {
+      display: flex;
+      gap: 32px;
+      margin-top: 60px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__data-value {
+      margin-top: 40px;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 1.22;
+    }
+
+    &__data-text {
+      margin-bottom: 60px;
+      padding: 0 50px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.76;
     }
   }
 }
