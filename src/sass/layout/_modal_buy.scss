@@ -71,8 +71,11 @@
   top: -60;
 }
 .picture__img--modal {
+  transform: translate(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox__input-green:checked+ .picture__img--modal {
   transform: translateY(-7px);
-  transition: $transition;
 }
 
 
