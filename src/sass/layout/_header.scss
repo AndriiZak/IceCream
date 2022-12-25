@@ -229,6 +229,7 @@
 }
 .hero {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   background-color: #84a178;
@@ -273,7 +274,7 @@
 .hero__img {
   position: absolute;
   bottom: 0;
-  right: 90px;
+  right: 60px;
   height: 217px;
   width: 177px;
 
