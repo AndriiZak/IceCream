@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 15px;
-  padding-right: 18px;
-  padding-left: 22px;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: #84a178;
 
   @media screen and (min-width: 768px) {
@@ -24,8 +24,16 @@
 }
 .header__logo {
   z-index: 3;
-  width: 48px;
-  height: 44px;
+  width: 40px;
+  height: 37px;
+  @include minW-Tablet {
+    width: 48px;
+    height: 44px;
+  }
+  @include minW-Dt {
+    width: 60px;
+    height: 65px;
+  }
 }
 
 .header__button {
@@ -44,6 +52,7 @@
   }
 }
 .menu {
+  z-index: 50;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -214,6 +223,10 @@
 .nav-menu__item:not(:last-child) {
   margin-right: 32px;
 }
+
+.icehero {
+  position: relative;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -260,7 +273,9 @@
 .hero__img {
   position: absolute;
   bottom: 0;
-  right: 60px;
+  right: 90px;
+  height: 217px;
+  width: 177px;
 
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -282,10 +297,9 @@
 .hero__div {
   display: flex;
   align-items: center;
-  margin-bottom: 19px;
+  margin-bottom: 160px;
   margin-right: auto;
   gap: 12px;
-  margin-left: 16px;
 
   @media screen and (min-width: 1200px) {
     margin-left: 16px;
@@ -295,10 +309,9 @@
 
 .hero__title {
   text-align: left;
-  margin-top: 47px;
+  margin-top: 50px;
   margin-bottom: 32px;
-  margin-left: 20px;
-  margin-right: 53px;
+  margin-right: 54px;
 
   font-family: 'Seymour One';
   font-style: normal;
@@ -333,8 +346,8 @@
   line-height: 1.2692;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
-  margin-bottom: 13px;
+  color: $txt-white;
+  margin-bottom: 9px;
 }
 
 .hero__title--2 {
@@ -342,11 +355,11 @@
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
-  line-height: 1.2692px;
+  line-height: 1.2692;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
-  margin-bottom: 8px;
+  color: $txt-white;
+  margin-bottom: 9px;
 }
 
 .hero__title--3 {
@@ -354,12 +367,15 @@
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  line-height: 0, 965;
+  line-height: 0.9705;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: $txt-white;
+  margin-bottom: 32px;
 }
 
 .hero__products {
+  width: 108px;
+  height: 38px;
   padding: 11px 26px;
   border: 2px solid #f8d24e;
   border-radius: 8px;
