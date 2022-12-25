@@ -25,6 +25,8 @@
 
 .modal {
   position: absolute;
+  max-height: 100%;
+  overflow: auto;
 
   top: 50%;
   left: 50%;
@@ -124,3 +126,9 @@
 //   transform: translate(-50%, -50%) scale(0.9);
 //   opacity: 0;
 // }
+
+//!! ПРИ ВІДКРИТТІ МОДАЛКИ ЦЕЙ КЛАС ЗАДАЄ БОДІ ФІКСОВАНУ ПОЗИЦІЮ (можливо треба буде змінити класс, цього не знаю)
+.js-overlay-modal {
+  position: fixed;
+  overflow-y: scroll;
+}

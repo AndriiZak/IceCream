@@ -5,16 +5,16 @@
   background-color: $bg-color-green;
   position: relative;
   &__container {
-    padding-bottom: 60px;
+    max-height: 1070px;
     font-family: 'Montserrat', sans-serif;
     position: relative;
     transform: translateY(-355px);
     @include minW-Tablet {
-      padding-bottom: 40px;
+      max-height: 320px;
       transform: translateY(-300px);
     }
     @include minW-Dt {
-      padding-bottom: 120px;
+      max-height: 560px;
       transform: translateY(-128px);
     }
   }
@@ -99,6 +99,7 @@
     &:hover,
     &:focus {
       text-decoration-line: underline;
+      cursor: url('../images/cursor.cur'), auto;
     }
     @include minW-Tablet {
       font-size: 14px;

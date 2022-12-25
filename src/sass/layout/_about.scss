@@ -24,6 +24,11 @@
         line-height: 1.23;
         letter-spacing: 0.04em;
     }
+
+    @media (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.23;
+    }
 }
 
 .section-about__title {
@@ -45,11 +50,22 @@
         font-size: 34px;
         line-height: 1.26;
         letter-spacing: 0.06em;
+        margin-bottom: 72px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 82px;
     }
 }
 
 .section-about__item {
+
+   @media (min-width: 768px) {
+
     display: flex;
+   }
 }
 .tumb {
     
@@ -61,13 +77,45 @@
     border-radius: 140px;
     margin: 0  auto 62px auto;
 
+
+    @media (min-width: 768px) {
+
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+    margin: 0  38px 62px 16px;
+   }
+
+   @media (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+    border-radius: 250px;
+    margin: 0 109px 62px 4px;
+   }
 }
 
 .section-about__picture {
     position: absolute;
     top: 22px;
+
+    @media (min-width: 768px) {
+        top: 28px;
+   }
+
+   @media (min-width: 1200px) {
+        top: 39px;
+    }
 }
 
+.wrapper {
+    @media (min-width: 768px) {
+        margin-top: 8px;
+   }
+
+   @media (min-width: 1200px) {
+        margin-top: 90px;
+    }
+}
 .section-about__text {
 
     font-weight: 400;
@@ -81,6 +129,13 @@
     @media (min-width: 768px) {
         max-width: 334px;
         text-align: left;
+        max-width: 334px;
+        margin: 0 auto 8px auto;
+    }
+
+     @media (min-width: 1200px) {
+        font-size: 16px;
+        max-width: 463px;
     }
 }
 .section-about__text--second {
@@ -88,6 +143,11 @@
     @media (max-width: 767px) {
         line-height: 1.59;
         margin-top: 4px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.94;
     }
 }
 .section-about__button {
@@ -105,6 +165,10 @@
     border-radius: 10px;
     padding: 12px 35px 12px 34px;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+        margin: 0;
+   }
 
 
     &:hover {
@@ -134,5 +198,13 @@
     @media (min-width: 768px) {
     display: block;
     line-height: 1.94;
+    max-width: 336px;
+    margin-bottom: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        margin-bottom: 54px;
+        max-width: 457px;
     }
 }

@@ -69,7 +69,7 @@ $slick-opacity-not-active: 0.25 !default;
   width: 20px;
   line-height: 0px;
   font-size: 0px;
-  cursor: pointer;
+  cursor: url('../images/cursor.cur'), auto;
   background: transparent;
   color: transparent;
   top: 50%;
@@ -152,7 +152,7 @@ $slick-opacity-not-active: 0.25 !default;
     width: 12px;
     margin: 0 18px;
     padding: 0;
-    cursor: pointer;
+    cursor: url('../images/cursor.cur'), auto;
     button {
       border: 0;
       background: transparent;
@@ -164,7 +164,7 @@ $slick-opacity-not-active: 0.25 !default;
       font-size: 0px;
       color: transparent;
       padding: 5px;
-      cursor: pointer;
+      cursor: url('../images/cursor.cur'), auto;
       &:hover,
       &:focus {
         outline: none;
