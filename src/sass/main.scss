@@ -6,6 +6,7 @@
 @import './base/modal-common-rules';
 
 // LAYOUT
+@import './layout/header';
 @import './layout/сontacts';
 @import './layout/about';
 @import './layout/advantages';
@@ -13,7 +14,7 @@
 @import './layout/footer';
 @import './components/form';
 @import './layout/gallery';
-@import './layout/header';
+// @import './layout/header';
 @import './layout/modal_buy';
 @import './layout/modal_map';
 @import './layout/modal_product';
