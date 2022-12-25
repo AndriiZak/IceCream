@@ -1,11 +1,21 @@
 .products {
-  background-image: url('../images/background/background_mobile.svg');
-  @include minW-Tablet {
-    background-image: url('../images/background/background_tablet.svg');
+  
+  
+
+    @include minW-Tablet {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/background_tablet.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      max-width: 1200px;
+      height: 400px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background/background_tablet@2x.png');
+    }
   }
-  @include minW-Dt {
-    background-image: url('../images/background/background_desktop.svg');
-  }
+
 
   background-repeat: no-repeat;
   background-position: center;
