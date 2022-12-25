@@ -247,9 +247,6 @@
       background-image: url(../images/hero/header-dots-desktop@2x.png);
     }
   }
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
 
   padding-bottom: 65px;
   height: 100%;
@@ -411,8 +408,18 @@
 }
 
 .hero__div1--svg {
+  width: 40px;
+  height: 16px;
   margin-top: 24px;
   fill: #fcfcfc;
+}
+
+.shadow--white {
+  filter: drop-shadow(0);
+  transition: filter $transition;
+}
+.shadow--white:hover {
+  filter: drop-shadow(3px 3px 2px rgba(232, 227, 227, 0.941));
 }
 
 .hero__div2 {
