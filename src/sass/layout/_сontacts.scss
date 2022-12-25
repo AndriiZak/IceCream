@@ -99,6 +99,7 @@
     &:hover,
     &:focus {
       text-decoration-line: underline;
+      cursor: url('../images/cursor.cur'), auto;
     }
     @include minW-Tablet {
       font-size: 14px;
