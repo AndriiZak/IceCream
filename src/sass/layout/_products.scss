@@ -1,10 +1,10 @@
 .products {
-  background-image: url(../images/background/background_mobile.svg);
+  background-image: url(./images/background/background_mobile.svg);
   @include minW-Tablet {
-    background-image: url(../images/background/background_tablet.svg);
+    background-image: url(./images/background/background_tablet.svg);
   }
   @include minW-Dt {
-    background-image: url(../images/background/background_desktop.svg);
+    background-image: url(./images/background/background_desktop.svg);
   }
 
   background-repeat: no-repeat;
