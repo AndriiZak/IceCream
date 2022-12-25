@@ -1,9 +1,5 @@
 .franchise-modal{
-        @include minW-Tablet {
-            width: 568px;
-            height: 644px;
-            padding: 32px 54px;
-        }
+        max-height: 668px;
 
 }
 
