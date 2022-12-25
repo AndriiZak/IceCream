@@ -1,20 +1,23 @@
-
+body {
+  cursor: url('../images/cursor.cur'), auto;
+}
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-button {
-    cursor: pointer;
+button,
+a {
+  cursor: url('../images/cursor.cur'), auto;
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 h1,
@@ -25,27 +28,24 @@ h5,
 h6,
 p,
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
-
-
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
-

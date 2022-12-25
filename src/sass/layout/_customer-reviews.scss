@@ -3,7 +3,7 @@
 .customer-reviews {
   padding-top: 178px;
   padding-bottom: 393px;
-  background-image: url('../images/Background/Background_mobile.svg');
+  background-image: url('../images/background/background_mobile.svg');
 
   background-repeat: no-repeat;
   background-position: center;
@@ -13,13 +13,13 @@
   @include minW-Tablet  {
         padding-top: 283px;
         padding-bottom: 379px;
-        background-image: url('../images/Background/Background_tablet.svg');
+        background-image: url('../images/background/background_tablet.svg');
       }
 /*---- Стилі для десктопа від 1200px ----*/
   @include minW-Dt {
     padding-top: 464px;
     padding-bottom: 228px;
-    background-image: url('../images/Background/Background_desktop.svg');
+    background-image: url('../images/background/background_desktop.svg');
   }
   
 
