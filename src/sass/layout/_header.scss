@@ -1,3 +1,7 @@
+.section-header {
+  width: 100%;
+  background-color: #84a178;
+}
 .header {
   position: relative;
   display: flex;
@@ -6,7 +10,6 @@
   padding-top: 12px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #84a178;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -22,7 +25,7 @@
     padding-left: 16px;
   }
 }
-.header__logo {
+.header__logo--svg {
   z-index: 3;
   width: 40px;
   height: 37px;
@@ -152,12 +155,19 @@
 }
 
 .button__text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142;
+  color: $black;
   margin-right: 4px;
 }
 
 .nav-menu__button {
+  width: 152px;
+  height: 42px;
   margin-bottom: 64px;
-  padding: 12px 35px;
+  padding: 12px 36px;
   background: #f8d24e;
   border-radius: 10px;
   border: none;
@@ -226,89 +236,123 @@
 
 .icehero {
   position: relative;
+  width: 100%;
+  background-color: #84a178;
 }
 .hero {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  background-color: #84a178;
-  //   background-image: url(../img/mob/mobpoints1x.png);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
-  background-image: url(../images/hero/header-dots-mobile.png);
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/header-dots-mobile@2x.png);
-  }
-
-  @include minW-Tablet {
-    background-image: url(../images/hero/header-dots-tablet.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/header-dots-tablet@2x.png);
-    }
-  }
-
-  @include minW-Dt {
-    background-image: url(../images/hero/header-dots-desktop.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/header-dots-desktop@2x.png);
-    }
-  }
-
-  padding-bottom: 65px;
-  height: 100%;
-
   @media screen and (min-width: 768px) {
+    padding: 0 32px;
     align-items: flex-start;
     position: relative;
   }
 }
+// .hero__ice {
+//   background-image: url(../images/hero/hero-ice-cream-mobile.png);
+//   @media screen and (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url(../images/hero/hero-ice-cream-mobile@2x.png);
+//   }
 
-.hero__img {
-  position: absolute;
-  bottom: 0;
-  right: 60px;
-  height: 217px;
-  width: 177px;
+//   @include minW-Tablet {
+//     background-image: url(../images/hero/hero-ice-cream-tablet.png);
+//     @media screen and (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/hero/hero-ice-cream-tablet@2x.png);
+//     }
+//   }
 
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    // width: 268px;
-    // height: 329px;
-    bottom: 0;
-    right: 92px;
-  }
+//   @include minW-Dt {
+//     background-image: url(../images/hero/hero-ice-cream-desktop.png);
+//     @media screen and (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/hero/hero-ice-cream-desktop@2x.png);
+//     }
+//   }
+// }
+// .hero__dots {
+//   background-image: url(../images/hero/header-dots-mobile.png);
+//   @media screen and (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url(../images/hero/header-dots-mobile@2x.png);
+//   }
 
-  @media screenand and (min-width: 1200px) {
-    position: absolute;
-    // width: 456px;
-    // height: 560px;
-    top: 31px;
-    right: 92px;
-  }
-}
+//   @include minW-Tablet {
+//     background-image: url(../images/hero/header-dots-tablet.png);
+//     @media screen and (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/hero/header-dots-tablet@2x.png);
+//     }
+//   }
+
+//   @include minW-Dt {
+//     background-image: url(../images/hero/header-dots-desktop.png);
+//     @media screen and (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/hero/header-dots-desktop@2x.png);
+//     }
+//   }
+// }
+
+// .hero__img {
+//   position: absolute;
+//   bottom: 0;
+//   right: 60px;
+//   height: 217px;
+//   width: 177px;
+
+//   @media screen and (min-width: 768px) {
+//     position: absolute;
+//     // width: 268px;
+//     // height: 329px;
+//     bottom: 0;
+//     right: 92px;
+//   }
+
+//   @media screenand and (min-width: 1200px) {
+//     position: absolute;
+//     // width: 456px;
+//     // height: 560px;
+//     top: 31px;
+//     right: 92px;
+//   }
+// }
 
 .hero__div {
   display: flex;
   align-items: center;
   margin-bottom: 160px;
   margin-right: auto;
-  gap: 12px;
+  flex-basis: calc((100% - 30px) / 2);
+  gap: 15px;
+  @include minW-Tablet {
+    flex-basis: calc((100% - 44px) / 2);
+    gap: 22px;
+    margin-bottom: 40px;
+  }
 
-  @media screen and (min-width: 1200px) {
+  @include minW-Dt {
+    flex-basis: calc((100% - 68px) / 2);
+    gap: 34px;
     margin-left: 16px;
     margin-bottom: 42px;
   }
 }
 
 .hero__title {
+  max-width: 247px;
+  width: 100%;
   text-align: left;
   margin-top: 50px;
   margin-bottom: 32px;
@@ -332,10 +376,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 45px;
-    margin-left: 1px;
-    margin-bottom: 28px;
-    margin-right: 0;
+    margin-top: 14px;
   }
 }
 
@@ -348,7 +389,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $txt-white;
-  margin-bottom: 9px;
 }
 
 .hero__title--2 {
@@ -360,7 +400,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $txt-white;
-  margin-bottom: 9px;
 }
 
 .hero__title--3 {
@@ -371,7 +410,6 @@
   line-height: 0.9705;
   text-transform: uppercase;
   color: $txt-white;
-  margin-bottom: 32px;
 }
 
 .hero__products {
@@ -401,8 +439,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
-    margin-left: 16px;
+    flex-basis: calc((100% - 64px) / 2);
     gap: 32px;
 
     &--text {
@@ -424,11 +461,20 @@
   }
 }
 
+.hero__img--round {
+  width: 152px;
+  height: 152px;
+  @include minW-Dt {
+    width: 225px;
+    height: 225px;
+  }
+}
+
 .hero__div1--svg {
   width: 40px;
   height: 16px;
-  margin-top: 24px;
-  fill: #fcfcfc;
+  margin-top: 12px;
+  fill: $txt-white;
 }
 
 .shadow--white {
@@ -462,11 +508,11 @@
       font-style: normal;
       font-weight: 900;
       font-size: 28px;
-      line-height: 1.2692;
+      line-height: 1.4166;
       text-align: right;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #131313;
+      color: $txt-black;
 
       @media screen and (min-width: 1200px) {
         font-family: 'Montserrat';
@@ -477,7 +523,7 @@
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #131313;
+        color: $txt-black;
       }
     }
 
@@ -486,9 +532,9 @@
       font-style: normal;
       font-weight: 400;
       font-size: 8px;
-      line-height: 10px;
+      line-height: 1.25;
       text-align: right;
-      color: #fcfcfc;
+      color: $txt-white;
 
       @media screen and (min-width: 1200px) {
         font-family: 'Montserrat';
@@ -497,7 +543,7 @@
         font-size: 14px;
         line-height: 1.2142;
         text-align: right;
-        color: #fcfcfc;
+        color: $txt-white;
       }
     }
   }
