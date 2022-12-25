@@ -1,45 +1,51 @@
 .gallery {
+
+      top: 2827px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
   
       padding: 60px 0;
-      background-image: url('../images/background/background_mobile.png');
+      // background-image: url('../images/background/background_mobile.png');
   
-      @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-        max-width: 768px;
-        // height: 400px;
-        background-image: url('../images/background/background_mobile@2x.png');
-      }
+      // @media screen and (min-device-pixel-ratio: 2),
+      // screen and (min-resolution: 192dpi),
+      // screen and (min-resolution: 2dppx) {
+      //   max-width: 768px;
+      //   // height: 400px;
+      //   background-image: url('../images/background/background_mobile@2x.png');
+      // }
   
-      @include minW-Tablet {
-        background-image: url('../images/background/background_tablet.png');
+      // @include minW-Tablet {
+      //   background-image: url('../images/background/background_tablet.png');
   
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-          max-width: 1200px;
-          // height: 400px;
-          background-image: url('../images/background/background_tablet@2x.png');
-        }
-      }
+      //   @media screen and (min-device-pixel-ratio: 2),
+      //   screen and (min-resolution: 192dpi),
+      //   screen and (min-resolution: 2dppx) {
+      //     max-width: 1200px;
+      //     // height: 400px;
+      //     background-image: url('../images/background/background_tablet@2x.png');
+      //   }
+      // }
   
-      @include minW-Dt {
-        max-width: 1600px;
-        // height: 600px;
-        margin: 0 auto;
+      // @include minW-Dt {
+      //   max-width: 1600px;
+      //   // height: 600px;
+      //   margin: 0 auto;
   
-        background-image: url('../images/background/background_desktop.png');
+      //   background-image: url('../images/background/background_desktop.png');
   
-        // 2x screens, retina
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-          background-image: url('../images/background/background_desktop@2x.png');
-        }
-      }
+      //   // 2x screens, retina
+      //   @media screen and (min-device-pixel-ratio: 2),
+      //   screen and (min-resolution: 192dpi),
+      //   screen and (min-resolution: 2dppx) {
+      //     background-image: url('../images/background/background_desktop@2x.png');
+      //   }
+      // }
     }
 
 

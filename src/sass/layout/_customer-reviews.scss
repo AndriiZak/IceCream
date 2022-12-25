@@ -5,7 +5,7 @@
       background-position: center;
       background-size: cover;
   
-      padding: 60px 0;
+      padding: 393px 0;
       background-image: url('../images/background/background_mobile.png');
   
       @media screen and (min-device-pixel-ratio: 2),
@@ -17,8 +17,10 @@
       }
   
       @include minW-Tablet {
+        padding: 379px 0;
+        
         background-image: url('../images/background/background_tablet.png');
-  
+        
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -29,6 +31,7 @@
       }
   
       @include minW-Dt {
+        padding: 464px 0 228px 0;
         max-width: 1600px;
         // height: 600px;
         margin: 0 auto;
