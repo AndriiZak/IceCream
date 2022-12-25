@@ -1,24 +1,7 @@
-.advantages-container {
-  margin: 0 auto;
-  padding: 0 16px;
-  padding-bottom: 32px;
-  min-width: 320px;
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    max-width: 480px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-  }
-}
-
 .advantages {
-  background: #84a178;
+  padding-bottom: 32px;
+  background: $bg-color-green;
+
   &__box {
     display: flex;
     flex-direction: column;
@@ -31,7 +14,7 @@
     line-height: 1.22;
     text-align: center;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: $txt-white;
   }
 
   &__title-under {
@@ -45,7 +28,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: $txt-white;
   }
 
   &__img {
@@ -60,13 +43,9 @@
   &__img-back {
     position: relative;
     height: 100%;
-    background: linear-gradient(
-        0deg,
-        rgba(248, 210, 78, 0.7),
-        rgba(248, 210, 78, 0.7)
-      ),
-      #d9d9d9;
-    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+    background: linear-gradient(0deg, $mustard-yellow, $mustard-yellow),
+      $pale-yellow;
+    box-shadow: 0px 4.48583px 16.8218px $mustard-black;
     border-radius: 50%;
   }
 
@@ -98,25 +77,40 @@
     line-height: 1.76;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #fcfcfc;
+    color: $txt-white;
   }
 
   &__button {
     display: inline-block;
     margin: 10px 0 0;
+    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
-    color: #000000;
+    color: $black;
     padding: 12px 34px;
-    background: #f8d24e;
+    background: $dyellow-color;
     border-radius: 10px;
     border: none;
     text-decoration: none;
+
+    &:hover {
+      color: $black;
+      background: $accent-color;
+    }
+
+    &:focus {
+      color: $txt-white;
+      background: $accent-color;
+    }
+
+    &:focus .advantages__button-vector {
+      fill: $txt-white;
+    }
   }
 
   &__button-vector {
-    margin-left: 8px;
+    margin-left: 4px;
   }
 
   &__data-wrapper {
@@ -139,7 +133,7 @@
     justify-content: center;
     width: 50px;
     height: 50px;
-    background: #f8d24e;
+    background: $dyellow-color;
     border-radius: 25px;
     margin-bottom: 16px;
   }
@@ -151,7 +145,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: $txt-white;
   }
 
   &__data-text {
@@ -164,7 +158,7 @@
     font-size: 12px;
     line-height: 1.7;
     text-align: center;
-    color: #fcfcfc;
+    color: $txt-white;
   }
 
   &__read-more {
