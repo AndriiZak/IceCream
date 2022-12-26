@@ -10,6 +10,7 @@
         height: 135px;
         border: 2px solid #96AF8C;
         border-radius: 15px;
+        cursor: inherit;
         content: '';
 
             @include minW-Tablet {
@@ -27,7 +28,7 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-        
+        cursor: inherit;
         width: 132px;
         height: 135px;
         border: 2px solid #96AF8C;
