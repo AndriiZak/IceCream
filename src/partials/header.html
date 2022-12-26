@@ -1,7 +1,7 @@
 <header class="section-header">
   <div class="container">
     <div class="header">
-      <!-- моб логотип -->
+      <!--  логотип -->
 
       <a class="header__logo" href="./">
         <svg class="header__logo--svg">
@@ -21,22 +21,16 @@
         </svg>
       </button>
 
-      <!-- широке меню для планшета і десктопа-->
+      <!-- широке меню для десктопа-->
 
       <nav class="header__navigation">
         <ul class="nav-menu__list">
+          <li class="nav-menu__item"><a href="#" class=""></a>Home</li>
           <li class="nav-menu__item">
-            <a href="#" class="menu__link"></a>Home
+            <a href="#" class=""></a>How it’s made?
           </li>
-          <li class="nav-menu__item">
-            <a href="#" class="menu__link"></a>How it’s made?
-          </li>
-          <li class="nav-menu__item">
-            <a href="#" class="menu__link"></a>Our products
-          </li>
-          <li class="nav-menu__item">
-            <a href="#" class="menu__link"></a>Contact
-          </li>
+          <li class="nav-menu__item"><a href="#" class=""></a>Our products</li>
+          <li class="nav-menu__item"><a href="#" class=""></a>Contact</li>
         </ul>
       </nav>
 
@@ -52,12 +46,27 @@
   </div>
 </header>
 
+<!-- Бургер меню випадне -->
+
 <div class="menu js-menu-container">
+  <!-- логотип випадног меню  -->
+
+  <a class="menu__logo" href="./">
+    <svg class="menu__logo--svg">
+      <use href="./images/icons.svg#icon-logo"></use>
+    </svg>
+  </a>
+
+  <!-- Кнопка закриття  -->
+
   <button type="button" class="menu__buttoncls js-close-menu">
     <svg width="32" height="32">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
   </button>
+
+  <!-- список посилань -->
+
   <ul class="menu__list">
     <li class="menu__item"><a href="#" class="menu__link"></a>Home</li>
     <li class="menu__item">
@@ -66,4 +75,13 @@
     <li class="menu__item"><a href="#" class="menu__link"></a>Our products</li>
     <li class="menu__item"><a href="#" class="menu__link"></a>Contact</li>
   </ul>
+
+  <!-- кнопка купити -->
+
+  <button type="button" class="menu__button">
+    <span class="button__text">Buy now</span>
+    <svg width="12" height="12">
+      <use href="./images/icons.svg#icon-vector"></use>
+    </svg>
+  </button>
 </div>
