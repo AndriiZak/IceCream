@@ -1,0 +1,186 @@
+<div class="modal modal-buy" data-modal="3">
+  <button class="modal__btn-close js-modal-close">
+    <svg width="20" height="20" class="">
+      <use href="./images/icons.svg#icon-close-cross"></use>
+    </svg>
+  </button>
+
+  <h2 class="modal__header modal__title">Buy now</h2>
+  <div class="product-box">
+    <ul class="list product-box__list">
+      <li class="product-box__item product-box__item--green">
+        <div class="picture__modal picture__back--green">
+          <div class="picture__img--modal">
+            <picture>
+              <source
+                media="(min-width:1200px )"
+                srcset="
+                  ./images/products/products-ice-cream-desktop.png    1x,
+                  ./images/products/products-ice-cream-desktop@2x.png 2x
+                "
+                type="png"
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ./images/products/products-ice-cream-tablet-mobile.png    1x,
+                  ./images/products/products-ice-cream-tablet-mobile@2x.png 2x
+                "
+                type="png"
+              />
+              <source
+                media="(min-width:480px )"
+                srcset="
+                  ./images/products/products-ice-cream-tablet-mobile.png    1x,
+                  ./images/products/products-ice-cream-tablet-mobile@2x.png 2x
+                "
+                type="png"
+              />
+              <img
+                src="./images/products/products-ice-cream-tablet-mobile.png"
+                alt="product"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="product-box__elements">
+          <h2 class="elements__txt">ICE CREAM</h2>
+        </div>
+      </li>
+      <li class="product-box__item product-box__item--yellow">
+        <div class="picture__modal picture__back--yellow">
+          <div class="picture__img--modal">
+            <picture>
+              <source
+                media="(min-width:1200px )"
+                srcset="
+                  ./images/products/products-ice-coffee-desktop.png    1x,
+                  ./images/products/products-ice-coffee-desktop@2x.png 2x
+                "
+                type="png"
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ./images/products/products-ice-coffee-tablet-mobile.png    1x,
+                  ./images/products/products-ice-coffee-tablet-mobile@2x.png 2x
+                "
+                type="png"
+              />
+              <source
+                media="(min-width:480px )"
+                srcset="
+                  ./images/products/products-ice-coffee-tablet-mobile.png    1x,
+                  ./images/products/products-ice-coffee-tablet-mobile@2x.png 2x
+                "
+                type="png"
+              />
+              <img
+                src="./images/products/products-ice-coffee-tablet-mobile.png"
+                alt="product"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="product-box__elements">
+          <h2 class="elements__txt">ICE COFFEE</h2>
+        </div>
+      </li>
+      <li class="product-box__item product-box__item--brown">
+        <div class="picture__modal picture__back--brown">
+          <div class="picture__img--modal">
+            <picture>
+              <source
+                media="(min-width:1200px )"
+                srcset="
+                  ./images/products/products-milkshakes-desktop.png    1x,
+                  ./images/products/products-milkshakes-desktop@2x.png 2x
+                "
+                type="png"
+              />
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ./images/products/products-milkshakes-tablet-mobile.png    1x,
+                  ./images/products/products-milkshakes-tablet-mobile@2x.png 2x
+                "
+                type="png"
+              />
+              <source
+                media="(min-width:480px )"
+                srcset="
+                  ./images/products/products-milkshakes-tablet-mobile.png    1x,
+                  ./images/products/products-milkshakes-tablet-mobile@2x.png 2x
+                "
+                type="png"
+              />
+              <img
+                src="./images/products/products-milkshakes-tablet-mobile.png"
+                alt="product"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="product-box__elements">
+          <h2 class="elements__txt">MILKSHAKE</h2>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="form-wrapper">
+    <form class="form-buy" action="#">
+      <div>
+        <input
+          class="checkbox__input-green visually-hidden"
+          id="checkbox-green"
+          type="checkbox"
+          name="checkbox-green"
+        />
+        <label class="checkbox__label-green" for="checkbox-green"> </label>
+        <input
+          class="checkbox__input-yellow visually-hidden"
+          id="checkbox-yellow"
+          type="checkbox"
+          name="checkbox-yellow"
+        />
+        <label class="checkbox__label-yellow" for="checkbox-yellow"> </label>
+        <input
+          class="checkbox__input-orange visually-hidden"
+          id="checkbox-orange"
+          type="checkbox"
+          name="checkbox-orange"
+        />
+        <label class="checkbox__label-orange" for="checkbox-orange"> </label>
+      </div>
+
+      <div class="input-wrapper">
+        <input
+          class="input-wrapper__input"
+          type="text"
+          name="user-name"
+          id="user-name"
+          placeholder="Name"
+        />
+
+        <input
+          class="input-wrapper__input"
+          type="text"
+          name="user-number"
+          id="user-number"
+          placeholder="Phone"
+        />
+
+        <textarea
+          class="input-wrapper__input form__textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+    </form>
+  </div>
+
+  <button type="submit" class="modal__btn">Submit</button>
+</div>
+
+<div class="overlay js-overlay-modal"></div>

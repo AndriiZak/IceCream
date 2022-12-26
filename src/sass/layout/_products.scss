@@ -1,17 +1,45 @@
 .products {
-  background-image: url(../images/background/Background_mobile.svg);
-  @include minW-Tablet {
-    background-image: url(../images/background/Background_tablet.svg);
-  }
-  @include minW-Dt {
-    background-image: url(../images/background/Background_desktop.svg);
-  }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    padding: 60px 0;
+    background-image: url('../images/background/background_mobile.png');
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        max-width: 768px;
+        // height: 400px;
+        background-image: url('../images/background/background_mobile@2x.png');
+      }
 
-  padding: 60px 0;
+    @include minW-Tablet {
+    background-image:url('../images/background/background_tablet.png');
+      
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      max-width: 1200px;
+      // height: 400px;
+      background-image: url('../images/background/background_tablet@2x.png');
+    }
+    }
+
+    @include minW-Dt {
+      max-width: 1600px;
+      // height: 600px;
+      margin: 0 auto;
+    
+      background-image:url('../images/background/background_desktop.png');
+    
+      // 2x screens, retina
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image:url('../images/background/background_desktop@2x.png');
+      }
+    }
 
   &__item {
     position: relative;
@@ -156,13 +184,8 @@
 .picture {
   &__img {
     z-index: 50;
-    transform: translateY(-11px);
-    @include minW-Tablet {
-      transform: translateY(-12px);
-    }
-    @include minW-Dt {
-      transform: translateY(-16px);
-    }
+    transform: translate(0);
+    transition: $transition;
   }
   &__back {
     position: absolute;
@@ -207,15 +230,20 @@
   }
 }
 
-// .picture__img {
-//   width: 200px;
-//   height: 200px;
-//   border-radius: 50%;
-//   background: linear-gradient(
-//       0deg,
-//       rgba(156, 190, 143, 0.7),
-//       rgba(156, 190, 143, 0.7)
-//     ),
-//     #d9d9d9;
-//   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-// }
+//!animation
+.products__item:hover .picture__img {
+  transform: translateY(-11px);
+  @include minW-Tablet {
+    transform: translateY(-12px);
+  }
+  @include minW-Dt {
+    transform: translateY(-16px);
+  }
+}
+.shadow {
+  filter: drop-shadow(0);
+  transition: filter $transition;
+}
+.products-elements__but:hover .shadow {
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+}
