@@ -57,7 +57,6 @@
 
   &__img-top {
     position: absolute;
-    top: 22px;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -65,6 +64,14 @@
     background-image: url(./../images/how-its-made/korova-mobile.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    transform: translate(0);
+    transition: $transition; 
+
+      &:hover {
+        transform: translatey(22px);
+        transition: $transition; 
+        transition-duration: 250ms;
+      }
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -99,15 +106,20 @@
     border-radius: 10px;
     border: none;
     text-decoration: none;
+    
 
     &:hover {
       color: $black;
       background: $accent-color;
+      transition-property: $accent-color;
+      transition-duration: 250ms;
     }
 
     &:focus {
       color: $txt-white;
       background: $accent-color;
+      transition-property: $accent-color;
+      transition-duration: 250ms;
     }
 
     &:focus .advantages__button-vector {
@@ -190,8 +202,14 @@
     }
 
     &__img-top {
-      top: 26px;
       background-image: url(./../images/how-its-made/korova-tablet.png);
+      transform: translate(0);
+      transition: $transition; 
+
+      &:hover {
+        transform: translatey(26px);
+        transition: $transition; 
+      }
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -260,8 +278,14 @@
     }
 
     &__img-top {
-      top: 39px;
       background-image: url(./../images/how-its-made/korova-desktop.png);
+      transform: translate(0);
+      transition: $transition; 
+
+      &:hover {
+        transform: translatey(39px);
+        transition: $transition; 
+      }
     }
 
     @media (min-device-pixel-ratio: 2),
