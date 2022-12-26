@@ -1,16 +1,13 @@
-// СЕКЦІЯ ГЕРОЙ -----------------------------------
+// СЕКЦІЯ ГЕРОЙ
 //
-//
-//
-//
-//
-//
+
 .icehero {
   position: relative;
   width: 100%;
   background-color: #84a178;
 }
 .hero {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -327,5 +324,25 @@
       font-size: 14px;
       line-height: 1.2142;
     }
+  }
+}
+
+.main-ice-cream {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 117px;
+  height: auto;
+
+  @include minW-Tablet {
+    width: 268px;
+    right: 92px;
+    transform: translateX(0%);
+  }
+
+  @include minW-Dt {
+    width: 456px;
   }
 }
