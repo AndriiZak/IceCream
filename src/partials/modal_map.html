@@ -1,29 +1,37 @@
-<div class="backdrop">
-  <div class="modal modal--map">
-    <button class="modal__btn-close">
-      <svg width="20" height="20" class="">
-        <use href="./images/icons.svg#icon-close-cross"></use>
-      </svg>
-    </button>
+<div class="modal modal--map" data-modal="2">
+  <button class="modal__btn-close js-modal-close">
+    <svg width="20" height="20" class="">
+      <use href="./images/icons.svg#icon-close-cross"></use>
+    </svg>
+  </button>
 
-    <h2 class="modal__header">Our Locations</h2>
+  <h2 class="modal__header">Our Locations</h2>
 
-    <picture>
-      <source srcset="
-          ./images/location-modal/location-modal-mobile.jpg    1x,
-          ./images/location-modal/location-modal-mobile@2x.jpg 2x
-        " media="(max-width: 767px)" />
+  <picture>
+    <source
+      srcset="
+        ./images/location-modal/location-modal-mobile.jpg    1x,
+        ./images/location-modal/location-modal-mobile@2x.jpg 2x
+      "
+      media="(max-width: 767px)"
+    />
 
-      <source srcset="
-          ./images/location-modal/location-modal-tablet.jpg    1x,
-          ./images/location-modal/location-modal-tablet@2x.jpg 2x
-        " media="(min-width: 768px)" />
+    <source
+      srcset="
+        ./images/location-modal/location-modal-tablet.jpg    1x,
+        ./images/location-modal/location-modal-tablet@2x.jpg 2x
+      "
+      media="(min-width: 768px)"
+    />
 
-      <img src="./images/location-modal/location-modal-mobile.jpg" alt="location map" />
-    </picture>
+    <img
+      src="./images/location-modal/location-modal-mobile.jpg"
+      alt="location map"
+    />
+  </picture>
 
-    <!-- або можна вставити карту гуглмапс наприклад -->
-    <!-- <iframe
+  <!-- або можна вставити карту гуглмапс наприклад -->
+  <!-- <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20329.894339577146!2d30.423693250000003!3d50.4366899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc127c0e1795%3A0x6dacfa669ee14a84!2z0LLRg9C70LjRhtGPINCc0LXRgtGA0L7QsdGD0LTRltCy0YHRjNC60LAsIDExLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1671790630611!5m2!1suk!2sua"
       width="224"
       height="199"
@@ -33,6 +41,7 @@
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe> -->
 
-    <button type="submit" class="modal__btn">Open map</button>
-  </div>
+  <button type="submit" class="modal__btn">Open map</button>
 </div>
+
+<div class="overlay js-overlay-modal"></div>
