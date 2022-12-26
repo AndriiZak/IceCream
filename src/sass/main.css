@@ -119,7 +119,7 @@ ul {
   visibility: hidden;
   width: 100%;
   max-width: 280px;
-  max-height: 100%;
+  max-height: calc(100% - 20px);
   overflow: auto;
   position: fixed;
   top: 50%;
@@ -2577,7 +2577,6 @@ ul {
   }
 }
 .modal-franchise__text {
-  width: 222px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -2606,7 +2605,7 @@ ul {
   width: 100%;
   color: #131313;
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
 }
 .form-franchise__textarea {
@@ -2618,7 +2617,7 @@ ul {
   width: 100%;
   color: #131313;
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84A178;
+  border: 1px solid #84a178;
   border-radius: 10px;
 }
 
