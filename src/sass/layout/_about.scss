@@ -165,6 +165,7 @@
     border-radius: 10px;
     padding: 12px 35px 12px 34px;
     margin: 0 auto;
+    transition: background-color $transition;
 
     @media (min-width: 768px) {
         margin: 0;
