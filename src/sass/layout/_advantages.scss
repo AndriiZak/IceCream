@@ -1,7 +1,13 @@
 .advantages {
   padding-bottom: 228px;
+  padding-bottom: 64px;
   background: $bg-color-green;
-
+  @include minW-Tablet {
+    padding-bottom: 205px;
+  }
+  @include minW-Dt {
+    padding-bottom: 180px;
+  }
   &__box {
     display: flex;
     flex-direction: column;
@@ -112,7 +118,6 @@
   &__button-vector {
     margin-left: 4px;
   }
-
 
   &__data {
     display: flex;

@@ -1,37 +1,74 @@
-<div class="gallery container">
-  <div class=".your-class-slideshow">
-    <div>
-      <picture>
-        <source media="(min-width:1200px )" srcset="
-                    ./images/gallery-min/gallery2-desktop.jpg    1x,
-                    ./images/gallery-min/gallery2-desktop@2x.jpg 2x
-                  " type="jpg" />
-      </picture>
-    </div>
-    <div>
-      <picture>
-        <source media="(min-width:1200px )" srcset="
-                    ./images/gallery-min/gallery3-desktop.jpg    1x,
-                    ./images/gallery-min/gallery3-desktop@2x.jpg 2x
-                  " type="jpg" />
-      </picture>
-    </div>
-    <div>
-      <picture>
-        <source media="(min-width:1200px )" srcset="
-                      ./images/gallery-min/gallery-1-mob.jpg    1x,
-                      ./images/gallery-min/gallery-1-mob@2x.jpg 2x
-                    " type="jpg" />
-        <source media="(min-width:768px )" srcset="
-                      ./images/gallery-min/gallery1-tab.jpg    1x,
-                      ./images/gallery-min/gallery1-tab@2x.jpg 2x
-                    " type="jpg" />
-        <source media="(min-width:480px )" srcset="
-                      ./images/gallery-min/gallery-1-mob.jpg    1x,
-                      ./images/gallery-min/gallery-1-mob@2x.jpg 2x
-                    " type="jpg" />
-        <img class="galery-img" src="./images/gallery-min/gallery-1-mob.jpg" alt="product" />
-      </picture>
+<section class="gallery">
+  <div class="container gallery__container">
+    <div class="gallery__slider">
+      <!-- 1й слайд -->
+      <div>
+        <picture
+          ><source
+            srcset="
+              ./images/gallery-min/gallery1-desktop.jpg 1x,
+              ./images/gallery-min/gallery1-desktop.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-min/gallery1-tab.jpg    1x,
+              ./images/gallery-min/gallery1-tab@2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery-min/gallery-1-mob.jpg    1x,
+              ./images/gallery-min/gallery-1-mob@2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            src="./images/gallery-min/gallery1-desktop.jpg"
+            alt="gallery"
+            width="1013"
+            height="422"
+          />
+        </picture>
+      </div>
+      <!-- 2й слайд -->
+      <div>
+        <picture
+          ><source
+            srcset="
+              ./images/gallery-min/gallery2-desktop.jpg 1x,
+              ./images/gallery-min/gallery2-desktop.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <img
+            src="./images/gallery-min/gallery2-desktop.jpg"
+            alt="gallery"
+            width="1013"
+            height="422"
+          />
+        </picture>
+      </div>
+      <!-- 3й слайд -->
+      <div>
+        <picture
+          ><source
+            srcset="
+              ./images/gallery-min/gallery3-desktop.jpg 1x,
+              ./images/gallery-min/gallery3-desktop.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <img
+            src="./images/gallery-min/gallery3-desktop.jpg"
+            alt="gallery"
+            width="1013"
+            height="422"
+          />
+        </picture>
+      </div>
     </div>
   </div>
-</div>
+</section>

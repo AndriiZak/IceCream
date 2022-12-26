@@ -5,13 +5,15 @@ $('.your-class').slick({
   dots: true,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
 });
 
-$('.your-class-slideshow').slick({
+$('.gallery__slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: true,
+  dots: false,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 5000,
 });
