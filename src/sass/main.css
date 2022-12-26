@@ -312,6 +312,7 @@ ul {
   min-width: 152px;
   min-height: 42px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .header__button {
@@ -322,6 +323,17 @@ ul {
   .header__button {
     margin-left: auto;
   }
+}
+.header__button:hover {
+  background: #0a8817;
+}
+.header__button:focus {
+  background: #0a8817;
+  color: #ffffff;
+}
+
+.header__button-svg {
+  fill: currentColor;
 }
 
 .menu {
@@ -419,11 +431,19 @@ ul {
   min-width: 152px;
   min-height: 42px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu__button {
     display: none;
   }
+}
+.menu__button:hover {
+  background: #0a8817;
+}
+.menu__button:focus {
+  background: #0a8817;
+  color: #ffffff;
 }
 
 .icehero {
