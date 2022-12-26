@@ -15,5 +15,9 @@ $('.gallery__slider').slick({
   dots: false,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
+
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
 });
