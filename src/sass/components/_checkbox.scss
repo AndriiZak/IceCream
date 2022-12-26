@@ -95,7 +95,7 @@
         top: 574px;
         left: 50%;
         transform: translateX(-50%);
-        z-index: -2;
+        z-index: -1;
         
         width: 132px;
         height: 135px;
@@ -105,7 +105,8 @@
 
         @include minW-Tablet {
                 top: 163px;
-                right: 54px;
+                left: 447px;
+                
             }
     }
 
@@ -126,7 +127,7 @@
 
             @include minW-Tablet {
                     top: 163px;
-                    right: 54px;
+                    left: 447px;
                 }
     }
 
