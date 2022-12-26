@@ -8,7 +8,6 @@
     right: 0;
     background-color: transparent;
     top: -32px;
-    max-width: 280px;
     @include minW-Tablet {
       top: -144px;
       max-width: 704px;
@@ -19,7 +18,11 @@
     }
   }
   &__slider {
-    max-width: 280px;
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     @include minW-Tablet {
       max-width: 704px;
     }
@@ -29,6 +32,9 @@
     img {
       height: 130px;
       border-radius: 8px;
+      @include minW-Phone {
+        height: 100%;
+      }
       @include minW-Tablet {
         height: 327px;
         border-radius: 18px;
