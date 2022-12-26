@@ -7,3 +7,24 @@
 //     }
 //   }
 // }
+
+.modal {
+  &--map {
+    max-width: 280px;
+    width: 100%;
+    padding: 28px;
+
+    @include minW-Tablet {
+      max-width: 568px;
+      padding: 32px 60px;
+    }
+  }
+}
+
+.modal__btn-loc {
+  margin-top: 24px;
+
+  @include minW-Tablet {
+    margin-top: 32px;
+  }
+}
