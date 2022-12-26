@@ -433,6 +433,7 @@ ul {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -729,6 +730,28 @@ ul {
   .hero__number--text {
     font-size: 14px;
     line-height: 1.2142;
+  }
+}
+
+.main-ice-cream {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 117px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .main-ice-cream {
+    width: 268px;
+    right: 92px;
+    transform: translateX(0%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-ice-cream {
+    width: 456px;
   }
 }
 
