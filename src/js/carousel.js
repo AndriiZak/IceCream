@@ -4,12 +4,16 @@ $('.your-class').slick({
   slidesToScroll: 1,
   dots: true,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 5000,
 });
 
-$('.your-class-slideshow').slick({
+$('.gallery__slider').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  dots: true,
+  dots: false,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 5000,
 });
