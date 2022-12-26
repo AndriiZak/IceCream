@@ -87,22 +87,36 @@
   display: flex;
 }
 
-.nav-menu__item {
+// .nav-menu__item {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   color: #fcfcfc;
+//   transition: $transition;
+
+//   &:hover {
+//     color: #f8d24e;
+//   }
+// }
+
+.nav-menu__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.nav-menu__link {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: calc(20 / 16);
   color: #fcfcfc;
-  transition: $transition;
+  transition: color $transition;
 
   &:hover {
     color: #f8d24e;
   }
-}
-
-.nav-menu__item:not(:last-child) {
-  margin-right: 32px;
 }
 
 // кнопка замовлення
@@ -229,7 +243,7 @@
 
 //окремий елемент списку посилань
 
-.menu__item {
+.menu__link {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
