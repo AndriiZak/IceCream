@@ -18,7 +18,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
+
 
   @include maxW-minPhone {
     width: 320px;

@@ -1,81 +1,101 @@
-<div class="backdrop">
-  <div class="modal">
-    <button class="modal__btn-close">
-      <svg class="modal__icon" width="14" height="14">
-        <use href="./images/icons.svg#icon-close-cross"></use>
+<div class="modal" data-modal="4">
+  <button class="modal__btn-close js-modal-close">
+    <svg class="modal__icon" width="14" height="14">
+      <use href="./images/icons.svg#icon-close-cross"></use>
     </svg>
-    </button>
+  </button>
 
-
-    
-
-    <h2 class="modal__title">Chololate icecream</h2>
-    <div class="modal__tumb">
-    <img class="modal__image"
-    srcset=".\images\modal-products\chololate-icecream-modal.png 240w,
-    .\images\modal-products\chololate-icecream-modal@2x.png 450w" 
-
-    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-      
-    src=".\images\modal-products\chololate-icecream-modal@2x.png" alt="ice-cream" width="132" class="modal__svg">
-  </div>
-   
-      <div>
-     <div class="calories">
-    <ul class="calories__list">
-      <li class="calories__list-item calories__list-item--border link">kcal</li>
-      <li class="calories__list-item calories__list-item--border link">Protein...</li>
-      <li class="calories__list-item calories__list-item--border link">Fats</li>
-      <li class="calories__list-item calories__list-item--border link">Carbs</li>
-      
-    </ul>
-  </div>
-    <ul class="calories__gramm">
-      <li class=" calories__list-item calories__list-item--sphere link">320</li>
-      <li class="calories__list-item calories__list-item--sphere link">4g </li>
-      <li class="calories__list-item calories__list-item--sphere link">8,2g </li>
-      <li class="calories__list-item  calories__list-item--sphere link">40,4g </li>
-    </ul>
+  <h2 class="modal__title">Chololate icecream</h2>
+  <div class="modal__tumb">
+    <img
+      class="modal__image"
+      srcset="
+        .\images\modal-products\chololate-icecream-modal.png    240w,
+        .\images\modal-products\chololate-icecream-modal@2x.png 450w
+      "
+      sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
+      src=".\images\modal-products\chololate-icecream-modal@2x.png"
+      alt="ice-cream"
+      width="132"
+      class="modal__svg"
+    />
   </div>
 
-    <p class="ingredients-name">Ingredients</p>
-
-<div class="ingredients"> 
-  <ul class="ingredients__list">
-  <li class="ingredients__list-item link ">Milk</li>
-  <li class="ingredients__list-item link">Belgian chocolate</li>
-  <li class="ingredients__list-item link">Cream</li>
-  <li class="ingredients__list-item link">Cocoa powder</li>
-  <li class="ingredients__list-item link">Sugar</li>
-  <li class="ingredients__list-item link">Vanilla sugar</li>
-</ul>
-
-<ul class="ingredients__list list-item">
-  <li class="ingredients__list-item link list-item">100ml</li>
-  <li class="ingredients__list-item link list-item">20g</li>
-  <li class="ingredients__list-item link list-item">150 ml</li>
-  <li class="ingredients__list-item link list-item">30g</li>
-  <li class="ingredients__list-item link list-item">40g</li>
-  <li class="ingredients__list-item link list-item">10g</li>
-</ul>
-</div>
-
-<div class="form__modal">
-   
-    <input class="form__line" type="text" name="name" id="name" placeholder="Name">
+  <div class="calories">
+    <div>
+      <ul class="calories__list">
+        <li class="calories__list-item calories__list-item--border link">
+          kcal
+        </li>
+        <li class="calories__list-item calories__list-item--border link">
+          Protein...
+        </li>
+        <li class="calories__list-item calories__list-item--border link">
+          Fats
+        </li>
+        <li class="calories__list-item calories__list-item--border link">
+          Carbs
+        </li>
+      </ul>
     </div>
-    <div class="form__modal">
-    
-    <input class="form__line" type="text" name="phone" id="phone" placeholder="Phone">
+    <ul class="calories__gramm">
+      <li class="calories__list-item calories__list-item--sphere link">320</li>
+      <li class="calories__list-item calories__list-item--sphere link">4g</li>
+      <li class="calories__list-item calories__list-item--sphere link">8,2g</li>
+      <li class="calories__list-item calories__list-item--sphere link">
+        40,4g
+      </li>
+    </ul>
+  </div>
+
+  <p class="ingredients-name">Ingredients</p>
+
+  <div class="ingredients">
+    <ul class="ingredients__list">
+      <li class="ingredients__list-item link">Milk</li>
+      <li class="ingredients__list-item link">Belgian chocolate</li>
+      <li class="ingredients__list-item link">Cream</li>
+      <li class="ingredients__list-item link">Cocoa powder</li>
+      <li class="ingredients__list-item link">Sugar</li>
+      <li class="ingredients__list-item link">Vanilla sugar</li>
+    </ul>
+
+    <ul class="ingredients__list list-item">
+      <li class="ingredients__list-item link list-item">100ml</li>
+      <li class="ingredients__list-item link list-item">20g</li>
+      <li class="ingredients__list-item link list-item">150 ml</li>
+      <li class="ingredients__list-item link list-item">30g</li>
+      <li class="ingredients__list-item link list-item">40g</li>
+      <li class="ingredients__list-item link list-item">10g</li>
+    </ul>
+  </div>
+
+  <div class="form__modal">
+    <input
+      class="form__line"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Name"
+    />
   </div>
   <div class="form__modal">
-   
-    <textarea class="form__line comment" id="text" placeholder="Comment"></textarea>
-
+    <input
+      class="form__line"
+      type="text"
+      name="phone"
+      id="phone"
+      placeholder="Phone"
+    />
   </div>
-    <button type="button" class="modal__btn">Submit</button>
- 
+  <div class="form__modal">
+    <textarea
+      class="form__line comment"
+      id="text"
+      placeholder="Comment"
+    ></textarea>
+  </div>
+  <button type="submit" class="modal__btn">Submit</button>
 </div>
-</div>
-</div>
-</div>
+
+<div class="overlay js-overlay-modal"></div>
