@@ -4,6 +4,8 @@ $('.your-class').slick({
   slidesToScroll: 1,
   dots: true,
   arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
 
 $('.your-class-slideshow').slick({
