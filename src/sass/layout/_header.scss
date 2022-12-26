@@ -31,6 +31,12 @@
 
 // Логотип в хедері
 
+.header__logo {
+  @include minW-Dt {
+    margin-right: 308px;
+  }
+}
+
 .header__logo--svg {
   width: 40px;
   height: 37px;
@@ -43,7 +49,6 @@
   @include minW-Dt {
     width: 60px;
     height: 65px;
-    margin-right: 308px;
   }
 }
 
@@ -79,9 +84,7 @@
 }
 
 .nav-menu__list {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
+  display: flex;
 }
 
 .nav-menu__item {
@@ -95,7 +98,6 @@
 
   &:hover {
     color: #f8d24e;
-    cursor: pointer;
   }
 }
 
@@ -131,13 +133,15 @@
 
 ////// МЕНЮ ВИПАДНЕ ЗГОРИ //////
 
+// сама обгортка меню
+
 .menu {
-  z-index: 50;
+  z-index: 100;
   position: fixed;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  // justify-content: space-around;
   gap: 110px;
 
   overflow-x: hidden;
@@ -149,27 +153,54 @@
   height: 100vh;
   transform: translateX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 768px) {
-    z-index: 5;
-  }
 }
 
 .menu.is-open {
   transform: translateX(-100%);
 }
 
-.menu__buttoncls {
-  display: inline-block;
+// логотип випадного меню
+
+.menu__logo {
   position: absolute;
+  top: 12px;
+  left: 32px;
+
+  @include minW-Tablet {
+    top: 20px;
+  }
+}
+
+.menu__logo--svg {
+  width: 40px;
+  height: 37px;
+
+  @include minW-Tablet {
+    width: 48px;
+    height: 44px;
+  }
+}
+
+// кнопка закриття моб меню
+
+.menu__buttoncls {
+  display: flex;
+  position: absolute;
+  padding: 0;
   right: 16px;
   top: 20px;
-  background-color: transparent;
-  margin-left: auto;
-  border: none;
 
-  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    right: 32px;
+    top: 32px;
+  }
+
+  background-color: transparent;
+  border: none;
 }
+
+//список посилань меню
+
 .menu__list {
   display: flex;
   flex-direction: column;
@@ -179,10 +210,10 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 140px;
-    width: 100%;
-    height: 100%;
   }
 }
+
+//окремий елемент списку посилань
 
 .menu__item {
   font-family: 'Montserrat';
@@ -195,6 +226,30 @@
   &:hover {
     color: #131313;
   }
+}
+
+//кнопка в меню
+
+.menu__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
+
+  background: #f8d24e;
+  border-radius: 10px;
+
+  min-width: 152px;
+  min-height: 42px;
+
+  border: none;
 }
 
 // .button {
@@ -300,335 +355,3 @@
 //     display: none;
 //   }
 // }
-
-// СЕКЦІЯ ГЕРОЙ -----------------------------------
-//
-//
-//
-//
-//
-//
-.icehero {
-  position: relative;
-  width: 100%;
-  background-color: #84a178;
-}
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: contain;
-  @media screen and (min-width: 768px) {
-    position: relative;
-  }
-  background-image: url(../images/hero/header-dots-mobile.png);
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/header-dots-mobile@2x.png);
-  }
-
-  @include minW-Tablet {
-    background-image: url(../images/hero/header-dots-tablet.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/header-dots-tablet@2x.png);
-    }
-  }
-
-  @include minW-Dt {
-    background-image: url(../images/hero/header-dots-desktop.png);
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/hero/header-dots-desktop@2x.png);
-    }
-  }
-}
-// .hero__ice {
-//   background-image: url(../images/hero/hero-ice-cream-mobile.png);
-//   @media screen and (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(../images/hero/hero-ice-cream-mobile@2x.png);
-//   }
-
-//   @include minW-Tablet {
-//     background-image: url(../images/hero/hero-ice-cream-tablet.png);
-//     @media screen and (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(../images/hero/hero-ice-cream-tablet@2x.png);
-//     }
-//   }
-
-//   @include minW-Dt {
-//     background-image: url(../images/hero/hero-ice-cream-desktop.png);
-//     @media screen and (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(../images/hero/hero-ice-cream-desktop@2x.png);
-//     }
-//   }
-// }
-// .hero__dots {
-// }
-
-// .hero__img {
-//   position: absolute;
-//   bottom: 0;
-//   right: 60px;
-//   height: 217px;
-//   width: 177px;
-
-//   @media screen and (min-width: 768px) {
-//     position: absolute;
-//     // width: 268px;
-//     // height: 329px;
-//     bottom: 0;
-//     right: 92px;
-//   }
-
-//   @media screenand and (min-width: 1200px) {
-//     position: absolute;
-//     // width: 456px;
-//     // height: 560px;
-//     top: 31px;
-//     right: 92px;
-//   }
-// }
-
-.hero__div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 160px;
-  margin-right: auto;
-  flex-basis: calc((100% - 30px) / 2);
-  gap: 15px;
-  @include minW-Tablet {
-    flex-basis: calc((100% - 44px) / 2);
-    gap: 22px;
-    margin-bottom: 40px;
-  }
-
-  @include minW-Dt {
-    flex-basis: calc((100% - 68px) / 2);
-    gap: 34px;
-    margin-bottom: 42px;
-  }
-}
-
-.hero__title {
-  max-width: 247px;
-  width: 100%;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 32px;
-  margin-right: 54px;
-
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.2692;
-  letter-spacing: 0.04em;
-  color: #fcfcfc;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
-    margin-top: 14px;
-    margin-bottom: 24px;
-    margin-right: 0;
-    width: 100%;
-    max-width: 367px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 45px;
-    margin-bottom: 28px;
-  }
-}
-
-.hero__title--1,
-.hero__title--2 {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.2692;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $txt-white;
-
-  @include minW-Dt {
-    font-size: 38px;
-    line-height: 1.2631;
-  }
-}
-
-.hero__title--3 {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 0.9705;
-  text-transform: uppercase;
-  color: $txt-white;
-  @include minW-Dt {
-    font-size: 38px;
-    line-height: 1.2631;
-  }
-}
-
-.hero__products {
-  width: 108px;
-  height: 38px;
-  padding: 11px 26px;
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
-  background-color: #84a178;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  color: $black;
-  transition: $transition;
-  @include minW-Dt {
-    width: 134px;
-    height: 42px;
-    font-size: 14px;
-    line-height: 1.2857;
-  }
-}
-
-.hero__products:hover {
-  border: 2px solid #0a8817;
-}
-.hero__products:focus {
-  color: $white;
-}
-.hero__link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  text-decoration-line: underline;
-  color: #f8d24e;
-  transition: color $transition;
-  @include minW-Dt {
-    font-size: 14px;
-    line-height: 1.2142;
-  }
-}
-.hero__link:hover {
-  color: #0a8817;
-}
-.hero__link:focus {
-  color: $txt-white;
-}
-
-.hero__div1 {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    flex-basis: calc((100% - 64px) / 2);
-    gap: 32px;
-
-    &--text {
-      width: 139px;
-      height: 85px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.4;
-      color: $txt-white;
-      margin-bottom: 12px;
-      @include minW-Dt {
-        font-size: 14px;
-        line-height: 1.4285;
-        max-width: 200px;
-        width: 100%;
-        margin-bottom: 24px;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
-    gap: 16px;
-  }
-}
-
-.hero__img--round {
-  width: 152px;
-  height: 152px;
-  @include minW-Dt {
-    width: 225px;
-    height: 225px;
-  }
-}
-
-.hero__div1--svg {
-  width: 40px;
-  height: 16px;
-  fill: $txt-white;
-}
-
-.shadow--white {
-  filter: drop-shadow(0);
-  transition: filter $transition;
-}
-.shadow--white:hover {
-  filter: drop-shadow(3px 3px 2px rgba(232, 227, 227, 0.941));
-}
-
-.hero {
-  &__number {
-    display: none;
-    position: absolute;
-    right: 32px;
-    top: 28px;
-    @include minW-Tablet {
-      display: block;
-    }
-    @include minW-Dt {
-      right: 16px;
-      top: 63px;
-    }
-  }
-  &__number--title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 1.2142;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $txt-black;
-    @include minW-Dt {
-      font-size: 46px;
-      line-height: 1.2173;
-    }
-  }
-  &__number--text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-    color: $txt-white;
-    @include minW-Dt {
-      font-size: 14px;
-      line-height: 1.2142;
-    }
-  }
-}
