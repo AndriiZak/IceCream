@@ -64,6 +64,8 @@
   }
 
   &__text {
+    display: flex;
+    align-items: center;
     padding: 35px 39px;
     margin-left: 4px;
     margin-right: 4px;
@@ -72,6 +74,9 @@
     background-color: $bg-color-green;
     border-radius: 10px;
 
+    
+    min-height: 200px;
+    height: 100%;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
