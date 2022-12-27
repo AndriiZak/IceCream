@@ -59,9 +59,6 @@
     background-image: url(./../images/how-its-made/korova-mobile.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    transform: translate(0);
-    transition: $transition; 
-
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -198,8 +195,6 @@
     &__img-top {
       top: 26px;
       background-image: url(./../images/how-its-made/korova-tablet.png);
-      transform: translate(0);
-      transition: $transition; 
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -272,8 +267,6 @@
     &__img-top {
       top: 39px;
       background-image: url(./../images/how-its-made/korova-desktop.png);
-      transform: translate(0);
-      transition: $transition; 
     }
 
     @media (min-device-pixel-ratio: 2),
