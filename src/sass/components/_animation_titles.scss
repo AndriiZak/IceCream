@@ -23,7 +23,7 @@
     .products__title--400,
     .products__title--800,
     .section-about__title {
-        animation: 5s anim-popoutin ease infinite 3s;
+        animation: 5s anim-popoutin ease 5 3s;
       }
       @keyframes anim-popoutin {
         0% {
