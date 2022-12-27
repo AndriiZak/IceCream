@@ -3,15 +3,16 @@
     <div class="header">
       <!--  логотип -->
 
-      <a class="header__logo" href="./">
-        <svg class="header__logo--svg">
+      <a class="header__logo" href="#">
+        <!-- <svg class="header__logo--svg">
           <use href="./images/icons.svg#icon-logo"></use>
-        </svg>
+        </svg> -->
+        <img class="header__logo--svg" src="./images/logo/logo.png" alt="logo">
       </a>
 
       <!-- кнопка моб меню смужки -->
 
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button class="menu-toggle js-open-menu" data-menu-open>
         <svg width="40" height="40" class="toggle-icon">
           <use href="./images/icons.svg#icon-top-menu-lines"></use>
         </svg>
@@ -46,51 +47,38 @@
       </button>
     </div>
   </div>
+  <div class="menu is-hidden" data-menu>
+    <div class="menu__container">
+      <button type="button" class="menu__buttoncls" data-menu-close>
+        <svg width="32" height="32">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <a class="menu__logo" href="./">
+        <svg class="menu__logo--svg">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="menu__list list">
+        <li class="menu__item">
+          <a href="" class="menu__link link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link link">How it’s made?</a>
+        </li>
+        <li class="menu__item">
+          <a href="#products" class="menu__link link">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="menu__link link">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="menu__button js-open-modal" data-modal="3">
+        <span class="button__text">Buy now</span>
+        <svg width="12" height="12">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
-
-<!-- Бургер меню випадне -->
-
-<div class="menu js-menu-container">
-  <!-- логотип випадног меню  -->
-
-  <a class="menu__logo" href="./">
-    <svg class="menu__logo--svg">
-      <use href="./images/icons.svg#icon-logo"></use>
-    </svg>
-  </a>
-
-  <!-- Кнопка закриття  -->
-
-  <button type="button" class="menu__buttoncls js-close-menu">
-    <svg width="32" height="32">
-      <use href="./images/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-
-  <!-- список посилань -->
-
-  <ul class="menu__list">
-    <li class="menu__item">
-      <a href="index.html" class="link menu__link">Home</a>
-    </li>
-    <li class="menu__item">
-      <a href="index.html#about" class="link menu__link">How it’s made?</a>
-    </li>
-    <li class="menu__item">
-      <a href="index.html#products" class="link menu__link">Our products</a>
-    </li>
-    <li class="menu__item">
-      <a href="index.html#contact" class="link menu__link">Contact</a>
-    </li>
-  </ul>
-
-
-  <!-- кнопка купити -->
-
-  <button type="button" class="menu__button">
-    <span class="button__text">Buy now</span>
-    <svg width="12" height="12">
-      <use href="./images/icons.svg#icon-vector"></use>
-    </svg>
-  </button>
-</div>
