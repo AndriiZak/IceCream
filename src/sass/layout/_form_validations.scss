@@ -1,0 +1,14 @@
+  .input-wrapper__input:not(:placeholder-shown):required:valid ,
+  .form-franchise__input:not(:placeholder-shown):required:valid ,
+  .form__line:not(:placeholder-shown):required:valid  {
+    border-color: #4caf50;
+}
+
+.input-wrapper__input:not(:placeholder-shown):required:invalid,
+.form-franchise__input:not(:placeholder-shown):required:invalid,
+.form__line:not(:placeholder-shown):required:invalid {
+    border-color: #f44336;
+}
+
+
+
