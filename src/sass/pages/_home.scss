@@ -25,3 +25,12 @@
     width: 1200px;
   }
 }
+
+.modalcls {
+  width: 20px;
+  height: 20px;
+  @include minW-Tablet {
+    width: 24px;
+    height: 24px;
+  }
+}
