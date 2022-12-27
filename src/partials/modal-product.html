@@ -83,9 +83,8 @@
       name="name"
       id="name"
       placeholder="Name"
+      required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
       title="Username must be two words separated by space." 
-      minlength="3" 
-      required
     />
   </div>
   <div class="form__modal">
@@ -95,8 +94,8 @@
       id="phone"
       placeholder="Phone"
       type="tel"
-      minlength="10" 
-      required 
+      required pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" 
+      title="Format: +99(99)9999-9999)"
     />
   </div>
   <div class="form__modal">
