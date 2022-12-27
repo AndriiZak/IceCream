@@ -22,9 +22,30 @@
 }
 
 .modal__btn-loc {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+
+  color: $txt-black;
   margin-top: 24px;
+  width: 134px;
 
   @include minW-Tablet {
+    font-size: 14px;
+    line-height: 1.2142;
     margin-top: 32px;
+    width: 145px;
   }
+}
+
+.video-size {
+  min-width: 224px;
+  min-height: 200px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
