@@ -126,7 +126,17 @@
 }
 
 // кнопка замовлення
+.button__text {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142;
 
+  margin-right: 4px;
+}
+.button__text:focus {
+  color: $white;
+}
 .header__button {
   font-family: 'Montserrat';
   @media screen and (max-width: 767px) {

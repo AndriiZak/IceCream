@@ -19,7 +19,6 @@
   margin: 0 auto;
   padding: 0 20px;
 
-
   @include maxW-minPhone {
     width: 320px;
   }
@@ -285,8 +284,8 @@
   display: inline-block;
 
   position: fixed;
-  right: 30px;
-  bottom: 30px;
+  right: 10px;
+  bottom: 10px;
 
   margin: 0;
   padding: 0;
@@ -312,7 +311,6 @@
   line-height: 1.83;
   transition: opacity $transition;
   position: fixed;
-  bottom: 30px;
   text-decoration: none;
   margin-right: 10px;
 
