@@ -1,9 +1,30 @@
+// .modal {
+//   &--map {
+//     min-height: 365px;
+
+//     @include minW-Tablet {
+//       min-height: 458px;
+//     }
+//   }
+// }
+
 .modal {
   &--map {
-    min-height: 365px;
+    max-width: 280px;
+    width: 100%;
+    padding: 28px;
 
     @include minW-Tablet {
-      min-height: 458px;
+      max-width: 568px;
+      padding: 32px 60px;
     }
+  }
+}
+
+.modal__btn-loc {
+  margin-top: 24px;
+
+  @include minW-Tablet {
+    margin-top: 32px;
   }
 }

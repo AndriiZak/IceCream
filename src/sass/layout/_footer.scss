@@ -18,7 +18,7 @@
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
+
 
   @include maxW-minPhone {
     width: 320px;
@@ -204,7 +204,6 @@
     align-items: center;
     justify-content: center;
     background: $dyellow-color;
-    transition: fill $transition;
     box-shadow: 0px 0px 0px 0px #f5eded, 0px 0px 0px 0px #92e692 inset;
     animation-name: changeBShColor;
     animation-duration: 4500ms;
@@ -235,6 +234,7 @@
   &__icon {
     border-radius: 50%;
     fill: #84a178;
+    transition: fill $transition;
   }
 }
 
@@ -281,12 +281,17 @@
   }
 }
 
-.stiky-container {
-  justify-content: flex-end;
-  display: flex;
-}
-
 .stiky-link {
+  display: inline-block;
+
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
   z-index: 4;
   width: 50px;
   height: 50px;

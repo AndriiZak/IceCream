@@ -1,11 +1,99 @@
-.modal{
-    &__franchise{
-        max-height: 668px;
-    }
+.modal-franchise {
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  background-color: $txt-white;
+
+  width: 280px;
+  padding: 28px;
+
+  @include minW-Tablet {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  border: 2px solid $dyellow-color;
+  border-radius: 10px;
+
+  opacity: 1;
+
+  //сюди ще піде транзішн переходу, як варіант внизу
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__header {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: center;
+
+    color: $txt-black;
+
+    margin-bottom: 20px;
+
+    @include minW-Tablet {
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 32px;
+    }
+  }
+  &__text {
+    // width: 222px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 32px;
+    color: $txt-black;
+
+    @include minW-Tablet {
+      width: 448px;
+    }
+  }
 }
 
+.form-franchise {
+  display: block;
+  margin: 0 auto;
+  max-width: 368px;
+  width: 100%;
 
-.is-hidden {
-    display: none;
+  &__input {
+    display: block;
+    margin: 0 auto 16px;
+    padding: 11px 16px;
+
+    max-width: 366px;
+    height: 32px;
+    width: 100%;
+
+    color: $txt-black;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+  }
+
+  &__textarea {
+    display: block;
+    margin: 0 auto 32px;
+
+    padding: 11px 16px;
+    max-width: 366px;
+    height: 84px;
+    width: 100%;
+
+    color: $txt-black;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+  }
 }

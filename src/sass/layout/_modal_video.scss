@@ -1,13 +1,26 @@
+.modal-read {
+  max-width: 280px;
+  width: 100%;
+  padding: 28px;
+
+  @include minW-Tablet {
+    max-width: 568px;
+    padding: 32px 60px;
+  }
+}
+
 .modal {
   &__video {
-    width: 224px;
+    margin: 0 auto;
+    // width: 224px;
     height: 199px;
     background: #131313;
     border-radius: 10px;
     margin-bottom: 20px;
 
     @include minW-Tablet {
-      width: 448px;
+      max-width: 448px;
+      width: 100%;
       height: 205px;
       margin-bottom: 32px;
     }

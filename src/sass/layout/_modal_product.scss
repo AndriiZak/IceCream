@@ -1,0 +1,247 @@
+.modal {
+  // width: 224px;
+  // width: 280px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 28px 20px;
+
+  @include minW-Tablet {
+    width: 568px;
+    padding: 32px 40px;
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    align-items: center;
+    color: #131313;
+    margin-bottom: 27px;
+    @include minW-Tablet {
+      margin-bottom: 31px;
+    }
+  }
+  &__tumb {
+    position: relative;
+    width: 132px;
+    height: 132px;
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    border-radius: 140px;
+    margin: 0 auto 22px auto;
+
+    @include minW-Tablet {
+      margin: 0 auto 24px auto;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0px;
+    transition: $transition;
+  }
+
+  &__btn-close {
+    border: none;
+  }
+}
+
+.modal__tumb:hover .modal__image {
+  bottom: 7px;
+}
+
+.calories {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+  @include minW-Tablet {
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    // gap: 20px;
+    gap: 9px;
+    box-sizing: border-box;
+
+    @include minW-Tablet {
+      gap: 20px;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    transition: $transition;
+  }
+
+  &__list-item--border {
+    height: 72px;
+    width: 53px;
+    border-radius: 40px;
+    border: 2px solid #9cbe8f;
+    align-items: flex-end;
+    display: flex;
+
+    @include minW-Tablet {
+      height: 90px;
+      width: 65px;
+    }
+  }
+  &__gramm {
+    position: absolute;
+    top: 0;
+    // left: 111px;
+    left: 3px;
+    display: flex;
+    box-sizing: border-box;
+
+    // gap: 9px;
+    gap: 19px;
+
+    @include minW-Tablet {
+      // gap: 30px;
+      gap: 32px;
+      left: 88px;
+    }
+  }
+}
+
+.calories__list-item:hover.calories__list-item--sphere {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.calories__list-item--sphere {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  background-color: #9cbe8f;
+  @include minW-Tablet {
+    height: 53px;
+    width: 53px;
+  }
+}
+
+.calories__descr {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+
+  position: absolute;
+  bottom: 8px;
+
+  @include minW-Tablet {
+    font-size: 12px;
+    line-height: 1.25;
+    bottom: 14px;
+  }
+}
+
+.ingredients-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.ingredients {
+  font-family: 'Montserrat';
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0em;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  @include minW-Tablet {
+    margin-bottom: 48px;
+  }
+
+  &__list-item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    text-align: start;
+  }
+}
+.list-item {
+  text-align: end;
+}
+
+.form {
+  &__modal {
+    display: block;
+  }
+
+  &__line {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+    cursor: pointer;
+    padding: 11px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    @include minW-Tablet {
+      width: 70%;
+      padding: 11px 16px;
+    }
+  }
+}
+.form__line:hover,
+.form__line:focus {
+  border: 1px solid rgb(10, 136, 23);
+}
+.form__line:active {
+  border: 2px solid;
+}
+.comment {
+  resize: none;
+  height: 84px;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal__btn-product {
+  margin-top: 24px;
+  transition: background-color $transition;
+  &:hover {
+    background-color: $accent-color;
+    color: $black;
+  }
+}

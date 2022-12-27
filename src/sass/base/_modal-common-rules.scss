@@ -1,57 +1,76 @@
-//БЕКДРОП ЯК ОКРЕМИЙ БЛОК
+////// ПІДЛОЖКА ЯК ОКРЕМИЙ БЛОК //////
 
-.backdrop {
+.overlay {
+  // Приховуємо підложку
+  opacity: 0;
+  visibility: hidden;
+
+  // Розташування підложки
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-
-  //сюди ще піде транзішн переходу, як варіант внизу
-  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// сюди пишемо стан бекдроп коли приховано бекдроп
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
-
-//-----------------------------------------
-//МОДАЛЬНЕ ВІКНО
+////// МОДАЛЬНЕ ВІКНО //////
 
 .modal {
-  position: absolute;
-  height: 100%;
-  overflow: auto;
+  // Приховування вікна
+  opacity: 0;
+  visibility: hidden;
 
+  //  Встановоюємо розміри вікна
+  width: 100%;
+  max-width: 280px;
+  max-height: calc(100% - 20px); //???
+
+  @include minW-Tablet {
+    max-width: 568px;
+  }
+
+  overflow: auto; ///???
+
+  //  Центруємо і задаємо z-index
+
+  position: fixed; // absolute; ???
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  z-index: 30; /* має бути більше ніж у підложки */
 
-  background-color: $txt-white;
-
-  width: 280px;
-  padding: 28px;
-
-  @include minW-Tablet {
-    width: 568px;
-    padding: 32px 60px;
-  }
+  //  Інші стилі
 
   border: 2px solid $dyellow-color;
   border-radius: 10px;
+  background-color: $txt-white;
 
-  opacity: 1;
+  padding: 28px;
 
-  //сюди ще піде транзішн переходу, як варіант внизу
+  @include minW-Tablet {
+    padding: 32px 60px;
+  }
+
+  //транзішн переходу, як варіант
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  //КНОПКА ЗАКРИТТЯ
+// Стилі для активних класів підложки і вікна
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+////// СТИЛІ ДЛЯ ЕЛЕМЕНТІВ МОДАЛЬНОГО ВІКНА //////
+
+.modal {
+  // Кнопка закриття
 
   &__btn-close {
     position: absolute;
@@ -68,7 +87,7 @@
     color: $txt-black;
   }
 
-  //ЗАГОЛОВОК МОДАЛЬНОГО ВІКНА
+  //Заголовок модального вікна
 
   &__header {
     font-family: 'Seymour One';
@@ -90,7 +109,7 @@
     }
   }
 
-  //КНОПКА ЧИ ПОСИЛАННЯ
+  //Кнопка чи посилання
 
   &__btn {
     display: flex;
@@ -118,19 +137,13 @@
       font-size: 14px;
       line-height: calc(17 / 14);
     }
+
+    transition: background-color $transition;
+  }
+
+  &__btn:hover {
+    background-color: $accent-color;
+    fill: $white;
+    color: $black;
   }
 }
-
-// сюди пишемо стан модалки коли приховано бекдроп
-// .backdrop.is-hidden .modal {
-//   transform: translate(-50%, -50%) scale(0.9);
-//   opacity: 0;
-// }
-
-
-//!! ПРИ ВІДКРИТТІ МОДАЛКИ ЦЕЙ КЛАС ЗАДАЄ БОДІ ФІКСОВАНУ ПОЗИЦІЮ (можливо треба буде змінити класс, цього не знаю)
-.js-overlay-modal {
-  position: fixed;
-  overflow-y: scroll;
-}
-

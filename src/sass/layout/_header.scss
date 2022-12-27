@@ -1,41 +1,175 @@
-header {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
+////// ВЕРХНЄ МЕНЮ //////
+
+// Секція хедер
+
+.section-header {
+  width: 100%;
   background-color: #84a178;
+}
+
+// корнетйнер хедер
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-right: 4px;
+  padding-left: 4px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 8px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
+
+// Логотип в хедері
 
 .header__logo {
-  z-index: 3;
+  @include minW-Dt {
+    margin-right: 308px;
+  }
 }
 
-.header__button {
-  display: inline-block;
-  background-color: transparent;
-  margin-left: auto;
-  border: none;
+.header__logo--svg {
+  width: 40px;
+  height: 37px;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 32px;
+  @include minW-Tablet {
+    width: 48px;
+    height: 44px;
   }
+
+  @include minW-Dt {
+    width: 60px;
+    height: 65px;
+  }
+}
+
+// кнопка випадного меню три сужки
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: #ffffff;
+
+  margin-left: auto;
 
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
 
-.menu {
-  position: fixed;
+//  іконка випадного менб три смужки
+
+.toggle-icon {
+  fill: currentColor;
+}
+
+// Верхнє меню для десктопа
+
+.header__navigation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.nav-menu__list {
   display: flex;
+}
+
+// .nav-menu__item {
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   color: #fcfcfc;
+//   transition: $transition;
+
+//   &:hover {
+//     color: #f8d24e;
+//   }
+// }
+
+.nav-menu__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.nav-menu__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #fcfcfc;
+  transition: color $transition;
+
+  &:hover {
+    color: #f8d24e;
+  }
+}
+
+// кнопка замовлення
+
+.header__button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 32px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+
+  background: #f8d24e;
+  border-radius: 10px;
+
+  min-width: 152px;
+  min-height: 42px;
+
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: #0a8817;
+  }
+
+  &:focus {
+    background: #0a8817;
+    color: #ffffff;
+  }
+}
+
+.header__button-svg {
+  fill: currentColor;
+}
+
+////// МЕНЮ ВИПАДНЕ ЗГОРИ //////
+
+// сама обгортка меню
+
+.menu {
+  z-index: 100;
+  position: fixed;
+  // display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  // justify-content: space-around;
   gap: 110px;
 
   overflow-x: hidden;
@@ -53,15 +187,47 @@ header {
   transform: translateX(-100%);
 }
 
-.menu__buttoncls {
-  display: inline-block;
+// логотип випадного меню
+
+.menu__logo {
   position: absolute;
+  top: 12px;
+  left: 32px;
+
+  @include minW-Tablet {
+    top: 20px;
+  }
+}
+
+.menu__logo--svg {
+  width: 40px;
+  height: 37px;
+
+  @include minW-Tablet {
+    width: 48px;
+    height: 44px;
+  }
+}
+
+// кнопка закриття моб меню
+
+.menu__buttoncls {
+  display: flex;
+  position: absolute;
+  padding: 0;
   right: 16px;
   top: 20px;
+
+  @media screen and (min-width: 768px) {
+    right: 32px;
+    top: 32px;
+  }
+
   background-color: transparent;
-  margin-left: auto;
   border: none;
 }
+
+//список посилань меню
 
 .menu__list {
   display: flex;
@@ -69,9 +235,15 @@ header {
   align-items: center;
   gap: 32px;
   margin-top: 100px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 140px;
+  }
 }
 
-.menu__item {
+//окремий елемент списку посилань
+
+.menu__link {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -84,103 +256,141 @@ header {
   }
 }
 
-.button {
+//кнопка в меню
+
+.menu__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
   display: flex;
   align-items: center;
-  margin-bottom: 64px;
-  padding: 12px 35px;
-  background-color: #f8d24e;
-  border-radius: 10px;
-  border: none;
+  justify-content: center;
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2142;
-  color: #000000;
-  fill: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  &:hover {
-    background-color: #0a8817;
-  }
-
-  &:focus {
-    background-color: #0a8817;
-    color: #ffffff;
-    fill: currentColor;
-  }
-}
-
-.button__text {
-  margin-right: 4px;
-}
-
-.nav-menu__button {
-  margin-bottom: 64px;
-  padding: 12px 35px;
   background: #f8d24e;
   border-radius: 10px;
+
+  min-width: 152px;
+  min-height: 42px;
+
   border: none;
 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2142;
-  color: #000000;
-  fill: #000000;
-
-  @media screen and (min-width: 320px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0;
-  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: #0a8817;
+    background: #0a8817;
   }
 
   &:focus {
-    background-color: #0a8817;
+    background: #0a8817;
     color: #ffffff;
-    fill: currentColor;
   }
 }
 
-.nav-menu {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
-}
+// .button {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 64px;
+//   padding: 12px 35px;
+//   background-color: #f8d24e;
+//   border-radius: 10px;
+//   border: none;
+//   cursor: pointer;
 
-.nav-menu__list {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
-}
+//   font-family: 'Montserrat';
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 1.2142;
+//   color: #000000;
+//   fill: #000000;
+//   transform: translateX(0);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.nav-menu__item {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #fcfcfc;
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
 
-  &:hover {
-    color: #f8d24e;
-  }
-}
+//   &:hover {
+//     background-color: #0a8817;
+//   }
 
-.nav-menu__item:not(:last-child) {
-  margin-right: 32px;
-}
+//   &:focus {
+//     background-color: #0a8817;
+//     color: #ffffff;
+//     fill: currentColor;
+//   }
+// }
+
+// .button__text {
+//   font-family: 'Montserrat';
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 1.2142;
+//   color: $black;
+//   margin-right: 4px;
+// }
+// .button__text:focus {
+//   color: $white;
+// }
+
+// .nav-menu__button {
+//   width: 152px;
+//   height: 42px;
+//   margin-bottom: 64px;
+//   padding: 12px 36px;
+//   background: #f8d24e;
+//   border-radius: 10px;
+//   border: none;
+//   cursor: pointer;
+//   margin-right: 4px;
+// }
+
+// .nav-menu__button {
+// margin-bottom: 64px;
+// padding: 12px 35px;
+// background: #f8d24e;
+// border-radius: 10px;
+// border: none;
+
+// font-family: 'Montserrat';
+// font-style: normal;
+// font-weight: 600;
+// font-size: 14px;
+// line-height: 1.2142;
+// color: #000000;
+// fill: #000000;
+// transform: translateX(0);
+// transition: background-color $transition;
+
+// @media screen and (min-width: 320px) {
+//   display: none;
+// }
+
+// @media screen and (min-width: 768px) {
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 0;
+// }
+
+//   &:hover {
+//     background-color: #0a8817;
+//   }
+
+//   &:focus {
+//     background-color: #0a8817;
+//     color: $white;
+
+//     fill: currentColor;
+//   }
+// }
+
+// .nav-menu {
+//   @media screen and (max-width: 1199px) {
+//     display: none;
+//   }
+// }

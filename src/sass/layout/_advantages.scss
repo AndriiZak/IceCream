@@ -1,7 +1,13 @@
 .advantages {
-  padding-bottom: 32px;
+  padding-bottom: 228px;
+  padding-bottom: 64px;
   background: $bg-color-green;
-
+  @include minW-Tablet {
+    padding-bottom: 205px;
+  }
+  @include minW-Dt {
+    padding-bottom: 180px;
+  }
   &__box {
     display: flex;
     flex-direction: column;
@@ -118,10 +124,6 @@
     margin-left: 4px;
   }
 
-  &__data-wrapper {
-    margin-top: 50px;
-  }
-
   &__data {
     display: flex;
     flex-direction: column;
@@ -224,7 +226,6 @@
     &__data-wrapper {
       display: flex;
       gap: 80px;
-      margin-top: 60px;
       margin-left: 44px;
       margin-right: 44px;
     }
@@ -234,7 +235,6 @@
     }
 
     &__data-text {
-      margin-bottom: 60px;
       padding: 0;
       font-weight: 400;
       font-size: 14px;
@@ -309,7 +309,6 @@
     &__data-wrapper {
       display: flex;
       gap: 32px;
-      margin-top: 60px;
       margin-left: 0;
       margin-right: 0;
     }
@@ -322,7 +321,6 @@
     }
 
     &__data-text {
-      margin-bottom: 60px;
       padding: 0 50px;
       font-weight: 400;
       font-size: 16px;
