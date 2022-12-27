@@ -8,11 +8,11 @@
 }
 .icehero {
   padding-top: 50px;
-  
-  @media screen and (min-width: 768px){
+
+  @media screen and (min-width: 768px) {
     padding-top: 64px;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     padding-top: 45px;
   }
 }
@@ -198,6 +198,7 @@
   border-radius: 8px;
   background-color: #84a178;
 
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -218,6 +219,7 @@
   color: $white;
 }
 .hero__link {
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
