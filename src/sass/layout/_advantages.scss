@@ -87,10 +87,20 @@
     padding-left: 35px;
     padding-right: 35px;
     font-size: 12px;
+    width: 230px;
+    width: 100%;
     line-height: 1.76;
     text-align: center;
     letter-spacing: 0.04em;
     color: $txt-white;
+
+    @include minW-Tablet {
+        width: 152px;
+      }
+
+    @include minW-Dt {  
+      width: 368px;
+      }
   }
 
   &__button {
