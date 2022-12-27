@@ -6,6 +6,17 @@
   width: 100%;
   background-color: #84a178;
 }
+.icehero {
+  padding-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+  }
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -180,13 +191,17 @@
 }
 
 .hero__products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 108px;
   height: 38px;
-  padding: 11px 26px;
+  padding: 11px 34px;
   border: 2px solid #f8d24e;
   border-radius: 8px;
   background-color: #84a178;
 
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -207,6 +222,7 @@
   color: $white;
 }
 .hero__link {
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
