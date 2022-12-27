@@ -23,15 +23,20 @@
       type="text"
       name="person-name"
       placeholder="Name"
+      title="Username must be two words separated by space." 
+          minlength="3" 
+          required 
     />
 
     <label class="form-franchise__label" for="person-phone"></label>
     <input
       class="form-franchise__input"
       id="person-phone"
-      type="tel"
       name="person-phone"
       placeholder="Phone"
+      type="tel"
+      minlength="10" 
+      required 
     />
 
     <label class="form-franchise__label" for="person-mail"></label>
@@ -41,6 +46,7 @@
       type="email"
       name="person-mail"
       placeholder="Email"
+      required
     />
 
     <label class="form-franchise__label" for="person-coment"></label>
