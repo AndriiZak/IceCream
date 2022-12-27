@@ -4,7 +4,7 @@
 
 .section-header {
   width: 100%;
-  background-color: #84a178;
+  background-color: $bg-color-green;
   position: fixed;
   width: 100%;
   top: 0;
@@ -153,11 +153,11 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background: #0a8817;
+    background: $accent-color;
   }
 
   &:focus {
-    background: #0a8817;
+    background: $accent-color;
     color: #ffffff;
   }
 }
@@ -166,34 +166,16 @@
   fill: currentColor;
 }
 
-////// МЕНЮ ВИПАДНЕ ЗГОРИ //////
-
-// сама обгортка меню
-
+/* ---------------------------------- МЕНЮ ---------------------------------- */
 .menu {
-  z-index: 100;
   position: fixed;
-  // display: flex;
-  flex-direction: column;
-  align-items: center;
-  // justify-content: space-around;
-  gap: 110px;
-
-  overflow-x: hidden;
-  background-color: #84a178;
-
-  left: 100%;
-  bottom: 0;
+  z-index: 100;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  transform: translateX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $bg-color-green;
 }
-
-.menu.is-open {
-  transform: translateX(-100%);
-}
-
 // логотип випадного меню
 
 .menu__logo {
@@ -257,7 +239,6 @@
   font-size: 32px;
   line-height: 1.2187;
   color: #fcfcfc;
-
   &:hover {
     color: #131313;
   }
@@ -266,138 +247,35 @@
 //кнопка в меню
 
 .menu__button {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-left: auto;
   margin-right: auto;
   margin-top: 110px;
-
   background: #f8d24e;
   border-radius: 10px;
-
   min-width: 152px;
   min-height: 42px;
-
   border: none;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: background-color $transition;
   &:hover {
-    background: #0a8817;
+    background: $accent-color;
   }
-
   &:focus {
-    background: #0a8817;
+    background: $accent-color;
     color: #ffffff;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
-// .button {
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 64px;
-//   padding: 12px 35px;
-//   background-color: #f8d24e;
-//   border-radius: 10px;
-//   border: none;
-//   cursor: pointer;
-
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 1.2142;
-//   color: #000000;
-//   fill: #000000;
-//   transform: translateX(0);
-//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-
-//   &:hover {
-//     background-color: #0a8817;
-//   }
-
-//   &:focus {
-//     background-color: #0a8817;
-//     color: #ffffff;
-//     fill: currentColor;
-//   }
-// }
-
-// .button__text {
-//   font-family: 'Montserrat';
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 1.2142;
-//   color: $black;
-//   margin-right: 4px;
-// }
-// .button__text:focus {
-//   color: $white;
-// }
-
-// .nav-menu__button {
-//   width: 152px;
-//   height: 42px;
-//   margin-bottom: 64px;
-//   padding: 12px 36px;
-//   background: #f8d24e;
-//   border-radius: 10px;
-//   border: none;
-//   cursor: pointer;
-//   margin-right: 4px;
-// }
-
-// .nav-menu__button {
-// margin-bottom: 64px;
-// padding: 12px 35px;
-// background: #f8d24e;
-// border-radius: 10px;
-// border: none;
-
-// font-family: 'Montserrat';
-// font-style: normal;
-// font-weight: 600;
-// font-size: 14px;
-// line-height: 1.2142;
-// color: #000000;
-// fill: #000000;
-// transform: translateX(0);
-// transition: background-color $transition;
-
-// @media screen and (min-width: 320px) {
-//   display: none;
-// }
-
-// @media screen and (min-width: 768px) {
-//   display: flex;
-//   align-items: center;
-//   margin-bottom: 0;
-// }
-
-//   &:hover {
-//     background-color: #0a8817;
-//   }
-
-//   &:focus {
-//     background-color: #0a8817;
-//     color: $white;
-
-//     fill: currentColor;
-//   }
-// }
-
-// .nav-menu {
-//   @media screen and (max-width: 1199px) {
-//     display: none;
-//   }
-// }
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
