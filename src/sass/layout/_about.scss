@@ -96,17 +96,21 @@
 
 .section-about__picture {
     position: absolute;
-    top: 22px;
+    transform: translate(0);
+    transition: transform $transition;
+
+}
+.tumb:hover .section-about__picture {
+    transform: translateY(22px);
 
     @media (min-width: 768px) {
-        top: 28px;
+        transform: translateY(28px);
    }
 
    @media (min-width: 1200px) {
-        top: 39px;
+        transform: translateY(39px);
     }
 }
-
 .wrapper {
     @media (min-width: 768px) {
         margin-top: 8px;
@@ -165,6 +169,7 @@
     border-radius: 10px;
     padding: 12px 35px 12px 34px;
     margin: 0 auto;
+    transition: background-color $transition;
 
     @media (min-width: 768px) {
         margin: 0;
@@ -185,6 +190,7 @@
 
     margin-left: 4px;
     fill: currentColor;
+
     
     &:hover,
     &:focus {

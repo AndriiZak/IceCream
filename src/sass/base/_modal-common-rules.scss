@@ -137,5 +137,13 @@
       font-size: 14px;
       line-height: calc(17 / 14);
     }
+
+    transition: background-color $transition;
+  }
+
+  &__btn:hover {
+    background-color: $accent-color;
+    fill: $white;
+    color: $black;
   }
 }

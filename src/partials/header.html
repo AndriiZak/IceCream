@@ -1,126 +1,96 @@
-<header>
-    <div class="section-header">
-        <div class="container header">
-            <a class="header__logo" href="./">
-                <svg class="header__logo--svg">
-                    <use href="./images/icons.svg#icon-logo"></use>
-                    <!-- </svg>
-                <img src="./images/logo/logo.png" alt="logo" /> --> -->
-                    <!-- </a>
-            <button type="button" class="header__button js-open-menu">
-                <svg width="32" height="32">
-                    <use href="./images/icons.svg#icon-burger"></use>
-                </svg>
-<!-- <header id="hero">
-    <div class=" header"> -->
-                    <!-- <a class="header__logo" href="./"><img src="./img/logo.png" alt="logo"></a> -->
-                    <!-- <button type="button" class="header__button js-open-menu"> -->
-                    <!-- <svg width="32" height="32">
-                <use href="./img/svg/symbol-defs.svg#icon-burger"></use>
-            </svg> -->
-                    <!-- </button>
-        <div class="menu js-menu-container">
-            <button type="button" class="menu__buttoncls js-close-menu"> -->
-                    <!-- <svg width="32" height="32">
-                                    <use href="./img/svg/symbol-defs.svg#icon-close"></use>
-                                </svg> -->
+<header class="section-header" id="hero">
+  <div class="container">
+    <div class="header">
+      <!--  логотип -->
 
-                    </button>
-                    <div class="menu js-menu-container">
-                        <button type="button" class="menu__buttoncls js-close-menu">
-                            <svg width="32" height="32">
-                                <use href="./images/icons.svg#icon-close"></use>
-                            </svg>
-                        </button>
-                        <ul class="menu__list">
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Home</li>
-                            <li class="menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Our products</li>
-                            <li class="menu__item"><a href="#" class="menu__link"></a>Contact</li>
-                        </ul>
-                        <button type="button" class="button">
-                            <span class="button__text">Buy now</span>
-                            <svg width="12" height="12">
-                                <use href="./images/icons.svg#icon-vector"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="nav-menu">
-                        <ul class="nav-menu__list">
-                            <li class="nav-menu__item"><a href="#" class="menu__link"></a>Home</li>
-                            <li class="nav-menu__item"><a href="#" class="menu__link"></a>How it’s made?</li>
-                            <li class="nav-menu__item"><a href="#" class="menu__link"></a>Our products</li>
-                            <li class="nav-menu__item"><a href="#" class="menu__link"></a>Contact</li>
-                        </ul>
-                    </div>
-                    <button type="button" class="nav-menu__button js-open-modal" data-modal="3"><span class="button__text">Buy now</span>
-                        <svg width="12" height="12">
-                            <use href="./images/icons.svg#icon-vector"></use>
-                        </svg>
-                    </button>
-        </div>
+      <a class="header__logo" href="./">
+        <svg class="header__logo--svg">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <!-- кнопка моб меню смужки -->
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" class="toggle-icon">
+          <use href="./images/icons.svg#icon-top-menu-lines"></use>
+        </svg>
+      </button>
+
+      <!-- широке меню для десктопа-->
+
+      <nav class="header__navigation">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a href="" class="link nav-menu__link">Home</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="index.html#about" class="link nav-menu__link">How it’s made?</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="index.html#products" class="link nav-menu__link">Our products</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="index.html#contact" class="link nav-menu__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- жовта кнопка Buy now -->
+
+      <button type="button" class="header__button js-open-modal" data-modal="3">
+        <span class="button__text">Buy now</span>
+        <svg width="12" height="12" class="header__button-svg">
+          <use href="./images/icons.svg#icon-vector"></use>
+        </svg>
+      </button>
     </div>
+  </div>
 </header>
 
+<!-- Бургер меню випадне -->
 
-<section class="icehero">
-    <div class="container hero">
-        <h1 class="hero__title">
-            <span class="hero__title--1">ice cream</span>
-            <span class="hero__title--2"> made with</span>
-            <span class="hero__title--3">passion</span>
-        </h1>
+<div class="menu js-menu-container">
+  <!-- логотип випадног меню  -->
 
-        <div class="hero__div">
-            <button type="button" class="hero__products js-open-modal" data-modal="4">Products</button>
-            <a class="hero__link" href="#">How it’s made?</a>
-        </div>
+  <a class="menu__logo" href="./">
+    <svg class="menu__logo--svg">
+      <use href="./images/icons.svg#icon-logo"></use>
+    </svg>
+  </a>
 
-        <div class="hero__div1">
-            <div class="hero__img--round">
-                <picture>
-                    <source media="(min-width:1200 )"
-                        srcset="./images/hero/hero-ice-cream-round-desktop.png 1x, ./images/hero/hero-ice-cream-round-desktop@2x.png 2x "
-                        type="image/png">
-                    <source media="(min-width:768 )"
-                        srcset="./images/hero/hero-ice-cream-round-tablet.png 1x, ./images/hero/hero-ice-cream-round-tablet@2x.png 2x "
-                        type="image/png">
-                    <img class='' src="./images/hero/hero-ice-cream-round-tablet.png" alt="dots" />
-                </picture>
-            </div>
-            <div>
-                <p class="hero__div1--text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et
-                </p>
-                <a href="#">
-                    <svg class="hero__div1--svg shadow--white" width="40" height="16">
-                        <use href="./images/icons.svg#icon-arrow"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="hero__number">
-            <h2 class="hero__number--title">
-                <h2 class="hero__number--title">16
-                </h2>
-                <p class="hero__number--text">cafes</p>
-                <h2 class="hero__number--title">32
-                </h2>
-                <p class="hero__number--text">food trucks</p>
-        </div>
+  <!-- Кнопка закриття  -->
 
-        <div class="hero__ice">
+  <button type="button" class="menu__buttoncls js-close-menu">
+    <svg width="32" height="32">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
 
-        </div>
-        <!-- <div class="hero__dots"></div> -->
-    </div>
-</section>
+  <!-- список посилань -->
+
+  <ul class="menu__list">
+    <li class="menu__item">
+      <a href="index.html" class="link menu__link">Home</a>
+    </li>
+    <li class="menu__item">
+      <a href="index.html#about" class="link menu__link">How it’s made?</a>
+    </li>
+    <li class="menu__item">
+      <a href="index.html#products" class="link menu__link">Our products</a>
+    </li>
+    <li class="menu__item">
+      <a href="index.html#contact" class="link menu__link">Contact</a>
+    </li>
+  </ul>
 
 
+  <!-- кнопка купити -->
 
-<script src="./js/modal.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-<script defer src="./js/mobile-menu.js"></script>
+  <button type="button" class="menu__button">
+    <span class="button__text">Buy now</span>
+    <svg width="12" height="12">
+      <use href="./images/icons.svg#icon-vector"></use>
+    </svg>
+  </button>
+</div>
