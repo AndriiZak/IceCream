@@ -1,161 +1,150 @@
 .checkbox {
-    &__label-green::before {
-        
-        position: absolute;
-        top: 135px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -2;
-        width: 132px;
-        height: 135px;
-        border: 2px solid #96AF8C;
-        border-radius: 15px;
-        cursor: inherit;
-        content: '';
+  &__label-green::before {
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+    width: 132px;
+    height: 135px;
+    border: 2px solid #96af8c;
+    border-radius: 15px;
+    cursor: inherit;
+    content: '';
 
-            @include minW-Tablet {
-                top: 163px;
-                left: 115px;
-                
-            }
-
-
+    @include minW-Tablet {
+      top: 163px;
+      left: 118px;
     }
+  }
 
-    &__label-green::after {
-        position: absolute;
-        top: 135px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-        cursor: inherit;
-        width: 132px;
-        height: 135px;
-        border: 2px solid #96AF8C;
-        background-color: #96AF8C;
-        border-radius: 15px;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        opacity: 0;
-        content: '';
-        
-            @include minW-Tablet {
-                top: 163px;
-                left: 115px;
-            }
+  &__label-green::after {
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    // cursor: inherit;
+    cursor: url('../images/cursor.cur'), auto; //бо спрацьовував якийст інший курсор
+    width: 132px;
+    height: 135px;
+    border: 2px solid #96af8c;
+    background-color: #96af8c;
+    border-radius: 15px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    content: '';
 
-            
+    @include minW-Tablet {
+      top: 163px;
+      left: 118px;
     }
+  }
 
+  &__label-yellow::before {
+    position: absolute;
+    top: 353px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
 
+    width: 132px;
+    height: 135px;
+    border: 2px solid#EFD478;
+    border-radius: 15px;
+    content: '';
 
-    &__label-yellow::before {
-        position: absolute;
-        top: 353px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -2;
-        
-        width: 132px;
-        height: 135px;
-        border: 2px solid#EFD478;
-        border-radius: 15px;
-        content: '';
-
-        @include minW-Tablet {
-                top: 163px;
-                right: 20px;
-            }
-
+    @include minW-Tablet {
+      top: 163px;
+      right: 20px;
     }
+  }
 
-    &__label-yellow::after {
-        position: absolute;
-        top: 353px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-        
-        width: 132px;
-        height: 135px;
-        border: 2px solid#EFD478;
-        background-color: #EFD478;
-        border-radius: 15px;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        opacity: 0;
-        content: '';
+  &__label-yellow::after {
+    position: absolute;
+    top: 353px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 
-            @include minW-Tablet {
-                    top: 163px;
-                    right: 54px;
-                }
+    width: 132px;
+    height: 135px;
+    border: 2px solid#EFD478;
+    background-color: #efd478;
+    border-radius: 15px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    content: '';
+    cursor: url('../images/cursor.cur'), auto; //бо спрацьовував якийст інший курсор
 
+    @include minW-Tablet {
+      top: 163px;
+      right: 54px;
     }
+  }
 
-    &__label-orange::before {
-        position: absolute;
-        top: 574px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-        
-        width: 132px;
-        height: 135px;
-        border: 2px solid#D6936D;
-        border-radius: 15px;
-        content: '';
+  &__label-orange::before {
+    position: absolute;
+    top: 574px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 
-        @include minW-Tablet {
-                top: 163px;
-                left: 447px;
-                
-            }
+    width: 132px;
+    height: 135px;
+    border: 2px solid#D6936D;
+    border-radius: 15px;
+    content: '';
+
+    @include minW-Tablet {
+      top: 163px;
+      left: 447px;
     }
+  }
 
-    &__label-orange::after {
-        position: absolute;
-        top: 574px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-        width: 132px;
-        height: 135px;
-        border: 2px solid#D6936D;
-        background-color: #D6936D;
-        border-radius: 15px;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        opacity: 0;
-        content: '';
+  &__label-orange::after {
+    position: absolute;
+    top: 574px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 132px;
+    height: 135px;
+    border: 2px solid#D6936D;
+    background-color: #d6936d;
+    border-radius: 15px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    content: '';
+    cursor: url('../images/cursor.cur'), auto; //бо спрацьовував якийст інший курсор
 
-            @include minW-Tablet {
-                    top: 163px;
-                    left: 447px;
-                }
+    @include minW-Tablet {
+      top: 163px;
+      left: 447px;
     }
+  }
 
+  &__input-green:checked + .checkbox__label-green::after {
+    opacity: 1;
+  }
 
-    &__input-green:checked+.checkbox__label-green::after {
-        opacity: 1;
-    }
+  &__input-green:checked + .checkbox__label-green::before {
+    opacity: 1;
+  }
 
-    &__input-green:checked+.checkbox__label-green::before {
-        opacity: 1;
-    }
+  &__input-yellow:checked + .checkbox__label-yellow::after {
+    opacity: 1;
+  }
 
-    &__input-yellow:checked+.checkbox__label-yellow::after {
-        opacity: 1;
-    }
+  &__input-yellow:checked + .checkbox__label-yellow::before {
+    opacity: 1;
+  }
 
-    &__input-yellow:checked+.checkbox__label-yellow::before {
-        opacity: 1;
-    }
+  &__input-orange:checked + .checkbox__label-orange::after {
+    opacity: 1;
+  }
 
-    &__input-orange:checked+.checkbox__label-orange::after {
-        opacity: 1;
-    }
-
-    &__input-orange:checked+.checkbox__label-orange::before {
-        opacity: 0;
-    }
-
+  &__input-orange:checked + .checkbox__label-orange::before {
+    opacity: 0;
+  }
 }
-
