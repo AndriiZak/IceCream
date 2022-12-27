@@ -1,13 +1,12 @@
 .section-about {
-  font-family: 'Montserrat', sans-serif;
-  background-color: $bg-color-green;
-  color: $txt-white;
-  padding: 61px 0 50px 0;
 
-  @media (min-width: 768px) {
-    padding: 60px 0 60px 0;
-    padding-bottom: 0;
-  }
+    background-color: $bg-color-green;
+    color: $txt-white;
+    padding: 61px 0 50px 0;
+
+     @media (min-width: 768px) {
+        padding: 60px 0 60px 0;
+    }
 }
 
 .section-about__pre-title {
@@ -93,21 +92,13 @@
 }
 
 .section-about__picture {
-  position: absolute;
-  transform: translate(0);
-  transition: transform $transition;
-}
-.tumb:hover .section-about__picture {
-  transform: translateY(22px);
 
-  @media (min-width: 768px) {
-    transform: translateY(28px);
-  }
-
-  @media (min-width: 1200px) {
-    transform: translateY(39px);
-  }
+    position: absolute;
+    transform: translateY(22px);
+    transition: transform $transition;
 }
+
+
 .wrapper {
   @media (min-width: 768px) {
     margin-top: 8px;

@@ -10,7 +10,6 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
         max-width: 768px;
-        // height: 400px;
         background-image: url('../images/background/background_mobile@2x.png');
       }
 
@@ -21,14 +20,12 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
       max-width: 1200px;
-      // height: 400px;
       background-image: url('../images/background/background_tablet@2x.png');
     }
     }
 
     @include minW-Dt {
       max-width: 1600px;
-      // height: 600px;
       margin: 0 auto;
     
       background-image:url('../images/background/background_desktop.png');
@@ -131,7 +128,6 @@
     }
   }
   &__text {
-    font-family: 'Montserrat';
     text-align: center;
     font-weight: 400;
     font-size: 14px;

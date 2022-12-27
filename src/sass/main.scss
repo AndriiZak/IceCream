@@ -6,6 +6,13 @@
 @import './base/modal-common-rules';
 
 // LAYOUT
+@import './components/animation_buttons';
+@import './components/animation_hero-icecream-image';
+@import './components/animation_titles';
+@import './components/checkbox';
+@import './components/form_validations';
+@import './components/menu';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/сontacts';
@@ -13,15 +20,13 @@
 @import './layout/advantages';
 @import './layout/customer-reviews';
 @import './layout/footer';
-@import './components/checkbox';
 @import './layout/gallery';
 @import './layout/modal_buy';
 @import './layout/modal_product';
 @import './layout/modal_video';
 @import './layout/modal-franchise';
 @import './layout/products';
-@import './layout/animation_titles';
 @import './layout/modal_map';
-@import './layout/animation_buttons';
-@import './layout/animation_hero-icecream-image';
-@import './layout/form_validations';
+
+
+
