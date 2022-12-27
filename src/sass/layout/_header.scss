@@ -10,9 +10,8 @@
   top: 0;
   left: 0;
   right: 0;
-  // min-height: 50px;
   z-index: 20;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid rgba(70, 125, 25, 0.3);
 }
 
 // корнетйнер хедер
@@ -21,8 +20,6 @@
   display: flex;
   align-items: center;
   padding-top: 12px;
-  padding-right: 4px;
-  padding-left: 4px;
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;
@@ -95,26 +92,12 @@
   display: flex;
 }
 
-// .nav-menu__item {
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.25;
-//   color: #fcfcfc;
-//   transition: $transition;
-
-//   &:hover {
-//     color: #f8d24e;
-//   }
-// }
 
 .nav-menu__item:not(:last-child) {
   margin-right: 32px;
 }
 
 .nav-menu__link {
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -128,7 +111,16 @@
 }
 
 // кнопка замовлення
+.button__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142;
 
+  margin-right: 4px;
+}
+.button__text:focus {
+  color: $white;
+}
 .header__button {
   @media screen and (max-width: 767px) {
     display: none;
@@ -177,6 +169,18 @@
   height: 100vh;
   background-color: $bg-color-green;
 }
+.menu__container {
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  max-width: 768px;
+  width: 100%;
+  padding: 0 32px;
+  @include minW-Tablet {
+    max-width: 1200px;
+    width: 100%;
+  }
+}
 // логотип випадного меню
 
 .menu__logo {
@@ -223,11 +227,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-basis: calc((100% - 96px) / 4);
   gap: 32px;
   margin-top: 100px;
 
   @media screen and (min-width: 768px) {
     margin-top: 140px;
+    gap: 40px;
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
@@ -243,6 +250,10 @@
   &:hover {
     color: #131313;
   }
+  @include minW-Tablet {
+    font-size: 48px;
+    line-height: 1.2291;
+  }
 }
 
 //кнопка в меню
@@ -254,6 +265,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 110px;
+  margin-bottom: 64px;
   background: #f8d24e;
   border-radius: 10px;
   min-width: 152px;

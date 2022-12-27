@@ -31,13 +31,16 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    // line-height: 1.5;
+   
+line-height: 140%;
 
     text-align: center;
 
     color: $txt-black;
-
-    margin-bottom: 20px;
+    max-width: 322px;
+    margin:0 auto 20px auto;
+    
 
     @include minW-Tablet {
       font-size: 20px;
@@ -46,8 +49,9 @@
     }
   }
   &__text {
-    // width: 222px;
-    font-family: 'Montserrat';
+    text-align: start;
+    margin-left: auto;
+    margin-right: auto;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

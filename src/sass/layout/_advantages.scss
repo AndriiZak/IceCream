@@ -96,7 +96,7 @@
   &__button {
     display: inline-block;
     margin: 10px 0 0;
-    font-family: 'Montserrat';
+
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
@@ -167,7 +167,6 @@
     margin-bottom: 28px;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
@@ -207,7 +206,7 @@
       transition: $transition; 
 
       &:hover {
-        transform: translatey(26px);
+        transform: translateY(26px);
         transition: $transition; 
       }
     }
@@ -283,7 +282,7 @@
       transition: $transition; 
 
       &:hover {
-        transform: translatey(39px);
+        transform: translateY(39px);
         transition: $transition; 
       }
     }

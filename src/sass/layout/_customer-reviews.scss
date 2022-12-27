@@ -12,7 +12,6 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     max-width: 768px;
-    // height: 400px;
     background-image: url('../images/background/background_mobile@2x.png');
   }
 
@@ -25,7 +24,6 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       max-width: 1200px;
-      // height: 400px;
       background-image: url('../images/background/background_tablet@2x.png');
     }
   }
@@ -33,7 +31,6 @@
   @include minW-Dt {
     padding: 464px 0 228px 0;
     max-width: 1600px;
-    // height: 600px;
     margin: 0 auto;
 
     background-image: url('../images/background/background_desktop.png');
@@ -75,7 +72,6 @@
     background-color: $bg-color-green;
     border-radius: 10px;
 
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -86,7 +82,9 @@
     text-align: center;
 
     color: #fcfcfc;
+
     /*---- Стилі для планшета 768px-1199px ----*/
+
     @include minW-Tablet {
       padding: 28px 80px;
       margin-left: 15px;
@@ -99,6 +97,7 @@
       line-height: 1.86;
     }
     /*---- Стилі для десктопа від 1200px ----*/
+
     @include minW-Dt {
       padding: 43px 73px;
       margin-left: 100px;
@@ -109,7 +108,6 @@
   }
 
   &__name {
-    font-family: 'Montserrat';
 
     font-weight: 500;
     font-size: 20px;

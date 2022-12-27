@@ -8,11 +8,11 @@
 }
 .icehero {
   padding-top: 50px;
-  
-  @media screen and (min-width: 768px){
+
+  @media screen and (min-width: 768px) {
     padding-top: 64px;
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     padding-top: 45px;
   }
 }
@@ -53,58 +53,6 @@
     }
   }
 }
-// .hero__ice {
-//   background-image: url(../images/hero/hero-ice-cream-mobile.png);
-//   @media screen and (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(../images/hero/hero-ice-cream-mobile@2x.png);
-//   }
-
-//   @include minW-Tablet {
-//     background-image: url(../images/hero/hero-ice-cream-tablet.png);
-//     @media screen and (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(../images/hero/hero-ice-cream-tablet@2x.png);
-//     }
-//   }
-
-//   @include minW-Dt {
-//     background-image: url(../images/hero/hero-ice-cream-desktop.png);
-//     @media screen and (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: url(../images/hero/hero-ice-cream-desktop@2x.png);
-//     }
-//   }
-// }
-// .hero__dots {
-// }
-
-// .hero__img {
-//   position: absolute;
-//   bottom: 0;
-//   right: 60px;
-//   height: 217px;
-//   width: 177px;
-
-//   @media screen and (min-width: 768px) {
-//     position: absolute;
-//     // width: 268px;
-//     // height: 329px;
-//     bottom: 0;
-//     right: 92px;
-//   }
-
-//   @media screenand and (min-width: 1200px) {
-//     position: absolute;
-//     // width: 456px;
-//     // height: 560px;
-//     top: 31px;
-//     right: 92px;
-//   }
-// }
 
 .hero__div {
   display: flex;
@@ -191,9 +139,12 @@
 }
 
 .hero__products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 108px;
   height: 38px;
-  padding: 11px 26px;
+  padding: 11px 34px;
   border: 2px solid #f8d24e;
   border-radius: 8px;
   background-color: #84a178;
@@ -218,6 +169,7 @@
   color: $white;
 }
 .hero__link {
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -248,7 +200,6 @@
     &--text {
       width: 139px;
       height: 85px;
-      font-family: 'Montserrat';
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
@@ -309,7 +260,6 @@
     }
   }
   &__number--title {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
@@ -324,7 +274,6 @@
     }
   }
   &__number--text {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
