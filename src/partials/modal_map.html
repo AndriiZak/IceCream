@@ -6,20 +6,13 @@
   </button>
 
   <h2 class="modal__header">Our Locations</h2>
-
-  <picture>
-    <source srcset="
-        ./images/location-modal/location-modal-mobile.jpg    1x,
-        ./images/location-modal/location-modal-mobile@2x.jpg 2x
-      " media="(max-width: 767px)" />
-
-    <source srcset="
-        ./images/location-modal/location-modal-tablet.jpg    1x,
-        ./images/location-modal/location-modal-tablet@2x.jpg 2x
-      " media="(min-width: 768px)" />
-
-    <img src="./images/location-modal/location-modal-mobile.jpg" alt="location map" />
-  </picture>
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048228.042308074!2d-95.09432355540712!3d41.74672584176937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ef721ed6db9e01%3A0xb3015830c39d4534!2sNatural%20Products%20Inc!5e0!3m2!1sru!2spl!4v1672173767173!5m2!1sru!2spl"
+      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
   <a href="https://goo.gl/maps/AvNRvpogiTNFUgvv9" target="_blank" rel="noreferrer noopener"
     class="modal__btn modal__btn-loc">Open map</a>
