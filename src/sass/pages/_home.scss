@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
   outline: 2px solid tomato; //тимчасово, щоб бачити межі контейнера
 
   @include maxW-minPhone {
@@ -18,10 +18,12 @@
   }
 
   @include minW-Tablet {
+    padding: 0 32px;
     width: 768px;
   }
 
   @include minW-Dt {
+    padding: 0 16px;
     width: 1200px;
   }
 }
