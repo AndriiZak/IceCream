@@ -1,7 +1,7 @@
 <!-- modal-franchise -->
 <div class="modal" data-modal="1">
   <button class="modal__btn-close js-modal-close">
-    <svg width="20" height="20" class="">
+    <svg class="modalcls">
       <use href="./images/icons.svg#icon-close-cross"></use>
     </svg>
   </button>
@@ -23,15 +23,19 @@
       type="text"
       name="person-name"
       placeholder="Name"
+      required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
+      title="Username must be two words separated by space." 
     />
 
     <label class="form-franchise__label" for="person-phone"></label>
     <input
       class="form-franchise__input"
       id="person-phone"
-      type="tel"
       name="person-phone"
       placeholder="Phone"
+      type="tel"
+      required pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" 
+      title="Format: +99(99)9999-9999)"
     />
 
     <label class="form-franchise__label" for="person-mail"></label>
@@ -41,6 +45,7 @@
       type="email"
       name="person-mail"
       placeholder="Email"
+      required
     />
 
     <label class="form-franchise__label" for="person-coment"></label>
