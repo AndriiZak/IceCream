@@ -1,349 +1,446 @@
-.advantages {
-  padding-bottom: 228px;
-  padding-bottom: 64px;
-  background: $bg-color-green;
-  @include minW-Tablet {
-    padding-bottom: 205px;
-  }
-  @include minW-Dt {
-    padding-bottom: 180px;
-  }
+// .advantages {
+//   padding-bottom: 228px;
+//   padding-bottom: 64px;
+//   background: $bg-color-green;
+//   @include minW-Tablet {
+//     padding-bottom: 205px;
+//   }
+//   @include minW-Dt {
+//     padding-bottom: 180px;
+//   }
+//   &__box {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+
+//   &__title-up {
+//     padding-top: 61px;
+//     font-size: 18px;
+//     line-height: 1.22;
+//     text-align: center;
+//     text-transform: uppercase;
+//     color: $txt-white;
+//   }
+
+//   &__title-under {
+//     margin-top: 12px;
+//     padding-left: 45px;
+//     padding-right: 45px;
+//     font-family: 'Seymour One';
+//     font-style: normal;
+//     font-size: 30px;
+//     line-height: 1.27;
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
+//     color: $txt-white;
+//   }
+
+//   &__img {
+//     width: 279px;
+//     height: 279px;
+//     box-sizing: content-box;
+//     padding-bottom: 22px;
+//     margin-top: 32px;
+//     margin-bottom: 40px;
+//   }
+
+//   &__img-back {
+//     position: relative;
+//     height: 100%;
+//     background: linear-gradient(0deg, $mustard-yellow, $mustard-yellow),
+//       $pale-yellow;
+//     box-shadow: 0px 4.48583px 16.8218px $mustard-black;
+//     border-radius: 50%;
+//   }
+
+//   &__img-top {
+//     position: absolute;
+//     left: 0;
+//     z-index: 1;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url(./../images/how-its-made/korova-mobile.png);
+//     background-size: 100% 100%;
+//     background-repeat: no-repeat;
+//     transform: translate(0);
+//     transition: $transition;
+
+//       &:hover {
+//         transform: translatey(22px);
+//         transition: $transition;
+//         transition-duration: 250ms;
+//       }
+//   }
+
+//   @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     &__img-top {
+//       background-image: url(./../images/how-its-made/korova-mobile@2x.png);
+//     }
+//   }
+
+//   &__text {
+//     padding-left: 35px;
+//     padding-right: 35px;
+//     font-size: 12px;
+//     line-height: 1.76;
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     color: $txt-white;
+//   }
+
+//   &__button {
+//     display: inline-block;
+//     margin: 10px 0 0;
+//     font-family: 'Montserrat';
+//     font-weight: 600;
+//     font-size: 14px;
+//     line-height: 1.29;
+//     color: $black;
+//     padding: 12px 34px;
+//     background: $dyellow-color;
+//     border-radius: 10px;
+//     border: none;
+//     text-decoration: none;
+
+//     &:hover {
+//       color: $black;
+//       background: $accent-color;
+//       transition-property: $accent-color;
+//       transition-duration: 250ms;
+//     }
+
+//     &:focus {
+//       color: $txt-white;
+//       background: $accent-color;
+//       transition-property: $accent-color;
+//       transition-duration: 250ms;
+//     }
+
+//     &:focus .advantages__button-vector {
+//       fill: $txt-white;
+//     }
+//   }
+
+//   &__button-vector {
+//     margin-left: 4px;
+//   }
+
+//   &__data {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     &:last-child .advantages__data-text {
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   &__data-item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 50px;
+//     height: 50px;
+//     background: $dyellow-color;
+//     border-radius: 25px;
+//     margin-bottom: 16px;
+//   }
+
+//   &__data-value {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.22;
+//     text-align: center;
+//     letter-spacing: 0.04em;
+//     text-transform: uppercase;
+//     color: $txt-white;
+//   }
+
+//   &__data-text {
+//     margin-top: 16px;
+//     margin-bottom: 28px;
+//     padding-left: 30px;
+//     padding-right: 30px;
+//     font-family: 'Montserrat';
+//     font-weight: 700;
+//     font-size: 12px;
+//     line-height: 1.7;
+//     text-align: center;
+//     color: $txt-white;
+//   }
+
+//   &__read-more {
+//     text-align: center;
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .advantages-container {
+//     padding: 0 32px;
+//   }
+
+//   .advantages {
+//     &__box {
+//       flex-direction: row;
+//       align-items: flex-start;
+//       margin-top: 72px;
+//     }
+
+//     &__img {
+//       width: 330px;
+//       height: 330px;
+//       flex: 0 0 330px;
+//       padding-bottom: 26px;
+//       margin-top: 0;
+//       margin-bottom: 0;
+//     }
+
+//     &__img-top {
+//       background-image: url(./../images/how-its-made/korova-tablet.png);
+//       transform: translate(0);
+//       transition: $transition;
+
+//       &:hover {
+//         transform: translatey(26px);
+//         transition: $transition;
+//       }
+//     }
+
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       &__img-top {
+//         background-image: url(./../images/how-its-made/korova-tablet@2x.png);
+//       }
+//     }
+
+//     &__info {
+//       margin-left: 34px;
+//     }
+
+//     &__text {
+//       padding-left: 0;
+//       padding-right: 0;
+//       text-align: left;
+//     }
+
+//     &__read-more {
+//       margin-top: 32px;
+//       text-align: left;
+//     }
+
+//     &__data-wrapper {
+//       display: flex;
+//       gap: 80px;
+//       margin-left: 44px;
+//       margin-right: 44px;
+//     }
+
+//     &__data-value {
+//       margin-top: 32px;
+//     }
+
+//     &__data-text {
+//       padding: 0;
+//       font-weight: 400;
+//       font-size: 14px;
+//       line-height: 1.74;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .advantages-container {
+//     padding: 0 16px;
+//   }
+
+//   .advantages {
+//     &__box {
+//       flex-direction: row;
+//       align-items: center;
+//       margin-top: 72px;
+//     }
+
+//     &__img {
+//       width: 490px;
+//       height: 490px;
+//       flex: 0 0 490px;
+//       padding-bottom: 39px;
+//       margin-top: 0;
+//       margin-bottom: 0;
+//     }
+
+//     &__img-top {
+//       background-image: url(./../images/how-its-made/korova-desktop.png);
+//       transform: translate(0);
+//       transition: $transition;
+
+//       &:hover {
+//         transform: translatey(39px);
+//         transition: $transition;
+//       }
+//     }
+
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       &__img-top {
+//         background-image: url(./../images/how-its-made/korova-desktop@2x.png);
+//       }
+//     }
+
+//     &__title-up {
+//       font-weight: 800;
+//       font-size: 30px;
+//       line-height: 1.23;
+//     }
+
+//     &__title-under {
+//       font-size: 36px;
+//       line-height: 1.25;
+//     }
+
+//     &__info {
+//       margin-left: 109px;
+//     }
+
+//     &__text {
+//       padding-left: 0;
+//       padding-right: 0;
+//       text-align: left;
+//       font-size: 16px;
+//       line-height: 1.76;
+//     }
+
+//     &__read-more {
+//       margin-top: 54px;
+//       text-align: left;
+//     }
+
+//     &__data-wrapper {
+//       display: flex;
+//       gap: 32px;
+//       margin-left: 0;
+//       margin-right: 0;
+//     }
+
+//     &__data-value {
+//       margin-top: 40px;
+//       font-weight: 700;
+//       font-size: 58px;
+//       line-height: 1.22;
+//     }
+
+//     &__data-text {
+//       padding: 0 50px;
+//       font-weight: 400;
+//       font-size: 16px;
+//       line-height: 1.76;
+//     }
+//   }
+// }
+
+.advanteges {
+  background-color: $bg-color-green;
   &__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__title-up {
-    padding-top: 61px;
-    font-size: 18px;
-    line-height: 1.22;
-    text-align: center;
-    text-transform: uppercase;
-    color: $txt-white;
-  }
-
-  &__title-under {
-    margin-top: 12px;
-    padding-left: 45px;
-    padding-right: 45px;
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-size: 30px;
-    line-height: 1.27;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $txt-white;
-  }
-
-  &__img {
-    width: 279px;
-    height: 279px;
-    box-sizing: content-box;
-    padding-bottom: 22px;
-    margin-top: 32px;
-    margin-bottom: 40px;
-  }
-
-  &__img-back {
-    position: relative;
-    height: 100%;
-    background: linear-gradient(0deg, $mustard-yellow, $mustard-yellow),
-      $pale-yellow;
-    box-shadow: 0px 4.48583px 16.8218px $mustard-black;
-    border-radius: 50%;
-  }
-
-  &__img-top {
-    position: absolute;
-    left: 0;
-    z-index: 1;
+    max-width: 320px;
     width: 100%;
-    height: 100%;
-    background-image: url(./../images/how-its-made/korova-mobile.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transform: translate(0);
-    transition: $transition; 
-
-      &:hover {
-        transform: translatey(22px);
-        transition: $transition; 
-        transition-duration: 250ms;
-      }
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    &__img-top {
-      background-image: url(./../images/how-its-made/korova-mobile@2x.png);
+    @include minW-Tablet {
+      max-width: 620px;
+      width: 100%;
+    }
+    @include minW-Dt {
+      max-width: 1200px;
+      width: 100%;
     }
   }
-
-  &__text {
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 12px;
-    line-height: 1.76;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: $txt-white;
-  }
-
-  &__button {
-    display: inline-block;
-    margin: 10px 0 0;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    color: $black;
-    padding: 12px 34px;
-    background: $dyellow-color;
-    border-radius: 10px;
-    border: none;
-    text-decoration: none;
-    
-
-    &:hover {
-      color: $black;
-      background: $accent-color;
-      transition-property: $accent-color;
-      transition-duration: 250ms;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-basis: calc((100% - 56px) / 3);
+    padding-bottom: 64px;
+    @include minW-Tablet {
+      flex-wrap: nowrap;
+      gap: 80px;
+      flex-basis: calc((100% - 80px) / 3);
+      padding-bottom: 204px;
     }
-
-    &:focus {
-      color: $txt-white;
-      background: $accent-color;
-      transition-property: $accent-color;
-      transition-duration: 250ms;
-    }
-
-    &:focus .advantages__button-vector {
-      fill: $txt-white;
+    @include minW-Dt {
+      flex-basis: calc((100% - 64px) / 3);
+      gap: 32px;
+      padding-bottom: 178px;
     }
   }
-
-  &__button-vector {
-    margin-left: 4px;
-  }
-
-  &__data {
+  &__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    &:last-child .advantages__data-text {
-      margin-bottom: 0;
-    }
-  }
-
-  &__data-item {
-    display: flex;
     align-items: center;
     justify-content: center;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
-    background: $dyellow-color;
-    border-radius: 25px;
+    border-radius: 50%;
+    background-color: $dyellow-color;
     margin-bottom: 16px;
+    @include minW-Tablet {
+      margin-bottom: 32px;
+    }
+    @include minW-Dt {
+      margin-bottom: 40px;
+    }
   }
-
-  &__data-value {
+  &__svg {
+    width: 36px;
+    height: 36px;
+  }
+  &__title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.22;
+    line-height: 1.2222;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $txt-white;
+    margin-bottom: 16px;
+    letter-spacing: 0.04em;
+    @include minW-Tablet {
+      font-size: 48px;
+      line-height: 1.2291;
+    }
+    @include minW-Dt {
+      font-size: 58px;
+      line-height: 1.2241;
+    }
   }
-
-  &__data-text {
-    margin-top: 16px;
-    margin-bottom: 28px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: 'Montserrat';
+  &__txt {
     font-weight: 700;
     font-size: 12px;
-    line-height: 1.7;
+    line-height: 1.6666;
     text-align: center;
     color: $txt-white;
-  }
-
-  &__read-more {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .advantages-container {
-    padding: 0 32px;
-  }
-
-  .advantages {
-    &__box {
-      flex-direction: row;
-      align-items: flex-start;
-      margin-top: 72px;
-    }
-
-    &__img {
-      width: 330px;
-      height: 330px;
-      flex: 0 0 330px;
-      padding-bottom: 26px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &__img-top {
-      background-image: url(./../images/how-its-made/korova-tablet.png);
-      transform: translate(0);
-      transition: $transition; 
-
-      &:hover {
-        transform: translatey(26px);
-        transition: $transition; 
-      }
-    }
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      &__img-top {
-        background-image: url(./../images/how-its-made/korova-tablet@2x.png);
-      }
-    }
-
-    &__info {
-      margin-left: 34px;
-    }
-
-    &__text {
-      padding-left: 0;
-      padding-right: 0;
-      text-align: left;
-    }
-
-    &__read-more {
-      margin-top: 32px;
-      text-align: left;
-    }
-
-    &__data-wrapper {
-      display: flex;
-      gap: 80px;
-      margin-left: 44px;
-      margin-right: 44px;
-    }
-
-    &__data-value {
-      margin-top: 32px;
-    }
-
-    &__data-text {
-      padding: 0;
+    @include minW-Tablet {
       font-weight: 400;
       font-size: 14px;
-      line-height: 1.74;
+      line-height: 1.7142;
     }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages-container {
-    padding: 0 16px;
-  }
-
-  .advantages {
-    &__box {
-      flex-direction: row;
-      align-items: center;
-      margin-top: 72px;
-    }
-
-    &__img {
-      width: 490px;
-      height: 490px;
-      flex: 0 0 490px;
-      padding-bottom: 39px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &__img-top {
-      background-image: url(./../images/how-its-made/korova-desktop.png);
-      transform: translate(0);
-      transition: $transition; 
-
-      &:hover {
-        transform: translatey(39px);
-        transition: $transition; 
-      }
-    }
-
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      &__img-top {
-        background-image: url(./../images/how-its-made/korova-desktop@2x.png);
-      }
-    }
-
-    &__title-up {
-      font-weight: 800;
-      font-size: 30px;
-      line-height: 1.23;
-    }
-
-    &__title-under {
-      font-size: 36px;
-      line-height: 1.25;
-    }
-
-    &__info {
-      margin-left: 109px;
-    }
-
-    &__text {
-      padding-left: 0;
-      padding-right: 0;
-      text-align: left;
-      font-size: 16px;
-      line-height: 1.76;
-    }
-
-    &__read-more {
-      margin-top: 54px;
-      text-align: left;
-    }
-
-    &__data-wrapper {
-      display: flex;
-      gap: 32px;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    &__data-value {
-      margin-top: 40px;
-      font-weight: 700;
-      font-size: 58px;
-      line-height: 1.22;
-    }
-
-    &__data-text {
-      padding: 0 50px;
+    @include minW-Dt {
       font-weight: 400;
       font-size: 16px;
-      line-height: 1.76;
+      line-height: 1.75;
     }
   }
 }
