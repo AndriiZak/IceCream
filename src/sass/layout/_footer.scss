@@ -278,12 +278,12 @@
   }
 }
 
-.stiky-link {
-  display: inline-block;
-
+.up {
   position: fixed;
-  right: 10px;
-  bottom: 10px;
+  display: inline-block;
+  right: 20px;
+  bottom: 20px;
+
 
   margin: 0;
   padding: 0;
@@ -293,23 +293,21 @@
   width: 50px;
   height: 50px;
   font-style: normal;
+
   font-weight: 700;
   font-size: 26px;
+  line-height: 1.83;
   color: #fff;
-  text-align: center;
   opacity: 0.7;
-  // background-color: #EE508F;
+  
   background-color: $dyellow-color;
   border-radius: 50%;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.83;
   transition: opacity $transition;
-  position: fixed;
+
   text-decoration: none;
-  margin-right: 10px;
 
   &:hover {
     opacity: 0.9;
