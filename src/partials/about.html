@@ -5,17 +5,16 @@
     <div class="section-about__item">
       <div class="tumb">
         <picture class="section-about__picture">
-          <source srcset="
-              /src/images/how-its-made/korova-mobile.png    1x,
-              /src/images/how-its-made/korova-mobile@2x.png 2x
-            " type="image/png" media="(max-width: 767px)" 480px " />
-          <source srcset=" /src/images/how-its-made/korova-tablet.png 1x, /src/images/how-its-made/korova-tablet@2x.png
-            2x " type=" image/png" media="(max-width: 1199px)" 768px" />
-          <source srcset="
-              /src/images/how-its-made/korova-desktop.png    1x,
-              /src/images/how-its-made/korova-desktop@2x.png 2x
-            " type="image/png" media="(max-width: 2200px)" 1200px" />
-          <img src="/src/images/how-its-made/korova-mobile.png" alt="cow" />
+          <source media="(min-width:1200px )"
+            srcset="./images/how-its-made/korova-desktop.png 1x,  ./images/how-its-made/korova-desktop@2x.png  2x"
+            type="image/png">
+          <source media="(min-width:768px )"
+            srcset="./images/how-its-made/korova-tablet.png 1x,  ./images/how-its-made/korova-tablet@2x.png  2x"
+            type="image/png">
+          <source media="(min-width:480px )"
+            srcset="./images/how-its-made/korova-mobile.png 1x,  ./images/how-its-made/korova-mobile@2x.png  2x"
+            type="image/png">
+          <img src="/src/images/how-its-made/korova-tablet.png" alt="cow" />
         </picture>
       </div>
       <div class="wrapper">

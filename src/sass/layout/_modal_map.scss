@@ -1,17 +1,5 @@
-// .modal {
-//   &--map {
-//     min-height: 365px;
-
-//     @include minW-Tablet {
-//       min-height: 458px;
-//     }
-//   }
-// }
-
 .modal {
   &--map {
-    max-width: 280px;
-    width: 100%;
     padding: 28px;
 
     @include minW-Tablet {
@@ -43,7 +31,6 @@
 }
 
 .video-size {
-  min-width: 224px;
   min-height: 200px;
   height: 100%;
   width: 100%;
