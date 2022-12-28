@@ -181,7 +181,7 @@
 .picture {
   &__img {
     z-index: 50;
-    transform: translate(0);
+    transform: translateY(-11px);
     transition: $transition;
   }
   &__back {
@@ -228,15 +228,15 @@
 }
 
 //!animation
-.products__item:hover .picture__img {
-  transform: translateY(-11px);
-  @include minW-Tablet {
-    transform: translateY(-12px);
-  }
-  @include minW-Dt {
-    transform: translateY(-16px);
-  }
-}
+// .products__item:hover .picture__img {
+//   transform: translateY(-11px);
+//   @include minW-Tablet {
+//     transform: translateY(-12px);
+//   }
+//   @include minW-Dt {
+//     transform: translateY(-16px);
+//   }
+// }
 .shadow {
   filter: drop-shadow(0);
   transition: filter $transition;
