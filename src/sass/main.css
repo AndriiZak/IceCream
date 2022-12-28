@@ -89,7 +89,6 @@ ul {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 2px solid tomato;
 }
 @media screen and (max-width: 319px) {
   .container {
@@ -878,6 +877,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #131313;
   margin-left: 32px;
   background: #f8d24e;
   border-radius: 10px;
@@ -1644,7 +1644,7 @@ body {
 }
 @media (min-width: 768px) {
   .section-about {
-    padding: 60px 0 60px 0;
+    padding: 30px 0 60px 0;
   }
 }
 
