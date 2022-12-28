@@ -1,38 +1,43 @@
 .menu__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 110px;
-    margin-bottom: 64px;
-    background: #f8d24e;
-    border-radius: 10px;
-    min-width: 152px;
-    min-height: 42px;
-    border: none;
-    transition: background-color $transition;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 110px;
+  margin-bottom: 64px;
+  background: #f8d24e;
+  border-radius: 10px;
+  min-width: 152px;
+  min-height: 42px;
+  border: none;
+  color: #131313;
+  transition: background-color $transition;
 
-    &:hover {
-        background: $accent-color;
-    }
+  &:hover {
+    background: $accent-color;
+  }
 
-    &:focus {
-        background: $accent-color;
-        color: #ffffff;
-    }
+  &:focus {
+    background: $accent-color;
+    color: #ffffff;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button__menu-icon {
+  fill: currentColor;
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }

@@ -92,7 +92,6 @@
   display: flex;
 }
 
-
 .nav-menu__item:not(:last-child) {
   margin-right: 32px;
 }
@@ -211,6 +210,7 @@
   padding: 0;
   right: 16px;
   top: 20px;
+  color: #131313;
 
   @media screen and (min-width: 768px) {
     right: 32px;
@@ -255,5 +255,3 @@
     line-height: 1.2291;
   }
 }
-
-
