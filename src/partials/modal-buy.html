@@ -1,6 +1,6 @@
 <div class="modal modal-buy" data-modal="3">
   <button class="modal__btn-close js-modal-close">
-    <svg  class="modalcls">
+    <svg class="modalcls">
       <use href="./images/icons.svg#icon-close-cross"></use>
     </svg>
   </button>
@@ -11,14 +11,10 @@
       <li class="product-box__item product-box__item--green">
         <div class="picture__modal picture__back--green">
           <div class="picture__img--modal">
-            <img
-              src="./images/modal-products/ice-cream-modal.png"
-              alt="product"
-              srcset="
+            <img src="./images/modal-products/ice-cream-modal.png" alt="product" srcset="
                 ./images/modal-products/ice-cream-modal.png    1x,
                 ./images/modal-products/ice-cream-modal@2x.png 2x
-              "
-            />
+              " />
           </div>
         </div>
         <div class="product-box__elements">
@@ -28,14 +24,10 @@
       <li class="product-box__item product-box__item--yellow">
         <div class="picture__modal picture__back--yellow">
           <div class="picture__img--modal">
-            <img
-              src="./images/modal-products/ice-coffee-modal.png"
-              alt="product"
-              srcset="
+            <img src="./images/modal-products/ice-coffee-modal.png" alt="product" srcset="
                 ./images/modal-products/ice-coffee-modal.png    1x,
                 ./images/modal-products/ice-coffee-modal@2x.png 2x
-              "
-            />
+              " />
           </div>
         </div>
         <div class="product-box__elements">
@@ -45,14 +37,10 @@
       <li class="product-box__item product-box__item--brown">
         <div class="picture__modal picture__back--brown">
           <div class="picture__img--modal">
-            <img
-              src="./images/modal-products/milkshake-modal.png"
-              alt="product"
-              srcset="
+            <img src="./images/modal-products/milkshake-modal.png" alt="product" srcset="
                 ./images/modal-products/milkshake-modal.png    1x,
                 ./images/modal-products/milkshake-modal@2x.png 2x
-              "
-            />
+              " />
           </div>
         </div>
         <div class="product-box__elements">
@@ -64,56 +52,24 @@
   <div class="form-wrapper">
     <form class="form-buy" action="#">
       <div>
-        <input
-          class="checkbox__input-green visually-hidden"
-          id="checkbox-green"
-          type="checkbox"
-          name="checkbox-green"
-        />
+        <input class="checkbox__input-green visually-hidden" id="checkbox-green" type="checkbox"
+          name="checkbox-green" />
         <label class="checkbox__label-green" for="checkbox-green"> </label>
-        <input
-          class="checkbox__input-yellow visually-hidden"
-          id="checkbox-yellow"
-          type="checkbox"
-          name="checkbox-yellow"
-        />
+        <input class="checkbox__input-yellow visually-hidden" id="checkbox-yellow" type="checkbox"
+          name="checkbox-yellow" />
         <label class="checkbox__label-yellow" for="checkbox-yellow"> </label>
-        <input
-          class="checkbox__input-orange visually-hidden"
-          id="checkbox-orange"
-          type="checkbox"
-          name="checkbox-orange"
-        />
+        <input class="checkbox__input-orange visually-hidden" id="checkbox-orange" type="checkbox"
+          name="checkbox-orange" />
         <label class="checkbox__label-orange" for="checkbox-orange"> </label>
       </div>
 
       <div class="input-wrapper">
-        <input
-          class="input-wrapper__input"
-          type="text"
-          name="user-name"
-          id="user-name"
-          placeholder="Name"
-          required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
-          title="Username must be two words separated by space." 
-        />
-        <input
-          class="input-wrapper__input"
-          name="user-number"
-          id="user-number"
-          placeholder="Phone"
-          type="tel"
-          minlength="10" 
-          required pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" 
-          title="Format: +99(99)9999-9999"
-       
-        />
-        <textarea
-          class="input-wrapper__input form__textarea"
-          name="user-comment"
-          id="user-comment"
-          placeholder="Comment"
-        ></textarea>
+        <input class="input-wrapper__input" type="text" name="user-name" id="user-name" placeholder="Name" required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Username must be two words separated by space." />
+        <input class="input-wrapper__input" name="user-number" id="user-number" placeholder="Phone" type="tel"
+          minlength="10" required pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Format: +99(99)9999-9999" />
+        <textarea class="input-wrapper__input form__textarea" name="user-comment" id="user-comment"
+          placeholder="Comment"></textarea>
       </div>
     </form>
   </div>
