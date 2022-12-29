@@ -69,7 +69,7 @@
     }
   
     &__number--text {
-      margin-top: 50px;
+      margin-top: 4px;
       font-style: normal;
       font-weight: 400;
       font-size: 8px;
@@ -107,9 +107,7 @@
       max-width: 247px;
       width: 100%;
       text-align: left;
-      margin-top: 50px;
-      margin-bottom: 32px;
-      margin-right: 54px;
+      margin: 50px 32px 54px 0;
 
       font-family: 'Seymour One';
       font-style: normal;
@@ -123,16 +121,45 @@
         display: flex;
         flex-direction: column;
         align-items: normal;
-        margin-top: 14px;
-        margin-bottom: 24px;
-        margin-right: 0;
+        margin: 14px 0 24px 0;
+
         width: 100%;
         max-width: 367px;
       }
 
       @media screen and (min-width: 1200px) {
-        margin-top: 45px;
-        margin-bottom: 28px;
+        margin: 45px 0 28px 0;
+      }
+
+      &--first,
+      &--second {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.2692;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $txt-white;
+
+        @include minW-Dt {
+          font-size: 38px;
+          line-height: 1.2631;
+        }
+      }
+
+      &--third {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 0.9705;
+        text-transform: uppercase;
+        color: $txt-white;
+        @include minW-Dt {
+          font-size: 38px;
+          line-height: 1.2631;
+        }
       }
     }
 
@@ -245,37 +272,6 @@
     
 }
 
-
-.hero__title--1,
-.hero__title--2 {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.2692;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $txt-white;
-
-  @include minW-Dt {
-    font-size: 38px;
-    line-height: 1.2631;
-  }
-}
-
-.hero__title--3 {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 0.9705;
-  text-transform: uppercase;
-  color: $txt-white;
-  @include minW-Dt {
-    font-size: 38px;
-    line-height: 1.2631;
-  }
-}
 
 
 .shadow--white {
