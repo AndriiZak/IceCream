@@ -1,22 +1,5 @@
 // СЕКЦІЯ ГЕРОЙ
 //
-
-.icehero {
-  position: relative;
-  width: 100%;
-  background-color: #84a178;
-}
-.icehero {
-  padding-top: 50px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 64px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 45px;
-  }
-}
-
 .hero {
   position: relative;
   display: flex;
@@ -52,60 +35,216 @@
       background-image: url(../images/hero/header-dots-desktop@2x.png);
     }
   }
+
+    &__number {
+      display: none;
+      position: absolute;
+      right: 32px;
+      top: 28px;
+  
+      @include minW-Tablet {
+        display: block;
+      }
+  
+      @include minW-Dt {
+        right: 16px;
+        top: 63px;
+      }
+    }
+  
+    &__number--title {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.2142;
+      text-align: right;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $txt-black;
+  
+      @include minW-Dt {
+        font-size: 46px;
+        line-height: 1.2173;
+      }
+    }
+  
+    &__number--text {
+      margin-top: 50px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+      color: $txt-white;
+  
+      @include minW-Dt {
+        font-size: 14px;
+        line-height: 1.2142;
+      }
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      margin-bottom: 160px;
+      margin-right: auto;
+      flex-basis: calc((100% - 30px) / 2);
+      gap: 15px;
+      @include minW-Tablet {
+        flex-basis: calc((100% - 44px) / 2);
+        gap: 22px;
+        margin-bottom: 40px;
+      }
+
+      @include minW-Dt {
+        flex-basis: calc((100% - 68px) / 2);
+        gap: 34px;
+        margin-bottom: 42px;
+      }
+    }
+
+    &__title {
+      max-width: 247px;
+      width: 100%;
+      text-align: left;
+      margin-top: 50px;
+      margin-bottom: 32px;
+      margin-right: 54px;
+
+      font-family: 'Seymour One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 1.2692;
+      letter-spacing: 0.04em;
+      color: #fcfcfc;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        margin-top: 14px;
+        margin-bottom: 24px;
+        margin-right: 0;
+        width: 100%;
+        max-width: 367px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-top: 45px;
+        margin-bottom: 28px;
+      }
+    }
+
+    &__products {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 108px;
+      height: 38px;
+      padding: 11px 34px;
+      border: 2px solid #f8d24e;
+      border-radius: 8px;
+      background-color: #84a178;
+    
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      color: $black;
+      transition: $transition;
+
+      &:hover {
+          border: 2px solid #0a8817;
+        }
+      
+      &:focus {
+        color: $white;
+      }
+    
+      @include minW-Dt {
+        width: 134px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 1.2857;
+      }
+    }
+
+    &__link {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      text-decoration-line: underline;
+      color: #f8d24e;
+      transition: color $transition;
+
+      &:hover {
+          color: #0a8817;
+        }
+      
+      &:focus {
+        color: $txt-white;
+        }
+
+      @include minW-Dt {
+        font-size: 14px;
+        line-height: 1.2142;
+      }
+    }
+
+    &__dishes {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-basis: calc((100% - 64px) / 2);
+        gap: 32px;
+
+        &--size{
+          margin-top: 60px;
+        }
+        &--text {
+          width: 139px;
+          height: 85px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.4;
+          color: $txt-white;
+          margin-bottom: 12px;
+          @include minW-Dt {
+            font-size: 14px;
+            line-height: 1.4285;
+            max-width: 200px;
+            width: 100%;
+            margin-bottom: 24px;
+          }
+        }
+
+        &--svg {
+          width: 40px;
+          height: 16px;
+          fill: $txt-white;
+        }
+      }
+
+        @media screen and (min-width: 1200px) {
+          margin-bottom: 60px;
+          gap: 16px;
+        }
+
+        &--round {
+          width: 152px;
+          height: 152px;
+        
+          @include minW-Dt {
+            width: 225px;
+            height: 225px;
+          }
+        }
+    }
+    
 }
 
-.hero__div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 160px;
-  margin-right: auto;
-  flex-basis: calc((100% - 30px) / 2);
-  gap: 15px;
-  @include minW-Tablet {
-    flex-basis: calc((100% - 44px) / 2);
-    gap: 22px;
-    margin-bottom: 40px;
-  }
-
-  @include minW-Dt {
-    flex-basis: calc((100% - 68px) / 2);
-    gap: 34px;
-    margin-bottom: 42px;
-  }
-}
-
-.hero__title {
-  max-width: 247px;
-  width: 100%;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 32px;
-  margin-right: 54px;
-
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.2692;
-  letter-spacing: 0.04em;
-  color: #fcfcfc;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
-    margin-top: 14px;
-    margin-bottom: 24px;
-    margin-right: 0;
-    width: 100%;
-    max-width: 367px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 45px;
-    margin-bottom: 28px;
-  }
-}
 
 .hero__title--1,
 .hero__title--2 {
@@ -138,104 +277,6 @@
   }
 }
 
-.hero__products {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 108px;
-  height: 38px;
-  padding: 11px 34px;
-  border: 2px solid #f8d24e;
-  border-radius: 8px;
-  background-color: #84a178;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  color: $black;
-  transition: $transition;
-  @include minW-Dt {
-    width: 134px;
-    height: 42px;
-    font-size: 14px;
-    line-height: 1.2857;
-  }
-}
-
-.hero__products:hover {
-  border: 2px solid #0a8817;
-}
-.hero__products:focus {
-  color: $white;
-}
-.hero__link {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.25;
-  text-decoration-line: underline;
-  color: #f8d24e;
-  transition: color $transition;
-  @include minW-Dt {
-    font-size: 14px;
-    line-height: 1.2142;
-  }
-}
-.hero__link:hover {
-  color: #0a8817;
-}
-.hero__link:focus {
-  color: $txt-white;
-}
-
-.hero__div1 {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    flex-basis: calc((100% - 64px) / 2);
-    gap: 32px;
-
-    &--text {
-      width: 139px;
-      height: 85px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.4;
-      color: $txt-white;
-      margin-bottom: 12px;
-      @include minW-Dt {
-        font-size: 14px;
-        line-height: 1.4285;
-        max-width: 200px;
-        width: 100%;
-        margin-bottom: 24px;
-      }
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
-    gap: 16px;
-  }
-}
-
-.hero__img--round {
-  width: 152px;
-  height: 152px;
-  @include minW-Dt {
-    width: 225px;
-    height: 225px;
-  }
-}
-
-.hero__div1--svg {
-  width: 40px;
-  height: 16px;
-  fill: $txt-white;
-}
 
 .shadow--white {
   filter: drop-shadow(0);
@@ -245,47 +286,6 @@
   filter: drop-shadow(3px 3px 2px rgba(232, 227, 227, 0.941));
 }
 
-.hero {
-  &__number {
-    display: none;
-    position: absolute;
-    right: 32px;
-    top: 28px;
-    @include minW-Tablet {
-      display: block;
-    }
-    @include minW-Dt {
-      right: 16px;
-      top: 63px;
-    }
-  }
-  &__number--title {
-    font-style: normal;
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 1.2142;
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $txt-black;
-    @include minW-Dt {
-      font-size: 46px;
-      line-height: 1.2173;
-    }
-  }
-  &__number--text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    text-align: right;
-    color: $txt-white;
-    @include minW-Dt {
-      font-size: 14px;
-      line-height: 1.2142;
-    }
-  }
-}
 
 .main-ice-cream {
   display: block;
@@ -309,5 +309,23 @@
 
   @include minW-Dt {
     width: 456px;
+  }
+}
+
+.hero-ice {
+  position: relative;
+  width: 100%;
+  background-color: #84a178;
+}
+
+.hero-ice {
+  padding-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
   }
 }
